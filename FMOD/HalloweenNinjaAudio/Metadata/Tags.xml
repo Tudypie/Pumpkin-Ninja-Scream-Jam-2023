@@ -4,5 +4,91 @@
 		<property name="name">
 			<value>Master</value>
 		</property>
+		<relationship name="items">
+			<destination>{19d4b76e-26dc-46ba-a003-f48fd631242d}</destination>
+			<destination>{3d426a47-7a68-48f0-aa9e-a172e01cd6ac}</destination>
+			<destination>{b89e9970-d60b-4531-8c61-80561478f33c}</destination>
+			<destination>{7154792e-47c9-44d9-b7b2-a6d8300744a7}</destination>
+			<destination>{fa058b49-8c1a-4e8d-a879-581a75c7c2c4}</destination>
+			<destination>{b3bd5f27-d175-4213-b4d4-dfeeed08b2ab}</destination>
+			<destination>{49bd8aa3-839d-491f-a498-707177c6e1bd}</destination>
+			<destination>{b4666b50-187a-4d62-8b6b-337c0f736bff}</destination>
+			<destination>{6103b40f-d28e-4797-a668-57bcdd42b79c}</destination>
+			<destination>{41757494-c330-40dc-b421-11a01c0a3f2a}</destination>
+			<destination>{b13c7bf8-56fc-4e4e-abdc-32f0ae2ab18b}</destination>
+			<destination>{887b6750-7a85-4296-87cf-54ead502a4ff}</destination>
+			<destination>{d2f34ae7-616a-4ce2-bad5-8fd32379cc14}</destination>
+			<destination>{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}</destination>
+		</relationship>
+	</object>
+	<object class="Tag" id="{19d4b76e-26dc-46ba-a003-f48fd631242d}">
+		<property name="name">
+			<value>Soundtrack</value>
+		</property>
+	</object>
+	<object class="Tag" id="{3d426a47-7a68-48f0-aa9e-a172e01cd6ac}">
+		<property name="name">
+			<value>SFX</value>
+		</property>
+	</object>
+	<object class="Tag" id="{b89e9970-d60b-4531-8c61-80561478f33c}">
+		<property name="name">
+			<value>Ambience</value>
+		</property>
+	</object>
+	<object class="Tag" id="{7154792e-47c9-44d9-b7b2-a6d8300744a7}">
+		<property name="name">
+			<value>Artifact</value>
+		</property>
+	</object>
+	<object class="Tag" id="{fa058b49-8c1a-4e8d-a879-581a75c7c2c4}">
+		<property name="name">
+			<value>UI</value>
+		</property>
+	</object>
+	<object class="Tag" id="{b3bd5f27-d175-4213-b4d4-dfeeed08b2ab}">
+		<property name="name">
+			<value>Character</value>
+		</property>
+	</object>
+	<object class="Tag" id="{49bd8aa3-839d-491f-a498-707177c6e1bd}">
+		<property name="name">
+			<value>Weapon</value>
+		</property>
+	</object>
+	<object class="Tag" id="{b4666b50-187a-4d62-8b6b-337c0f736bff}">
+		<property name="name">
+			<value>Pumpkin</value>
+		</property>
+	</object>
+	<object class="Tag" id="{6103b40f-d28e-4797-a668-57bcdd42b79c}">
+		<property name="name">
+			<value>Bomb</value>
+		</property>
+	</object>
+	<object class="Tag" id="{41757494-c330-40dc-b421-11a01c0a3f2a}">
+		<property name="name">
+			<value>Ice</value>
+		</property>
+	</object>
+	<object class="Tag" id="{b13c7bf8-56fc-4e4e-abdc-32f0ae2ab18b}">
+		<property name="name">
+			<value>Standard</value>
+		</property>
+	</object>
+	<object class="Tag" id="{887b6750-7a85-4296-87cf-54ead502a4ff}">
+		<property name="name">
+			<value>Shurikens</value>
+		</property>
+	</object>
+	<object class="Tag" id="{d2f34ae7-616a-4ce2-bad5-8fd32379cc14}">
+		<property name="name">
+			<value>s</value>
+		</property>
+	</object>
+	<object class="Tag" id="{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}">
+		<property name="name">
+			<value>Katana</value>
+		</property>
 	</object>
 </objects>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EventFolder" id="{3c8f284a-b25d-4a9e-84d8-e9f70b8fd1a9}">
+	<object class="EventFolder" id="{e8313cbc-39fc-4fd0-8392-5b7a1e0fb286}">
 		<property name="note">
-			<value>Soundtracks folder</value>
+			<value>Ice pumpkin sounds folder</value>
 		</property>
 		<property name="name">
-			<value>Music</value>
+			<value>Ice Pumpkin</value>
 		</property>
 		<relationship name="folder">
-			<destination>{f9ea37ca-b3c4-4da2-ba0b-e1578f869f90}</destination>
+			<destination>{c1335b00-820d-4651-bc8c-f36bfb2c0967}</destination>
 		</relationship>
 	</object>
 </objects>
