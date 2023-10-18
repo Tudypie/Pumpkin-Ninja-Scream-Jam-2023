@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{d2020368-91cb-4558-a127-49892e0db1a5}">
+	<object class="AudioFile" id="{be52a550-24b7-4157-90d3-a25cc84cb732}">
 		<property name="assetPath">
 			<value>Scream Jam 2023 - sfx_character_footsteps_1.wav</value>
 		</property>
