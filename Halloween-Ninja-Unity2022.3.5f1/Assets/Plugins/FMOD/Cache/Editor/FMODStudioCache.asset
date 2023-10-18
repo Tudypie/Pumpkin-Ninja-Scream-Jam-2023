@@ -1,25 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7742253803881162016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638331782747052677
-  FileSizes:
-  - Name: Desktop
-    Value: 2914
-  Exists: 1
 --- !u!114 &-7403054145788622400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +19,7 @@ MonoBehaviour:
     Data3: 938974869
     Data4: 1550673586
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -66,7 +46,7 @@ MonoBehaviour:
     Data3: 470912414
     Data4: 1303265473
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -74,6 +54,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100
+--- !u!114 &-6811316367364741212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638331782747215571
+  FileSizes:
+  - Name: Desktop
+    Value: 2316
+  Exists: 1
 --- !u!114 &-6305740602961135948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,14 +93,14 @@ MonoBehaviour:
     Data3: 505602950
     Data4: -2123106215
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 1400
 --- !u!114 &-5156155683098093123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     Data3: 856952983
     Data4: 1371577475
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
     Data3: -1478438466
     Data4: 1687518042
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     Data3: 989860480
     Data4: -334693342
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -201,7 +201,7 @@ MonoBehaviour:
     Data3: -2071532658
     Data4: -1080480314
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
     Data3: -1913826143
     Data4: -553979773
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -255,7 +255,7 @@ MonoBehaviour:
     Data3: 1051313315
     Data4: 2135149934
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
     Data3: -1526774628
     Data4: 1640921542
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -309,7 +309,7 @@ MonoBehaviour:
     Data3: -528883068
     Data4: 399164537
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
     Data3: -737491534
     Data4: 2066418948
   Banks:
-  - {fileID: -7742253803881162016}
+  - {fileID: -564994515729920819}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
     Data3: 584093578
     Data4: 1427046176
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -390,7 +390,7 @@ MonoBehaviour:
     Data3: -565411657
     Data4: -144590965
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -417,7 +417,7 @@ MonoBehaviour:
     Data3: 1523928200
     Data4: -946956136
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -425,6 +425,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-564994515729920819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638331782747052677
+  FileSizes:
+  - Name: Desktop
+    Value: 2914
+  Exists: 1
 --- !u!114 &-263867969778589268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +464,7 @@ MonoBehaviour:
     Data3: -688794969
     Data4: 1121031294
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -465,10 +485,10 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3774353127494059560}
-  - {fileID: -7742253803881162016}
-  - {fileID: 5217823976649990906}
-  - {fileID: 2591719823837964880}
+  - {fileID: 7204074291728855098}
+  - {fileID: -564994515729920819}
+  - {fileID: -6811316367364741212}
+  - {fileID: 538128785970648780}
   EditorEvents:
   - {fileID: 5819344619472549874}
   - {fileID: 4796026275910177023}
@@ -501,11 +521,31 @@ MonoBehaviour:
   - {fileID: 3919131302369125669}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7742253803881162016}
+  - {fileID: -564994515729920819}
   StringsBanks:
-  - {fileID: 3774353127494059560}
-  cacheTime: 638331782747285390
+  - {fileID: 7204074291728855098}
+  cacheTime: 638332646131873343
   cacheVersion: 131603
+--- !u!114 &538128785970648780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638332646131873343
+  FileSizes:
+  - Name: Desktop
+    Value: 141312
+  Exists: 1
 --- !u!114 &716244296977018345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,7 +565,7 @@ MonoBehaviour:
     Data3: -628974451
     Data4: -918897682
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -552,7 +592,7 @@ MonoBehaviour:
     Data3: -103801430
     Data4: -155227217
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -579,7 +619,7 @@ MonoBehaviour:
     Data3: 1287042709
     Data4: 1401116587
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -587,26 +627,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &2591719823837964880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638331782747285390
-  FileSizes:
-  - Name: Desktop
-    Value: 29106
-  Exists: 1
 --- !u!114 &2697873214679398641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +646,7 @@ MonoBehaviour:
     Data3: -1477604167
     Data4: -1400028364
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -634,26 +654,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &3774353127494059560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638331782747135942
-  FileSizes:
-  - Name: Desktop
-    Value: 2452
-  Exists: 1
 --- !u!114 &3919131302369125669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,7 +673,7 @@ MonoBehaviour:
     Data3: -343709789
     Data4: 1130644002
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -700,7 +700,7 @@ MonoBehaviour:
     Data3: -1466557265
     Data4: -1712695987
   Banks:
-  - {fileID: 5217823976649990906}
+  - {fileID: -6811316367364741212}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -727,7 +727,7 @@ MonoBehaviour:
     Data3: 335379605
     Data4: -269109593
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -735,26 +735,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &5217823976649990906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638331782747215571
-  FileSizes:
-  - Name: Desktop
-    Value: 2316
-  Exists: 1
 --- !u!114 &5636082019182823406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +754,7 @@ MonoBehaviour:
     Data3: 1564557211
     Data4: 70752457
   Banks:
-  - {fileID: 5217823976649990906}
+  - {fileID: -6811316367364741212}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -801,7 +781,7 @@ MonoBehaviour:
     Data3: 1737319045
     Data4: -210690957
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -809,6 +789,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &7204074291728855098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638331782747135942
+  FileSizes:
+  - Name: Desktop
+    Value: 2452
+  Exists: 1
 --- !u!114 &7964675030650643531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,7 +828,7 @@ MonoBehaviour:
     Data3: -684717675
     Data4: -1296371248
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -855,7 +855,7 @@ MonoBehaviour:
     Data3: 151455620
     Data4: 115272260
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -882,7 +882,7 @@ MonoBehaviour:
     Data3: 1558817190
     Data4: 1036867379
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -909,7 +909,7 @@ MonoBehaviour:
     Data3: 1409986959
     Data4: -269278844
   Banks:
-  - {fileID: 2591719823837964880}
+  - {fileID: 538128785970648780}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

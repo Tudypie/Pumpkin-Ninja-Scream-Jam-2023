@@ -426,8 +426,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/HalloweenNinjaAudio.fspro
-  sourceBankPath: ../Halloween-Ninja-Audio/FMOD/HalloweenNinjaAudio/Build
+  sourceProjectPath: ../FMOD/HalloweenNinjaAudio/HalloweenNinjaAudio.fspro
+  sourceBankPath: ../FMOD/HalloweenNinjaAudio/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
