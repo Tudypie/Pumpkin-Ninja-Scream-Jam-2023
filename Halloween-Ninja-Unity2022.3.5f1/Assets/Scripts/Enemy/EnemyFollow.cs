@@ -9,7 +9,7 @@ public class EnemyFollow : EnemyBehaviour
 
     public override void EnterState()
     {
-        nma.speed = 5;
+        nma.speed = followSpeed;
     }
 
     // Update is called once per frame
