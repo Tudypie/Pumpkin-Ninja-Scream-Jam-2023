@@ -20,6 +20,7 @@ public class EnemyBehaviourMachine : MonoBehaviour
             behaviourRef.Add(allBehaviours[i].stateName, allBehaviours[i]);
         }
         currentState = behaviourRef[defaultStateName];
+        currentState.EnterState();
     }
 
     private void Update()
@@ -29,9 +30,10 @@ public class EnemyBehaviourMachine : MonoBehaviour
 
     public void ChangeState(string newStateName)
     {
+        currentState.ExitState();
         currentState = behaviourRef[newStateName];
-
         currentStateName = newStateName; // This is for debugging only
+        currentState.EnterState();
     }
 
 }

@@ -40,7 +40,6 @@ public class FlashOnDamage : MonoBehaviour
 
     void StartFlash() 
     {
-        Debug.Log("Start Flash");
         isFlashing = true;
         for (int i = 0; i < renderers.Length; i++)
         {
