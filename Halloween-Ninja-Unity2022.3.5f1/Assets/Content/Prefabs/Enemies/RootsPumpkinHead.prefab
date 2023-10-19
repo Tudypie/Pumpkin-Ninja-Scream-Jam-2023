@@ -471,7 +471,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7534810629117599508}
-  - component: {fileID: 2202681773637625496}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -501,27 +500,6 @@ Transform:
   - {fileID: 8883149174366294203}
   m_Father: {fileID: 5750271619315284222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2202681773637625496
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2380436410156900892}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2385827824103536448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2981256077158755316}
+  - component: {fileID: 8658313936410306162}
   m_Layer: 0
   m_Name: Character1_Head
   m_TagString: Untagged
@@ -2616,6 +2595,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2613545132954666228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &8658313936410306162
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511133996355323409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0.13, z: 0}
 --- !u!1 &8559006916274940282
 GameObject:
   m_ObjectHideFlags: 0
