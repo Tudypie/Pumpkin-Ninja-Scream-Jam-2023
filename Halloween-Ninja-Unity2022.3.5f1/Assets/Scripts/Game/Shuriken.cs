@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shuriken : MonoBehaviour
 {
+
+    float damage = 10f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) { return; }
@@ -16,5 +18,17 @@ public class Shuriken : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) { return; }
 
         GetComponentInChildren<Animator>().speed = 0;
+
+        Health health = other.gameObject.GetComponentInParent<Health>();
+        if (health)
+        {
+            health.TakeDamage(damage);
+        }
+
+        enabled = false;
+
     }
+
+
+
 }
