@@ -32,14 +32,6 @@ public class Health : MonoBehaviour
         currenthealth = maxhealth;
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(10);
-        }
-    }
-
     public void Heal(float healAmount)
     {
         currenthealth = Mathf.Clamp(currenthealth += healAmount, 0, maxhealth);

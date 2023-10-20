@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1375435848721095928}
   - component: {fileID: 2377547536642745323}
   - component: {fileID: 1551696098280710796}
+  - component: {fileID: 6693804236247952486}
   m_Layer: 7
   m_Name: HoppingPumpkin
   m_TagString: Untagged
@@ -75,7 +76,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.4
-  m_Speed: 3.5
+  m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -117,6 +118,18 @@ MonoBehaviour:
   - {fileID: 8573799939849104199}
   flashMaterial: {fileID: 2100000, guid: fc8b577c00f008142a30311a73982939, type: 2}
   flashDuration: 0.1
+--- !u!114 &6693804236247952486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825192112361741151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e82bfa75a96c340888f19577b18d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1339929993668930572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177,13 +190,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -2928018331300148642, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1153349843008588259, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_Name
       value: PumpkinHopAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528860797864257434, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8417361359673230750, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_Enabled
@@ -205,6 +238,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1153349843008588259, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5209466315025496143}
+    - targetCorrespondingSourceObject: {fileID: -1153349843008588259, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2933123742617772933}
   m_SourcePrefab: {fileID: 100100000, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
 --- !u!4 &1518516025509432295 stripped
 Transform:
@@ -280,6 +316,33 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.015
   m_Center: {x: 0, y: 0.012, z: 0}
+--- !u!54 &2933123742617772933
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9035937565181434385}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &8573799939847205671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,6 +354,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b7d91d0267dee0d47ac567b06fba4018, type: 3}
       propertyPath: m_Name
       value: pumpkin2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b7d91d0267dee0d47ac567b06fba4018, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b7d91d0267dee0d47ac567b06fba4018, type: 3}
       propertyPath: m_LocalScale.x

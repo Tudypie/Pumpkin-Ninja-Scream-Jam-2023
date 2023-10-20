@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shuriken : MonoBehaviour
 {
-
+    
     float damage = 10f;
     private void OnTriggerEnter(Collider other)
     {
