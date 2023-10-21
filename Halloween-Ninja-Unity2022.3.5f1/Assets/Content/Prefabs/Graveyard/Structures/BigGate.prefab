@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7185867025041649893}
   - component: {fileID: 4308578928657743328}
   m_Layer: 0
-  m_Name: BigGate_L
+  m_Name: BigGate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
