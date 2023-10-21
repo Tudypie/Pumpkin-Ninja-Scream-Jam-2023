@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{637603bd-add5-4a59-999b-8e2445e11fe6}">
+		<property name="assetPath">
+			<value>Scream Jam 2023 - mus_menu.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>76.799999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6944cdb5-07d6-480e-acf3-5314af6164c7}</destination>
+		</relationship>
+	</object>
+</objects>
