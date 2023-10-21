@@ -17,7 +17,6 @@ public class Interactable : MonoBehaviour
     {
         interactionController = GameObject.FindGameObjectWithTag("Player").GetComponent<InteractionController>();
         coll = GetComponent<Collider>();
-        AbleToInteract(ableToInteract);
     }
 
     private void OnEnable()
@@ -34,13 +33,13 @@ public class Interactable : MonoBehaviour
     {
         if (!rayHitObject || !ableToInteract) { return; }
 
-        interactionController.interactText.text = interactMessage;
-
         if (Input.GetKeyDown(interactionController.interactKey))
             interactEvent?.Invoke();
     }
 
-    private void CheckInteraction(RaycastHit hit) => rayHitObject = hit.collider == coll;
-
-    public void AbleToInteract(bool ableToInteract) => this.ableToInteract = ableToInteract;
+    private void CheckInteraction(RaycastHit hit)
+    {
+        rayHitObject = hit.collider == coll;
+        interactionController.interactText.text = rayHitObject ? interactMessage : "";
+    }
 }

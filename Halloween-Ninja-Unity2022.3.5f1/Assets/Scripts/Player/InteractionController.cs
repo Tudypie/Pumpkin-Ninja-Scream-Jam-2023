@@ -36,8 +36,6 @@ public class InteractionController : MonoBehaviour
             return;
         }
 
-        Debug.Log("raycast");
-
         hitInfo.collider.gameObject.TryGetComponent(out Interactable interactable);
 
         if(interactable == null || !interactable.ableToInteract)
@@ -46,6 +44,7 @@ public class InteractionController : MonoBehaviour
             return;
         }
 
+        Debug.Log("on hit something");
         OnHitSomething?.Invoke(hitInfo);
     }
 }

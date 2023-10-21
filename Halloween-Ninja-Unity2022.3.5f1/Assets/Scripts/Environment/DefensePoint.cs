@@ -6,11 +6,14 @@ public class DefensePoint : MonoBehaviour
 {
     [SerializeField] private Transform healthPointsParent;
     [SerializeField] private GameObject healthPointImagePrefab;
-    [SerializeField] private List<GameObject> healthPointImages;
+    private List<GameObject> healthPointImages = new List<GameObject>();
+
+    private Interactable interactable;
     private Health health;
 
     void Awake()
     {
+        interactable = GetComponent<Interactable>();
         health = GetComponent<Health>();
         for(int i = 0; i < health.currenthealth; i++)
         {
@@ -45,5 +48,6 @@ public class DefensePoint : MonoBehaviour
     public void StartWave()
     {
         WaveSystem.Instance.NewWave();
+        interactable.ableToInteract = false;
     }
 }
