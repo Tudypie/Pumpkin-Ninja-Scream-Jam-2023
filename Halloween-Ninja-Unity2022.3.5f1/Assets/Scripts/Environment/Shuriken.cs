@@ -25,7 +25,16 @@ public class Shuriken : MonoBehaviour
             health.TakeDamage(damage);
         }
 
+        float multiplier = 1;
+        ShurikenTag shurikenTag = other.gameObject.GetComponentInParent<ShurikenTag>();
+        if (shurikenTag)
+        {
+            shurikenTag.tagged = true;
+        }
+
+        enabled = false;
         GetComponent<Collider>().enabled = false;
+
     }
 
 

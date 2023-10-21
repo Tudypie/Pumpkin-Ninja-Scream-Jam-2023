@@ -11470,11 +11470,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3412335340451128556, guid: 2ba87b1f10ba3d342a12114cfcac84df, type: 3}
   m_PrefabInstance: {fileID: 769970064}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &778717877 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 2070389752}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &782454740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11739,10 +11734,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 798955679}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (3)
@@ -11792,11 +11787,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &798955679 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 798955678}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &813696475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13067,10 +13057,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 952624143}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (1)
@@ -13120,11 +13110,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &952624143 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 952624142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &982561838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14256,10 +14241,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 1141616883}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (4)
@@ -14309,11 +14294,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &1141616883 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 1141616882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1150148805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15160,10 +15140,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 1261611778}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (2)
@@ -15213,11 +15193,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &1261611778 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 1261611777}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1262205514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15292,10 +15267,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 1262946346}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (5)
@@ -15345,11 +15320,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &1262946346 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 1262946345}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1264558900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15482,10 +15452,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 1274410884}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (6)
@@ -15535,11 +15505,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &1274410884 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 1274410883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1281231533
 GameObject:
   m_ObjectHideFlags: 0
@@ -27842,10 +27807,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 2030198691}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin (7)
@@ -27895,11 +27860,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
---- !u!4 &2030198691 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5027694960162563666, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  m_PrefabInstance: {fileID: 2030198690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2039132199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28440,10 +28400,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6693804236247952486, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-      propertyPath: bodyToReplace
-      value: 
-      objectReference: {fileID: 778717877}
+    - target: {fileID: 1375435848721095928, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
       value: HoppingPumpkin
@@ -29087,6 +29047,14 @@ PrefabInstance:
     - target: {fileID: 1327824513817722017, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424272180765492581, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
+      propertyPath: dashMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424272180765492581, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
+      propertyPath: enemyLayerMask.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 1551265104382909333, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
       propertyPath: m_Layer

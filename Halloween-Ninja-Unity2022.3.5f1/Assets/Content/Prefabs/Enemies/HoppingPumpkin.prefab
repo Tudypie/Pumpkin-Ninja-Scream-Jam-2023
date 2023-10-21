@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7108467213629304056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5883483704838218126}
+  - component: {fileID: 4328637806273333040}
+  m_Layer: 12
+  m_Name: DashCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5883483704838218126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7108467213629304056}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -5.3024526e-33, z: -5.30245e-33, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0.0113, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5027694960162563666}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &4328637806273333040
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7108467213629304056}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.023464402
+  m_Center: {x: -0.0004424989, y: 0.000000007947286, z: -1.00612625e-16}
 --- !u!1 &7825192112361741151
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,6 +68,7 @@ GameObject:
   - component: {fileID: 2377547536642745323}
   - component: {fileID: 1551696098280710796}
   - component: {fileID: 6693804236247952486}
+  - component: {fileID: 3530049247211455324}
   m_Layer: 7
   m_Name: HoppingPumpkin
   m_TagString: Untagged
@@ -130,8 +184,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e82bfa75a96c340888f19577b18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyToReplace: {fileID: 8573799939847334311}
+  bodyToReplace: {fileID: 5027694960162563666}
   bodyToReplaceWith: {fileID: 2163228715338391821, guid: 644b688d300327e4b9d408c43f0df432, type: 3}
+--- !u!114 &3530049247211455324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825192112361741151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b027741ee831b645b78ba312e9040d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagged: 0
 --- !u!1001 &1339929993668930572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,6 +294,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -2928018331300148642, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5883483704838218126}
     - targetCorrespondingSourceObject: {fileID: -2928018331300148642, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8573799939847334311}
