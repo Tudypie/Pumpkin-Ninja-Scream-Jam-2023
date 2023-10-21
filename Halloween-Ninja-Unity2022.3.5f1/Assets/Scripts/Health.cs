@@ -24,8 +24,8 @@ public class Health : MonoBehaviour
     }
     public EventHandler<HealingEventArgs> OnHealing;
 
-    [SerializeField] int maxhealth;
-    [SerializeField] float currenthealth;
+    public int maxhealth;
+    public float currenthealth;
 
     public void Awake()
     {

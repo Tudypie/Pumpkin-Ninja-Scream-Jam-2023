@@ -30,6 +30,10 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] [Tooltip("Determining which enemy to spawn")] 
     private float chanceCounter;
 
+    [Header("Wave Settings")]
+    [SerializeField] private Vector2 waveDurationMinMax;
+    [SerializeField] private Vector2 enemiesToKillMinMax;
+
     [Header("Spawn Rate")]
     [SerializeField] private float spawnRate = 5.0f;
     [SerializeField] private float spawnRateMinimum = 0.5f;
@@ -44,20 +48,43 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private Transform[] enemySpawnAreas;
     [SerializeField] private float spawnRadius = 5.0f;
 
+    public static WaveSystem Instance;
+
     #endregion
 
     #region Default Methods
 
-    private void Start()
+    void Awake()
     {
-        //Debug
-        NewWaveWithDuration(60f);
-        foreach(Enemy enemy in enemies) spawnableEnemies.Add(enemy);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(Instance);
+        }
+        else
+        {
+            Instance = this;
+        }
+
+        foreach (Enemy enemy in enemies)
+            spawnableEnemies.Add(enemy);
     }
 
     #endregion
 
     #region Public Methods
+
+    public void NewWave()
+    {
+        float randomWave = Random.Range(0, 2);
+        if(randomWave == 0)
+        {
+            NewWaveWithDuration((int)Random.Range(waveDurationMinMax.x, waveDurationMinMax.y));
+        }
+        else if(randomWave == 1)
+        {
+            NewWaveWithEnemiesToKill((int)Random.Range(enemiesToKillMinMax.x, enemiesToKillMinMax.y));
+        }
+    }
 
     public void NewWaveWithDuration(float duration) => StartCoroutine(WaveRoutine(waveDuration: duration));
 
