@@ -14,8 +14,8 @@ TagManager:
   - PostProcessing
   - Enemies
   - DamageBoxes
-  - 
-  - 
+  - CosmeticColliders
+  - Player
   - 
   - 
   - 

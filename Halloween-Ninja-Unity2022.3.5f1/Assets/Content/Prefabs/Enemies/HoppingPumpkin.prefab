@@ -130,6 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e82bfa75a96c340888f19577b18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyToReplace: {fileID: 8573799939847334311}
+  bodyToReplaceWith: {fileID: 2163228715338391821, guid: 644b688d300327e4b9d408c43f0df432, type: 3}
 --- !u!1001 &1339929993668930572
 PrefabInstance:
   m_ObjectHideFlags: 0
