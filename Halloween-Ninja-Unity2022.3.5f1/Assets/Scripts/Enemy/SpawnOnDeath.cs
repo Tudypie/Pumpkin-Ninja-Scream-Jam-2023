@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ExplodeOnDeath : MonoBehaviour
+public class SpawnOnDeath : MonoBehaviour
 {
     [SerializeField] Transform bodyToReplace;
     [SerializeField] Transform bodyToReplaceWith;
