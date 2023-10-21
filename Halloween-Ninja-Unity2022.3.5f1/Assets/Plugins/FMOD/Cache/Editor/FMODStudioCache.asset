@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638331782747215571
+  lastModified: 638332539761491486
   FileSizes:
   - Name: Desktop
     Value: 2316
@@ -467,7 +467,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638331782747052677
+  lastModified: 638332539761491486
   FileSizes:
   - Name: Desktop
     Value: 2914
@@ -552,7 +552,7 @@ MonoBehaviour:
   - {fileID: -564994515729920819}
   StringsBanks:
   - {fileID: 7204074291728855098}
-  cacheTime: 638333414650948822
+  cacheTime: 638332539761501538
   cacheVersion: 131603
 --- !u!114 &538128785970648780
 MonoBehaviour:
@@ -569,7 +569,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638333414650948822
+  lastModified: 638332539761501538
   FileSizes:
   - Name: Desktop
     Value: 72960
@@ -832,7 +832,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638332666693689911
+  lastModified: 638332539761491486
   FileSizes:
   - Name: Desktop
     Value: 2488
