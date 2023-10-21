@@ -8,7 +8,8 @@ public class DefensePoint : MonoBehaviour
     [SerializeField] private GameObject healthPointImagePrefab;
     private List<GameObject> healthPointImages = new List<GameObject>();
 
-    private Interactable interactable;
+    [HideInInspector] 
+    public Interactable interactable;
     private Health health;
 
     void Awake()

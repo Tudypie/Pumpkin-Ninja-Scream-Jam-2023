@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shuriken : MonoBehaviour
 {
     
-    float damage = 10f;
+    [SerializeField] float damage = 10f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) { return; }
@@ -25,8 +25,7 @@ public class Shuriken : MonoBehaviour
             health.TakeDamage(damage);
         }
 
-        enabled = false;
-
+        GetComponent<Collider>().enabled = false;
     }
 
 

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -30,15 +31,18 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] [Tooltip("Determining which enemy to spawn")] 
     private float chanceCounter;
 
-    [Header("Wave Settings")]
-    [SerializeField] private Vector2 waveDurationMinMax;
-    [SerializeField] private Vector2 enemiesToKillMinMax;
+    [Header("References")]
+    [SerializeField] private DefensePoint defensePoint;
+    [SerializeField] private TMP_Text waveTimerText;
 
-    [Header("Spawn Rate")]
+    [Header("Wave Settings")]
     [SerializeField] private float spawnRate = 5.0f;
     [SerializeField] private float spawnRateMinimum = 0.5f;
     [SerializeField] private float spawnRateDecrease = 0.75f;
-    [SerializeField] private int everyAmountOfWaves = 4;
+    [SerializeField, Space] private float waveDuration;
+    [SerializeField] private float waveDurationMaximum = 120.0f;
+    [SerializeField] private float waveDurationIncrease = 15f;
+    [SerializeField, Space ] private int difficultyIncreaseEveryWaves = 4;
 
     [Header("Enemies")]
     [SerializeField] private Enemy[] enemies;
@@ -67,28 +71,15 @@ public class WaveSystem : MonoBehaviour
 
         foreach (Enemy enemy in enemies)
             spawnableEnemies.Add(enemy);
+
+        waveTimerText.text = "Start Wave";
     }
 
     #endregion
 
     #region Public Methods
 
-    public void NewWave()
-    {
-        float randomWave = Random.Range(0, 2);
-        if(randomWave == 0)
-        {
-            NewWaveWithDuration((int)Random.Range(waveDurationMinMax.x, waveDurationMinMax.y));
-        }
-        else if(randomWave == 1)
-        {
-            NewWaveWithEnemiesToKill((int)Random.Range(enemiesToKillMinMax.x, enemiesToKillMinMax.y));
-        }
-    }
-
-    public void NewWaveWithDuration(float duration) => StartCoroutine(WaveRoutine(waveDuration: duration));
-
-    public void NewWaveWithEnemiesToKill(int enemiesToKill) => StartCoroutine(WaveRoutine(enemiesToKill: enemiesToKill));
+    public void NewWave() => StartCoroutine(WaveRoutine(waveDuration));
 
     public void NewSpawnableEnemy(int enemyIndex) => spawnableEnemies.Add(enemies[enemyIndex]);
 
@@ -137,16 +128,19 @@ public class WaveSystem : MonoBehaviour
         */
     }
 
-
     private void EndWave()
     {
         waveIsInProgress = false;
         currentWaveNumber++;
+        waveTimerText.text = "Wave Complete. Start New Wave.";
+        defensePoint.interactable.ableToInteract = true;
 
-        if(currentWaveNumber % everyAmountOfWaves == 0)
+        if(currentWaveNumber % difficultyIncreaseEveryWaves == 0)
         {
             spawnRate -= spawnRateDecrease;
             spawnRate = Mathf.Max(spawnRate, spawnRateMinimum);
+            waveDuration += waveDurationIncrease;
+            waveDuration = Mathf.Min(waveDuration, waveDurationMaximum);
         }
     }
 
@@ -154,10 +148,15 @@ public class WaveSystem : MonoBehaviour
     {
         waveIsInProgress = true;
         InvokeRepeating(nameof(SpawnEnemy), spawnRate, spawnRate);
-        float timeElapsed = 0;
-        while(timeElapsed < waveDuration)
+        float timeElapsed = waveDuration;
+        while(timeElapsed > 0)
         {
-            timeElapsed += Time.deltaTime;
+            timeElapsed -= Time.deltaTime;
+
+            int minutes = Mathf.FloorToInt(timeElapsed / 60F);
+            int seconds = Mathf.FloorToInt(timeElapsed - minutes * 60);
+            waveTimerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+
             yield return null;
         }
         CancelInvoke();
