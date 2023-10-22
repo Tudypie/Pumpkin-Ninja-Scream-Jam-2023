@@ -19,6 +19,7 @@
 			<destination>{887b6750-7a85-4296-87cf-54ead502a4ff}</destination>
 			<destination>{d2f34ae7-616a-4ce2-bad5-8fd32379cc14}</destination>
 			<destination>{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}</destination>
+			<destination>{9597f8a6-9316-4419-9526-c0101bdd4bd8}</destination>
 		</relationship>
 	</object>
 	<object class="Tag" id="{19d4b76e-26dc-46ba-a003-f48fd631242d}">
@@ -89,6 +90,11 @@
 	<object class="Tag" id="{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}">
 		<property name="name">
 			<value>Katana</value>
+		</property>
+	</object>
+	<object class="Tag" id="{9597f8a6-9316-4419-9526-c0101bdd4bd8}">
+		<property name="name">
+			<value>Ambient</value>
 		</property>
 	</object>
 </objects>
