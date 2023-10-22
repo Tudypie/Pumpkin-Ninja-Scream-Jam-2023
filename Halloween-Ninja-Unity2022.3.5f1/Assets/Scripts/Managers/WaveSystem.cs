@@ -41,6 +41,7 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private float enemiesPerSpawn = 1;
     [SerializeField] private float enemiesPerSpawnMaximum = 6;
     [SerializeField] private float enemiesPerSpawnIncrease = 0.5f;
+    [SerializeField] private float maxEnemiesInArea = 4;
     [Space]
     [SerializeField] private float spawnRate = 5.0f;
     [SerializeField] private float spawnRateMinimum = 0.5f;
@@ -124,6 +125,7 @@ public class WaveSystem : MonoBehaviour
             if (randomSpawnValue <= chanceCounter)
             {
                 int randomArea = Random.Range(0, enemySpawnAreas.Length);
+                int newRandomArea = -1;
                 int enemiesToSpawn = (int)Random.Range(enemiesPerSpawn / 2, enemiesPerSpawn+1);
                 enemiesToSpawn = Mathf.Clamp(enemiesToSpawn, 1, (int)enemiesPerSpawnMaximum);
                 for (int i = 0; i < enemiesToSpawn; i++)
@@ -132,6 +134,15 @@ public class WaveSystem : MonoBehaviour
                     randomPosInArea.y = enemySpawnAreas[0].position.y;
                     GameObject spawnedEnemy = Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
                     enemiesSpawnedInCurrentWave.Add(spawnedEnemy);
+                    
+                    if(i >= maxEnemiesInArea-1 && newRandomArea == -1)
+                    {
+                        newRandomArea = Random.Range(0, enemySpawnAreas.Length);
+                        while (newRandomArea == randomArea)
+                            newRandomArea = Random.Range(0, enemySpawnAreas.Length);
+                        randomArea = newRandomArea;
+                    }
+
                 }
                 Debug.Log("Spawned " + enemiesToSpawn + " enemies at " + enemySpawnAreas[randomArea].name + " gate");
                 break;

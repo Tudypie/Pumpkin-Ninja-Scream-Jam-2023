@@ -10,6 +10,7 @@ public class Katana : MonoBehaviour
     [SerializeField] TriggerRelay trigger;
     [SerializeField] float dashSpeed = 15f;
     [SerializeField] LayerMask dashMask;
+    [SerializeField] KeyCode attackKey;
 
     List<GameObject> hitThisAttack = new List<GameObject>();
     
@@ -54,7 +55,7 @@ public class Katana : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && Time.time > nextAttackTime){
+        if(Input.GetKeyDown(attackKey) && Time.time > nextAttackTime){
             KatanaStrike();
         }
     }

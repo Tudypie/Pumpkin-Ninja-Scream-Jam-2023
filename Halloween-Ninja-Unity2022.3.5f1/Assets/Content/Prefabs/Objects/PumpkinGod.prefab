@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 419295986523471651}
   - component: {fileID: 960781839791581341}
   - component: {fileID: 8285948296209363015}
+  - component: {fileID: 9167889660688089817}
   m_Layer: 11
   m_Name: PumpkinGod
   m_TagString: DefensePoint
@@ -190,6 +191,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4dff83ea1b1bc147b472abe5f1c9b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9167889660688089817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308578727644589649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f13845433e35f4298008f0cff20eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers:
+  - {fileID: 7864205239754486716}
+  flashMaterial: {fileID: 2100000, guid: fc8b577c00f008142a30311a73982939, type: 2}
+  flashDuration: 0.25
 --- !u!1 &6590677657873536950
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +218,7 @@ GameObject:
   - component: {fileID: 538889010213036430}
   - component: {fileID: 4538213335660026803}
   - component: {fileID: 562279582915475237}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: HPText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6656007643487385380}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: DefensePointTarget
   m_TagString: DefensePointTarget
   m_Icon: {fileID: 0}
@@ -642,6 +659,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2571226605813904584}
   m_SourcePrefab: {fileID: 100100000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
+--- !u!23 &7864205239754486716 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
+  m_PrefabInstance: {fileID: 7864205239756778460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7864205239756386652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
