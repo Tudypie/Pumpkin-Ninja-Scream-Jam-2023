@@ -53,6 +53,7 @@ public class ComboSystem : MonoBehaviour
     public void AddCombo()
     {
         currentComboTimer += comboTimerAdd;
+        currentComboTimer = Mathf.Min(currentComboTimer, comboTimer);
 
         if (currentComboTimer >= comboTimer && currentCombo < maxCombo)
         {
