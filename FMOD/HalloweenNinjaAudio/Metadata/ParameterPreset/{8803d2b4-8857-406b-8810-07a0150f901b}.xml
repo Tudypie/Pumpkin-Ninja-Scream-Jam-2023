@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8803d2b4-8857-406b-8810-07a0150f901b}">
+		<property name="name">
+			<value>Wave Intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0b67bf6e-7069-4b5e-9129-ed74d8ea0986}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{66ebd9c7-2ffb-4e53-af8c-4f9b49929943}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{66ebd9c7-2ffb-4e53-af8c-4f9b49929943}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
