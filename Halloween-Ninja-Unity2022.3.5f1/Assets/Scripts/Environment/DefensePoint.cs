@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,10 +8,6 @@ public class DefensePoint : MonoBehaviour
 {
     [SerializeField] private TMP_Text hpText;
 
-    private Transform healthPointsParent;
-    private GameObject healthPointImagePrefab;
-    private List<GameObject> healthPointImages = new List<GameObject>();
-
     private Interactable interactable;
     private Health health;
 
@@ -18,10 +15,7 @@ public class DefensePoint : MonoBehaviour
     {
         interactable = GetComponent<Interactable>();
         health = GetComponent<Health>();
-        /*for(int i = 0; i < health.currenthealth; i++)
-        {
-            healthPointImages.Add(Instantiate(healthPointImagePrefab, healthPointsParent));
-        }*/
+        health.OnDeath += DefensePointDeath;
     }
 
     void Update()
@@ -29,19 +23,9 @@ public class DefensePoint : MonoBehaviour
         hpText.text = health.currenthealth + "%";
     }
 
-    private void UpdateHealthPointImages()
+    private void DefensePointDeath(object sender, EventArgs e)
     {
-        int i;
-        for(i = 0; i < health.currenthealth; i++)
-        {
-            healthPointImages[i].gameObject.SetActive(true);
-        }
-
-        int j;
-        for (j = i; j < health.maxhealth; j++)
-        {
-            healthPointImages[j].gameObject.SetActive(false);
-        }
+        LoseGame.Instance.Lose = true;
     }
 
     public void StartWave()

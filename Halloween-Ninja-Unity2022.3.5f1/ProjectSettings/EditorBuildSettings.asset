@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ab769d55cdc31544dafe8e3fca01469d
+  - enabled: 1
+    path: Assets/Scenes/Tudypie.unity
+    guid: d605439144a04454db81bcfa724625ef
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 662d35aba9088ee4b950490de26f3ff2
   m_configObjects: {}

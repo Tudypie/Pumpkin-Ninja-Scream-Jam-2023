@@ -17,7 +17,7 @@ public class SpawnOnDeath : MonoBehaviour
     void SpawnDeadPrefab(object sender, EventArgs e)
     {
         Transform newBody = Instantiate(bodyToReplaceWith, bodyToReplace.position, bodyToReplace.rotation);
-        
+        Destroy(bodyToReplace.gameObject);      
     }
 
 }

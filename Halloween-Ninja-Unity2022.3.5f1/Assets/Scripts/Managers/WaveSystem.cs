@@ -54,7 +54,8 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private int difficultyIncreaseEveryWaves = 1;
 
     [Header("Messages")]
-    [SerializeField] private string startGameMessage;
+    [SerializeField] private string gameStartMessage;
+    [SerializeField] private string gameEndMessage;
     [SerializeField] private string waveEndMessage;
 
     [Header("Enemies")]
@@ -87,7 +88,7 @@ public class WaveSystem : MonoBehaviour
         foreach (Enemy enemy in enemies)
             spawnableEnemies.Add(enemy);
 
-        waveStatusText.text = startGameMessage;
+        waveStatusText.text = gameStartMessage;
     }
 
     #endregion
@@ -100,12 +101,20 @@ public class WaveSystem : MonoBehaviour
 
     public void KillEnemy() => enemiesKilledInCurrentWave++;
 
+    public void EndWaveSystem()
+    {
+        waveIsInProgress = false;
+        waveStatusText.text = "Game Over.";
+    }
+
     #endregion
 
     #region Private Methods
 
     private void SpawnEnemy()
     {
+        if(LoseGame.Instance.Lose) { return; }
+
         if (spawnableEnemies.Count == 0)
         {
             Debug.LogError("No spawnable enemies. Add enemies to spawnableEnemies list.");
@@ -163,6 +172,8 @@ public class WaveSystem : MonoBehaviour
 
     private void EndWave()
     {
+        if (LoseGame.Instance.Lose) { return; }
+
         waveIsInProgress = false;
         currentWaveNumber++;
 
