@@ -28,9 +28,6 @@ public class LoseGame : MonoBehaviour
     {
         if (!Lose) { return; }
 
-        WaveSystem.Instance.EndWaveSystem();
-        FMODAudio.Instance.defeatSoundtrack.Play();
-
         if (lastTime == 0)
         {
             lastTime = Time.realtimeSinceStartup;
@@ -50,5 +47,12 @@ public class LoseGame : MonoBehaviour
             Cursor.visible = true;
             SceneLoader.Instance.LoadScene("DeathScreen");
         }
+    }
+
+    public void OnLose()
+    {
+        Lose = true;
+        WaveSystem.Instance.EndWaveSystem();
+        FMODAudio.Instance.defeatSoundtrack.Play();
     }
 }

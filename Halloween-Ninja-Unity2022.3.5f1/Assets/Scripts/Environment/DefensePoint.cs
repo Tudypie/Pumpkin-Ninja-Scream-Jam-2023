@@ -42,7 +42,7 @@ public class DefensePoint : MonoBehaviour
 
     private void DefensePointDeath(object sender, EventArgs e)
     {
-        LoseGame.Instance.Lose = true;
+        LoseGame.Instance.OnLose();
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.defensePointDestruction, transform.position);
     }
 
