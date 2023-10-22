@@ -15,26 +15,20 @@ public class Shuriken : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player")) { return; }
-
-        GetComponentInChildren<Animator>().speed = 0;
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("DefensePoint")) { return; }
 
         Health health = other.gameObject.GetComponentInParent<Health>();
         if (health)
-        {
             health.TakeDamage(damage);
-        }
 
         float multiplier = 1;
         ShurikenTag shurikenTag = other.gameObject.GetComponentInParent<ShurikenTag>();
         if (shurikenTag)
-        {
             shurikenTag.tagged = true;
-        }
 
+        GetComponentInChildren<Animator>().speed = 0;
+        Destroy(gameObject, 3f);
         enabled = false;
-        GetComponent<Collider>().enabled = false;
-
     }
 
 

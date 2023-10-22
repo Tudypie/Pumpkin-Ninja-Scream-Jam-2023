@@ -1,34 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DefensePoint : MonoBehaviour
 {
-    [SerializeField] private Transform healthPointsParent;
-    [SerializeField] private GameObject healthPointImagePrefab;
+    [SerializeField] private TMP_Text hpText;
+
+    private Transform healthPointsParent;
+    private GameObject healthPointImagePrefab;
     private List<GameObject> healthPointImages = new List<GameObject>();
 
-    [HideInInspector] 
-    public Interactable interactable;
+    private Interactable interactable;
     private Health health;
 
     void Awake()
     {
         interactable = GetComponent<Interactable>();
         health = GetComponent<Health>();
-        for(int i = 0; i < health.currenthealth; i++)
+        /*for(int i = 0; i < health.currenthealth; i++)
         {
             healthPointImages.Add(Instantiate(healthPointImagePrefab, healthPointsParent));
-        }
+        }*/
     }
 
     void Update()
     {
-        UpdateHealthPointImages();
-
-        if (Input.GetKeyUp(KeyCode.T)) { health.TakeDamage(1); }
-
-        if (Input.GetKeyUp(KeyCode.H)) { health.Heal(1); }
+        hpText.text = health.currenthealth + "%";
     }
 
     private void UpdateHealthPointImages()

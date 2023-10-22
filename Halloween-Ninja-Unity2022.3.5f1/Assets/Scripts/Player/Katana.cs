@@ -30,9 +30,10 @@ public class Katana : MonoBehaviour
         if (!canDamage) return;
         GameObject hitGameGbject = e.other.gameObject;
 
+        if (hitGameGbject.CompareTag("DefensePoint")) return;
+
         if (hitThisAttack.Contains(hitGameGbject)) return;
         hitThisAttack.Add(hitGameGbject);
-
 
         float multiplier = 1;
         ShurikenTag shurikenTag = e.other.gameObject.GetComponentInParent<ShurikenTag>();
@@ -41,7 +42,6 @@ public class Katana : MonoBehaviour
             if (shurikenTag.tagged)
             {
                 multiplier = 3f;
-
             }
         }
 

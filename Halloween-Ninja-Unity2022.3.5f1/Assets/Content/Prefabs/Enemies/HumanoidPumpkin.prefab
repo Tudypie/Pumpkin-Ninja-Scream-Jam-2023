@@ -2163,7 +2163,7 @@ GameObject:
   - component: {fileID: 2595587315318909761}
   - component: {fileID: 6738478030360248574}
   m_Layer: 7
-  m_Name: RootsPumpkinHead
+  m_Name: HumanoidPumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

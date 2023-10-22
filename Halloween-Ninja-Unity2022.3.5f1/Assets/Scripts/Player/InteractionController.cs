@@ -44,7 +44,6 @@ public class InteractionController : MonoBehaviour
             return;
         }
 
-        Debug.Log("on hit something");
         OnHitSomething?.Invoke(hitInfo);
     }
 }

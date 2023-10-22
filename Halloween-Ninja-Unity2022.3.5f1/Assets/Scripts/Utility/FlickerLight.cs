@@ -9,15 +9,15 @@ public class FlickerLight : MonoBehaviour
     [Tooltip("Number of seconds for each pass through the flickerCurve")]
     [SerializeField] float flickerSpeed;
     [SerializeField] float flickerMagnitude;
-    Light light;
+    Light objectLight;
     float baseIntensity;
     float currentCurvePosition;
     [SerializeField] bool randomizeStartingValue;
 
     private void Awake()
     {
-        light = GetComponent<Light>();
-        baseIntensity = light.intensity;
+        objectLight = GetComponent<Light>();
+        baseIntensity = objectLight.intensity;
         if(randomizeStartingValue) currentCurvePosition = Random.Range(0f, 1f);
     }
 
@@ -28,7 +28,7 @@ public class FlickerLight : MonoBehaviour
 
 
 
-        light.intensity = baseIntensity + flickerCurve.Evaluate(currentCurvePosition) * flickerMagnitude;
+        objectLight.intensity = baseIntensity + flickerCurve.Evaluate(currentCurvePosition) * flickerMagnitude;
     }
 
 

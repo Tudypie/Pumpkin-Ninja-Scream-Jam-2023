@@ -48,7 +48,6 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
-
         OnDeath?.Invoke(this, EventArgs.Empty);
         Destroy(gameObject);
     }

@@ -62,13 +62,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8926778632086394726}
+  - component: {fileID: 1375435848721095928}
   - component: {fileID: 5512617748743378312}
   - component: {fileID: 4639414819019062557}
-  - component: {fileID: 1375435848721095928}
   - component: {fileID: 2377547536642745323}
   - component: {fileID: 1551696098280710796}
   - component: {fileID: 6693804236247952486}
   - component: {fileID: 3530049247211455324}
+  - component: {fileID: 4081462060773568496}
+  - component: {fileID: 6737717831555489431}
   m_Layer: 7
   m_Name: HoppingPumpkin
   m_TagString: Untagged
@@ -92,6 +94,28 @@ Transform:
   - {fileID: 1518516025509432295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1375435848721095928
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825192112361741151}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 0
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &5512617748743378312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,29 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: EnemyFollow
   target: {fileID: 0}
-  followSpeed: 6
---- !u!195 &1375435848721095928
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7825192112361741151}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.4
-  m_Speed: 0
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  followSpeed: 4.5
 --- !u!114 &2377547536642745323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +201,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagged: 0
+--- !u!114 &4081462060773568496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825192112361741151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a964c7a8a73314798114434588f45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!135 &6737717831555489431
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825192112361741151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.33, z: 0}
 --- !u!1001 &1339929993668930572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,6 +303,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2928018331300148642, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.9988081
+      objectReference: {fileID: 0}
     - target: {fileID: -1153349843008588259, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -283,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5746564759562468899, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 89.98021
+      objectReference: {fileID: 0}
     - target: {fileID: 7036213049465896255, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -290,6 +334,10 @@ PrefabInstance:
     - target: {fileID: 8417361359673230750, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: dd72841d4659d8a44a48a8854b57e065, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98021
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

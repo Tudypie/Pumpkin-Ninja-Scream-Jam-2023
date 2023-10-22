@@ -22,8 +22,9 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private bool waveIsInProgress;
     [SerializeField] private int currentWaveNumber = 0;
     [SerializeField] private int enemiesKilledInCurrentWave = 0;
+    [SerializeField] private List<GameObject> enemiesSpawnedInCurrentWave = new List<GameObject>();
 
-    [Header("Spawn Debug")]
+    [Header("Spawn Chance Debug")]
     [SerializeField] [Tooltip("Enemies spawn chance added together")]
     private float totalSpawnChance;
     [SerializeField] [Tooltip("Random value from 0 to totalSpawnChance")] 
@@ -32,17 +33,28 @@ public class WaveSystem : MonoBehaviour
     private float chanceCounter;
 
     [Header("References")]
+    [SerializeField] private TMP_Text waveStatusText;
     [SerializeField] private DefensePoint defensePoint;
-    [SerializeField] private TMP_Text waveTimerText;
+    private Interactable defensePointInteractable;
 
     [Header("Wave Settings")]
+    [SerializeField] private float enemiesPerSpawn = 1;
+    [SerializeField] private float enemiesPerSpawnMaximum = 6;
+    [SerializeField] private float enemiesPerSpawnIncrease = 0.5f;
+    [Space]
     [SerializeField] private float spawnRate = 5.0f;
     [SerializeField] private float spawnRateMinimum = 0.5f;
     [SerializeField] private float spawnRateDecrease = 0.75f;
-    [SerializeField, Space] private float waveDuration;
+    [Space]
+    [SerializeField] private float waveDuration;
     [SerializeField] private float waveDurationMaximum = 120.0f;
-    [SerializeField] private float waveDurationIncrease = 15f;
-    [SerializeField, Space ] private int difficultyIncreaseEveryWaves = 4;
+    [SerializeField] private float waveDurationIncrease = 10.0f;
+    [Space]
+    [SerializeField] private int difficultyIncreaseEveryWaves = 1;
+
+    [Header("Messages")]
+    [SerializeField] private string startGameMessage;
+    [SerializeField] private string waveEndMessage;
 
     [Header("Enemies")]
     [SerializeField] private Enemy[] enemies;
@@ -69,10 +81,12 @@ public class WaveSystem : MonoBehaviour
             Instance = this;
         }
 
+        defensePointInteractable = defensePoint.gameObject.GetComponent<Interactable>();
+
         foreach (Enemy enemy in enemies)
             spawnableEnemies.Add(enemy);
 
-        waveTimerText.text = "Start Wave";
+        waveStatusText.text = startGameMessage;
     }
 
     #endregion
@@ -109,9 +123,17 @@ public class WaveSystem : MonoBehaviour
             chanceCounter += enemy.spawnChance;
             if (randomSpawnValue <= chanceCounter)
             {
-                Vector3 randomPosInArea = enemySpawnAreas[Random.Range(0, enemySpawnAreas.Length)].position + Random.insideUnitSphere * spawnRadius;
-                randomPosInArea.y = enemySpawnAreas[0].position.y;
-                Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
+                int randomArea = Random.Range(0, enemySpawnAreas.Length);
+                int enemiesToSpawn = (int)Random.Range(enemiesPerSpawn / 2, enemiesPerSpawn+1);
+                enemiesToSpawn = Mathf.Clamp(enemiesToSpawn, 1, (int)enemiesPerSpawnMaximum);
+                for (int i = 0; i < enemiesToSpawn; i++)
+                {
+                    Vector3 randomPosInArea = enemySpawnAreas[randomArea].position + Random.insideUnitSphere * spawnRadius;
+                    randomPosInArea.y = enemySpawnAreas[0].position.y;
+                    GameObject spawnedEnemy = Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
+                    enemiesSpawnedInCurrentWave.Add(spawnedEnemy);
+                }
+                Debug.Log("Spawned " + enemiesToSpawn + " enemies at " + enemySpawnAreas[randomArea].name + " gate");
                 break;
             }
         }
@@ -132,13 +154,26 @@ public class WaveSystem : MonoBehaviour
     {
         waveIsInProgress = false;
         currentWaveNumber++;
-        waveTimerText.text = "Wave Complete. Start New Wave.";
-        defensePoint.interactable.ableToInteract = true;
+
+        foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
+        {
+            if (enemy != null)
+                enemy.GetComponent<Health>().Death();
+        }
+
+        enemiesSpawnedInCurrentWave = new List<GameObject>();
+        enemiesKilledInCurrentWave = 0;
+        waveStatusText.text = waveEndMessage;
+        defensePointInteractable.ableToInteract = true;
 
         if(currentWaveNumber % difficultyIncreaseEveryWaves == 0)
         {
+            enemiesPerSpawn += enemiesPerSpawnIncrease;
+            enemiesPerSpawn = Mathf.Min(enemiesPerSpawn, enemiesPerSpawnMaximum);
+
             spawnRate -= spawnRateDecrease;
             spawnRate = Mathf.Max(spawnRate, spawnRateMinimum);
+
             waveDuration += waveDurationIncrease;
             waveDuration = Mathf.Min(waveDuration, waveDurationMaximum);
         }
@@ -147,7 +182,8 @@ public class WaveSystem : MonoBehaviour
     private IEnumerator WaveRoutine(float waveDuration)
     {
         waveIsInProgress = true;
-        InvokeRepeating(nameof(SpawnEnemy), spawnRate, spawnRate);
+        InvokeRepeating(nameof(SpawnEnemy), 0.0f, spawnRate);
+
         float timeElapsed = waveDuration;
         while(timeElapsed > 0)
         {
@@ -155,7 +191,7 @@ public class WaveSystem : MonoBehaviour
 
             int minutes = Mathf.FloorToInt(timeElapsed / 60F);
             int seconds = Mathf.FloorToInt(timeElapsed - minutes * 60);
-            waveTimerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            waveStatusText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
 
             yield return null;
         }

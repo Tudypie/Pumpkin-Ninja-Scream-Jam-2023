@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Name
-      value: RollingPumpkin Variant
+      value: RollingPumpkin (Variant)
       objectReference: {fileID: 0}
     - target: {fileID: 7884919437572706239, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: m_Controller

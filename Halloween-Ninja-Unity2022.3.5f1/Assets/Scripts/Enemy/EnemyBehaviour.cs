@@ -14,7 +14,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
     void Start()
     {
-        if(!target) target = GameObject.Find("DefensePoint").transform;
+        if(!target) target = GameObject.FindGameObjectWithTag("DefensePointTarget").transform;
     }
 
     public abstract void EnterState();

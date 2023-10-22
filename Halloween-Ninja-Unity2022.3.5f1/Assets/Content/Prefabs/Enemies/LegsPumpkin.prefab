@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2377547536642745323}
   - component: {fileID: 1551696098280710796}
   m_Layer: 7
-  m_Name: SmallPumpkin
+  m_Name: LegsPumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
