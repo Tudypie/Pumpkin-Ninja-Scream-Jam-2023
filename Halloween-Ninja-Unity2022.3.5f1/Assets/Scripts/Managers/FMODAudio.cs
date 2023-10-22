@@ -1,9 +1,37 @@
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class FMODAudio : MonoBehaviour
 {
     public static FMODAudio Instance { get; private set; }
+
+    [Header("Soundtracks")]
+    public StudioEventEmitter menuSoundtrack;
+    public StudioEventEmitter gameplaySoundtrack;
+    public StudioEventEmitter defeatSoundtrack;
+
+    [Header("Misc")]
+    public EventReference waveStart;
+    public EventReference waveEnd;
+
+    [Header("Character")]
+    public EventReference characterFootsteps;
+    public EventReference characterJump;
+    public EventReference katanaAttack;
+    public EventReference katanaSlash;
+    public EventReference katanaDash;
+    public EventReference shurikenThrow;
+
+    [Header("Defense Point")]
+    public EventReference defensePointAlert;
+    public EventReference defensePointDestruction;
+
+    [Header("Enemies")]
+    public EventReference pumpkinExplosion;
+
+    [Header("Snapshots")]
+    public StudioEventEmitter betweenWavesSnapshot;
 
     private void Awake()
     { 
@@ -18,14 +46,20 @@ public class FMODAudio : MonoBehaviour
         }
     }
 
-    public void PlayAudio(StudioEventEmitter audioEvent)
+    public void PlayAudio(EventReference sound)
     {
-        audioEvent.Play();
+        RuntimeManager.PlayOneShot(sound, transform.position);
+        Debug.Log(sound);
     }
 
-    public void PlayAudio(StudioEventEmitter audioEvent, Transform location)
+    public void PlayAudio(EventReference sound, Vector3 worldPos)
     {
-        StudioEventEmitter audioEventAtLocation = Instantiate(audioEvent, location);
-        audioEventAtLocation.Play();
+        RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
+    public EventInstance CreateInstance(EventReference eventReference)
+    {
+        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        return eventInstance;
     }
 }

@@ -57,7 +57,6 @@ public class FirstPersonController : MonoBehaviour
     [Header("Footstep Parameters")]
     [SerializeField] private float baseStepSpeed = 0.5f;
     [SerializeField] private float sprintStepMultiplier = 0.6f;
-    [SerializeField] private StudioEventEmitter footstepSound;
     private float footstepTimer = 0f;
     private float GetCurrentOffset => IsSprinting ? baseStepSpeed * sprintStepMultiplier : baseStepSpeed;
 
@@ -123,6 +122,7 @@ public class FirstPersonController : MonoBehaviour
          if(ShouldJump)
         {
             moveDirection.y = jumpForce;
+            FMODAudio.Instance.PlayAudio(FMODAudio.Instance.characterJump, transform.position);
         }
     }
 
@@ -193,7 +193,7 @@ public class FirstPersonController : MonoBehaviour
         {
             if(Physics.Raycast(playerCamera.transform.position, Vector3.down, out RaycastHit hit, 3))
             {
-                footstepSound.Play();
+                FMODAudio.Instance.PlayAudio(FMODAudio.Instance.characterFootsteps, transform.position);
             }
             footstepTimer = GetCurrentOffset;
         }

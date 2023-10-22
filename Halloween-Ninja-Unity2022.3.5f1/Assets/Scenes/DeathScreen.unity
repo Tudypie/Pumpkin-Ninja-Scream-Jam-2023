@@ -823,7 +823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pumpkin God is Dead
+  m_text: Game Over
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abeb2faa066adf24fa1c2aa4d86871a0, type: 2}
   m_sharedMaterial: {fileID: 5537652595643420199, guid: abeb2faa066adf24fa1c2aa4d86871a0, type: 2}

@@ -80,7 +80,8 @@ public class Katana : MonoBehaviour
     {
         nextAttackTime = Time.time + attackCooldown;
         anim.SetTrigger("Melee1");
-        
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaAttack, transform.position);
+
         yield return new WaitForSeconds(attackBeginTime);
         canDamage = true;
         yield return new WaitForSeconds(attackEndTime - attackBeginTime);
@@ -92,8 +93,8 @@ public class Katana : MonoBehaviour
     {
         nextAttackTime = Time.time + attackCooldown;
         anim.SetTrigger("Melee1");
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaDash, transform.position);
 
-        
         Vector3 targetPosition = transform.position + transform.forward * 8;
         Vector3 dashVelocity = transform.forward * dashSpeed;
         CharacterController playerController = transform.parent.GetComponentInParent<CharacterController>();

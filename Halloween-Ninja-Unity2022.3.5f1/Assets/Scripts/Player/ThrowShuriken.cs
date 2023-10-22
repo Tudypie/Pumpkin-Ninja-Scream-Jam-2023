@@ -37,6 +37,7 @@ public class ThrowShuriken : MonoBehaviour
         if (Input.GetKey(throwKey))
         {
             shurikenInHand.SetActive(false);
+            FMODAudio.Instance.PlayAudio(FMODAudio.Instance.shurikenThrow, transform.position);
 
             Vector3 throwDirection = mainCam.transform.forward;
 

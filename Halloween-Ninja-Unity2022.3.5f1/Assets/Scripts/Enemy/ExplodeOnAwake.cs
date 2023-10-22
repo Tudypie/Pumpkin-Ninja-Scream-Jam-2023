@@ -14,6 +14,7 @@ public class ExplodeOnAwake : MonoBehaviour
     {
         foreach (Rigidbody rb in pieces)
         {
+            FMODAudio.Instance.PlayAudio(FMODAudio.Instance.pumpkinExplosion, transform.position);
             rb.AddExplosionForce(explosionForce, transform.position + explosionOffset, explosionRadius);
             Destroy(gameObject, destroyAfter);
         }

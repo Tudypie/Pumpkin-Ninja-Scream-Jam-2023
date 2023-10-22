@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,10 +11,14 @@ public class EnemyBehaviourMachine : MonoBehaviour
 
     string currentStateName; // This is for debugging only
     EnemyBehaviour currentState;
+    Health health;
 
 
     void Awake()
     {
+        health = GetComponent<Health>();
+
+
         EnemyBehaviour[] allBehaviours = GetComponents<EnemyBehaviour>();
         for (int i = 0; i < allBehaviours.Length; i++)
         {
@@ -21,6 +26,16 @@ public class EnemyBehaviourMachine : MonoBehaviour
         }
         currentState = behaviourRef[defaultStateName];
 
+    }
+
+    private void OnEnable()
+    {
+        health.OnDeath += EnemyDeath;
+    }
+
+    private void OnDisable()
+    {
+        health.OnDeath -= EnemyDeath;
     }
 
     private void Start()
@@ -31,6 +46,13 @@ public class EnemyBehaviourMachine : MonoBehaviour
     private void Update()
     {
         currentState.StateTick();
+    }
+
+    private void EnemyDeath(object sender, EventArgs e)
+    {
+        WaveSystem.Instance.KillEnemy();
+        ComboSystem.Instance.AddCombo();
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.pumpkinExplosion);
     }
 
     public void ChangeState(string newStateName)

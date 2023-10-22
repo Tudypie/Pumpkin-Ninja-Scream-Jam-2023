@@ -50,8 +50,10 @@ public class Health : MonoBehaviour
     public void Death()
     {
         OnDeath?.Invoke(this, EventArgs.Empty);
-        if(destroyOnDeath)
+
+        if (destroyOnDeath)
             Destroy(gameObject);
+
         enabled = false;
     }
 }
