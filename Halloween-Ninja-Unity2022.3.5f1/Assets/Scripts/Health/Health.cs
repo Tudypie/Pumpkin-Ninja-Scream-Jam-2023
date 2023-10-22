@@ -50,8 +50,16 @@ public class Health : MonoBehaviour
     public void Death()
     {
         OnDeath?.Invoke(this, EventArgs.Empty);
-        if(destroyOnDeath)
+
+        if (gameObject.CompareTag("Enemy"))
+        {
+            WaveSystem.Instance.KillEnemy();
+            ComboSystem.Instance.AddCombo();
+        }
+
+        if (destroyOnDeath)
             Destroy(gameObject);
+
         enabled = false;
     }
 }

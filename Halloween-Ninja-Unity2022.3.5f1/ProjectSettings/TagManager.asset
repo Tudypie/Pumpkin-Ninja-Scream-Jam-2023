@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DefensePoint
   - DefensePointTarget
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ public class WaveSystem : MonoBehaviour
 
     [Header("Wave Debug")]
     [SerializeField] private bool waveIsInProgress;
-    [SerializeField] private int currentWaveNumber = 0;
+    [SerializeField] private int currentWaveNumber = 1;
     [SerializeField] private int enemiesKilledInCurrentWave = 0;
     [SerializeField] private List<GameObject> enemiesSpawnedInCurrentWave = new List<GameObject>();
 
@@ -33,7 +33,8 @@ public class WaveSystem : MonoBehaviour
     private float chanceCounter;
 
     [Header("References")]
-    [SerializeField] private TMP_Text waveStatusText;
+    [SerializeField] private TMP_Text waveTimerText;
+    [SerializeField] private TMP_Text waveText;
     [SerializeField] private DefensePoint defensePoint;
     private Interactable defensePointInteractable;
 
@@ -88,7 +89,7 @@ public class WaveSystem : MonoBehaviour
         foreach (Enemy enemy in enemies)
             spawnableEnemies.Add(enemy);
 
-        waveStatusText.text = gameStartMessage;
+        waveTimerText.text = gameStartMessage;
     }
 
     #endregion
@@ -99,12 +100,15 @@ public class WaveSystem : MonoBehaviour
 
     public void NewSpawnableEnemy(int enemyIndex) => spawnableEnemies.Add(enemies[enemyIndex]);
 
-    public void KillEnemy() => enemiesKilledInCurrentWave++;
+    public void KillEnemy()
+    {
+        enemiesKilledInCurrentWave++;
+    }
 
     public void EndWaveSystem()
     {
         waveIsInProgress = false;
-        waveStatusText.text = "Game Over.";
+        waveTimerText.text = "Game Over.";
     }
 
     #endregion
@@ -175,6 +179,8 @@ public class WaveSystem : MonoBehaviour
         if (LoseGame.Instance.Lose) { return; }
 
         waveIsInProgress = false;
+        waveText.text = "Wave " + currentWaveNumber + " Completed";
+        waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
         currentWaveNumber++;
 
         foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
@@ -185,7 +191,7 @@ public class WaveSystem : MonoBehaviour
 
         enemiesSpawnedInCurrentWave = new List<GameObject>();
         enemiesKilledInCurrentWave = 0;
-        waveStatusText.text = waveEndMessage;
+        waveTimerText.text = waveEndMessage;
         defensePointInteractable.ableToInteract = true;
 
         if(currentWaveNumber % difficultyIncreaseEveryWaves == 0)
@@ -204,7 +210,10 @@ public class WaveSystem : MonoBehaviour
     private IEnumerator WaveRoutine(float waveDuration)
     {
         waveIsInProgress = true;
-        InvokeRepeating(nameof(SpawnEnemy), 0.0f, spawnRate);
+        InvokeRepeating(nameof(SpawnEnemy), 4.0f, spawnRate);
+
+        waveText.text = "Wave " + currentWaveNumber;
+        waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
 
         float timeElapsed = waveDuration;
         while(timeElapsed > 0)
@@ -213,7 +222,7 @@ public class WaveSystem : MonoBehaviour
 
             int minutes = Mathf.FloorToInt(timeElapsed / 60F);
             int seconds = Mathf.FloorToInt(timeElapsed - minutes * 60);
-            waveStatusText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            waveTimerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
 
             yield return null;
         }
