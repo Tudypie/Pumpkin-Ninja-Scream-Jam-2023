@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638335687810931918
+  lastModified: 638335970402606963
   FileSizes:
   - Name: Desktop
-    Value: 995488
+    Value: 1078912
   Exists: 1
 --- !u!114 &-6305740602961135948
 MonoBehaviour:
@@ -467,10 +467,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638331782747052677
+  lastModified: 638335970402427432
   FileSizes:
   - Name: Desktop
-    Value: 2914
+    Value: 3930
   Exists: 1
 --- !u!114 &-263867969778589268
 MonoBehaviour:
@@ -547,12 +547,14 @@ MonoBehaviour:
   - {fileID: -1467408882890797055}
   - {fileID: 3919131302369125669}
   - {fileID: -816707525313536818}
+  - {fileID: 4166784172225926360}
+  - {fileID: 4482034463210913546}
   EditorParameters: []
   MasterBanks:
   - {fileID: -564994515729920819}
   StringsBanks:
   - {fileID: 7204074291728855098}
-  cacheTime: 638335687810931918
+  cacheTime: 638335970402696716
   cacheVersion: 131603
 --- !u!114 &538128785970648780
 MonoBehaviour:
@@ -569,7 +571,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638333414650948822
+  lastModified: 638335970402696716
   FileSizes:
   - Name: Desktop
     Value: 72960
@@ -709,6 +711,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &4166784172225926360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Between Waves
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Between Waves
+  Guid:
+    Data1: -702938958
+    Data2: 1212782322
+    Data3: -9819259
+    Data4: -220285157
+  Banks:
+  - {fileID: -564994515729920819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4482034463210913546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Fanfares/mus_defeat
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Fanfares/mus_defeat
+  Guid:
+    Data1: -314568785
+    Data2: 1102559184
+    Data3: -81646429
+    Data4: 1032839923
+  Banks:
+  - {fileID: -6811316367364741212}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
 --- !u!114 &4777934560517889836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,10 +888,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638332666693689911
+  lastModified: 638335970402497273
   FileSizes:
   - Name: Desktop
-    Value: 2488
+    Value: 2628
   Exists: 1
 --- !u!114 &7964675030650643531
 MonoBehaviour:

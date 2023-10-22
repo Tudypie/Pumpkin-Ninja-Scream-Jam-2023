@@ -29,6 +29,7 @@ public class LoseGame : MonoBehaviour
         if (!Lose) { return; }
 
         WaveSystem.Instance.EndWaveSystem();
+        FMODAudio.Instance.defeatSoundtrack.Play();
 
         if (lastTime == 0)
         {

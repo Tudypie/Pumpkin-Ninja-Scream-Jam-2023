@@ -37,11 +37,13 @@ public class DefensePoint : MonoBehaviour
     private void DefensePointTakeDamage(object sender, EventArgs e)
     {
         ComboSystem.Instance.DecreaseCombo();
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.defensePointAlert, transform.position);
     }
 
     private void DefensePointDeath(object sender, EventArgs e)
     {
         LoseGame.Instance.Lose = true;
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.defensePointDestruction, transform.position);
     }
 
     public void StartWave()

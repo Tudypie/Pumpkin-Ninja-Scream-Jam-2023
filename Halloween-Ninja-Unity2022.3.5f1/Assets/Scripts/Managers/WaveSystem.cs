@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
+using FMODUnity;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -25,11 +26,11 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private List<GameObject> enemiesSpawnedInCurrentWave = new List<GameObject>();
 
     [Header("Spawn Chance Debug")]
-    [SerializeField] [Tooltip("Enemies spawn chance added together")]
+    [SerializeField][Tooltip("Enemies spawn chance added together")]
     private float totalSpawnChance;
-    [SerializeField] [Tooltip("Random value from 0 to totalSpawnChance")] 
+    [SerializeField][Tooltip("Random value from 0 to totalSpawnChance")]
     private float randomSpawnValue;
-    [SerializeField] [Tooltip("Determining which enemy to spawn")] 
+    [SerializeField][Tooltip("Determining which enemy to spawn")]
     private float chanceCounter;
 
     [Header("References")]
@@ -96,7 +97,15 @@ public class WaveSystem : MonoBehaviour
 
     #region Public Methods
 
-    public void NewWave() => StartCoroutine(WaveRoutine(waveDuration));
+    public void NewWave()
+    {
+        waveIsInProgress = true;
+        waveText.text = "Wave " + currentWaveNumber;
+        waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
+        FMODAudio.Instance.betweenWavesSnapshot.Stop();
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveStart);
+        StartCoroutine(WaveRoutine(waveDuration));
+    } 
 
     public void NewSpawnableEnemy(int enemyIndex) => spawnableEnemies.Add(enemies[enemyIndex]);
 
@@ -183,6 +192,9 @@ public class WaveSystem : MonoBehaviour
         waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
         currentWaveNumber++;
 
+        FMODAudio.Instance.betweenWavesSnapshot.Play();
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveEnd);
+
         foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
         {
             if (enemy != null)
@@ -209,11 +221,7 @@ public class WaveSystem : MonoBehaviour
 
     private IEnumerator WaveRoutine(float waveDuration)
     {
-        waveIsInProgress = true;
         InvokeRepeating(nameof(SpawnEnemy), 4.0f, spawnRate);
-
-        waveText.text = "Wave " + currentWaveNumber;
-        waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
 
         float timeElapsed = waveDuration;
         while(timeElapsed > 0)
