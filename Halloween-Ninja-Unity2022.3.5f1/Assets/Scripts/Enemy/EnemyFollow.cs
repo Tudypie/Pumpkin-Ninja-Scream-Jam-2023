@@ -15,6 +15,8 @@ public class EnemyFollow : EnemyBehaviour
     // Update is called once per frame
     public override void StateTick()
     {
+        if (!nma) return;
+        if (!target) return;
         nma.SetDestination(target.position);
     }
 

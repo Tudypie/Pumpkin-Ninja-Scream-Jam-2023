@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 100
 --- !u!114 &-6924238525168052879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +69,11 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
+<<<<<<< Updated upstream
   lastModified: 638336094106163921
+=======
+  lastModified: 638335750164530890
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 12524256
@@ -101,6 +105,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 630
+--- !u!114 &-5600781205278346007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/General/sfx_character_jump
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/General/sfx_character_jump
+  Guid:
+    Data1: -1158500949
+    Data2: 1166947480
+    Data3: 1102142354
+    Data4: 666692593
+  Banks:
+  - {fileID: 538128785970648780}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-5156155683098093123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +320,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 100
 --- !u!114 &-3026504373170244425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +498,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638335970402427432
+  lastModified: 638335750163917333
   FileSizes:
   - Name: Desktop
     Value: 3930
@@ -573,12 +604,19 @@ MonoBehaviour:
   - {fileID: -816707525313536818}
   - {fileID: 4166784172225926360}
   - {fileID: 4482034463210913546}
+  - {fileID: -5600781205278346007}
+  - {fileID: 5398040962318681030}
+  - {fileID: 1272545333410937055}
   EditorParameters: []
   MasterBanks:
   - {fileID: -564994515729920819}
   StringsBanks:
   - {fileID: 7204074291728855098}
+<<<<<<< Updated upstream
   cacheTime: 638336094106163921
+=======
+  cacheTime: 638335750164550573
+>>>>>>> Stashed changes
   cacheVersion: 131603
 --- !u!114 &538128785970648780
 MonoBehaviour:
@@ -595,10 +633,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638335970402696716
+  lastModified: 638335750164550573
   FileSizes:
   - Name: Desktop
-    Value: 72960
+    Value: 76128
   Exists: 1
 --- !u!114 &716244296977018345
 MonoBehaviour:
@@ -618,6 +656,33 @@ MonoBehaviour:
     Data2: 1099083259
     Data3: -628974451
     Data4: -918897682
+  Banks:
+  - {fileID: 538128785970648780}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &1272545333410937055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
+  Guid:
+    Data1: 1248910052
+    Data2: 1154255860
+    Data3: 1055198130
+    Data4: 549787076
   Banks:
   - {fileID: 538128785970648780}
   IsStream: 0
@@ -681,6 +746,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &1918008285846995227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mus_gameplay/Wave Intensity
+  m_EditorClassIdentifier: 
+  Name: Wave Intensity
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 1693876243
+    data2: 2709233731
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2697873214679398641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,7 +823,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 100
 --- !u!114 &4166784172225926360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,6 +932,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5398040962318681030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_end
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Artifact/sfx_artifact_end
+  Guid:
+    Data1: 1990694835
+    Data2: 1253349928
+    Data3: 1658821296
+    Data4: -1107175622
+  Banks:
+  - {fileID: 538128785970648780}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &5636082019182823406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +983,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< Updated upstream
   - {fileID: -311226750573415257}
+=======
+  - {fileID: 1918008285846995227}
+>>>>>>> Stashed changes
   MinDistance: 1
   MaxDistance: 20
   Length: 199111
@@ -913,10 +1033,17 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638336094104568187
   FileSizes:
   - Name: Desktop
     Value: 2684
+=======
+  lastModified: 638335750163986902
+  FileSizes:
+  - Name: Desktop
+    Value: 2800
+>>>>>>> Stashed changes
   Exists: 1
 --- !u!114 &7964675030650643531
 MonoBehaviour:
