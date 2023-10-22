@@ -5,7 +5,7 @@
 			<value>Sounds for katana hits (grass, stone, wood and pumpkin)</value>
 		</property>
 		<property name="name">
-			<value>sfx_weapon_katana_hit</value>
+			<value>sfx_weapon_katana_slash</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

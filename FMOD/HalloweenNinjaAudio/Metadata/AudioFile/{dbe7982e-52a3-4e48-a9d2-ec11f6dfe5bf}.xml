@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{5f9e4ce9-386a-4d34-afb3-49215642a665}">
+	<object class="AudioFile" id="{dbe7982e-52a3-4e48-a9d2-ec11f6dfe5bf}">
 		<property name="assetPath">
-			<value>Scream Jam 2023 - sfx_character_footsteps_2.wav</value>
+			<value>SFX/Scream Jam 2023 - sfx_character_footsteps_4.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.62875283446712016</value>
+			<value>0.5625170068027211</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6944cdb5-07d6-480e-acf3-5314af6164c7}</destination>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4a70dae4-8bf4-44cc-b20b-e53ec415c520}">
+		<property name="note">
+			<value>Dash sound when using katana</value>
+		</property>
 		<property name="name">
 			<value>sfx_weapon_katana_dash</value>
 		</property>
@@ -9,6 +12,12 @@
 		</property>
 		<relationship name="folder">
 			<destination>{50e686bd-9766-4c41-98b4-0e87e9520adc}</destination>
+		</relationship>
+		<relationship name="tags">
+			<destination>{3d426a47-7a68-48f0-aa9e-a172e01cd6ac}</destination>
+			<destination>{b3bd5f27-d175-4213-b4d4-dfeeed08b2ab}</destination>
+			<destination>{49bd8aa3-839d-491f-a498-707177c6e1bd}</destination>
+			<destination>{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{751d4546-f199-4a51-bea3-68ff530fb43d}</destination>

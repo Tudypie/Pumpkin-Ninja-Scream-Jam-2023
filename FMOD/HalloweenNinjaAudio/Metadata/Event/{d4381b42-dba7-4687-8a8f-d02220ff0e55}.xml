@@ -5,7 +5,7 @@
 			<value>Bomb pumpkin death sound</value>
 		</property>
 		<property name="name">
-			<value>sfx_pumpkin_bomb_death</value>
+			<value>sfx_pumpkin_bomb_explosion</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

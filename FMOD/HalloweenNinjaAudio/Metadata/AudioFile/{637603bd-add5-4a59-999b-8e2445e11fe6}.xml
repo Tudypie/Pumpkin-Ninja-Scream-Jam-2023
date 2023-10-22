@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{637603bd-add5-4a59-999b-8e2445e11fe6}">
 		<property name="assetPath">
-			<value>Scream Jam 2023 - mus_menu.wav</value>
+			<value>Music/Scream Jam 2023 - mus_menu.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{ed400faf-b7d0-41b7-a32c-22fbf3e28f3d}">
+		<property name="note">
+			<value>Defeat fanfare</value>
+		</property>
 		<property name="name">
 			<value>mus_defeat</value>
 		</property>
@@ -9,6 +12,9 @@
 		</property>
 		<relationship name="folder">
 			<destination>{4453ef3a-7b48-47fd-afdb-67f8e648aca9}</destination>
+		</relationship>
+		<relationship name="tags">
+			<destination>{19d4b76e-26dc-46ba-a003-f48fd631242d}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{935958ea-4f3b-4533-ba10-b9367f6b9b4d}</destination>
