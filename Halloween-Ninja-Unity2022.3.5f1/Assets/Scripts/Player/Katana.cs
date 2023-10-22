@@ -35,19 +35,20 @@ public class Katana : MonoBehaviour
 
 
         float multiplier = 1;
-        ShurikenTag shurikenTag = e.other.gameObject.GetComponent<ShurikenTag>();
+        ShurikenTag shurikenTag = e.other.gameObject.GetComponentInParent<ShurikenTag>();
         if (shurikenTag)
         {
             if (shurikenTag.tagged)
             {
                 multiplier = 3f;
+
             }
         }
 
         Health hitHealth = hitGameGbject.GetComponentInParent<Health>();
         if (hitHealth == null) return;
 
-        hitHealth.TakeDamage(damage);
+        hitHealth.TakeDamage(damage * multiplier);
         
     }
 
@@ -63,10 +64,9 @@ public class Katana : MonoBehaviour
         bool isTagged = false;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, dashSpeed, dashMask))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, dashSpeed*0.75f, dashMask))
         {
             isTagged = hit.collider.transform.GetComponentInParent<ShurikenTag>().tagged;
-            Debug.Log("Hit and tag is " + isTagged);
         }
         if(isTagged)
         StartCoroutine(IKatanaDashStrike());
