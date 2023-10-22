@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7403054145788622400
+--- !u!114 &-9133308243443580627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 938974869
     Data4: 1550673586
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100
---- !u!114 &-6924238525168052879
+--- !u!114 &-6764033845275671621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,291 +37,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_spawn
+  m_Name: event:/Sound Design/Ambience/sfx_ambience
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_spawn
+  Path: event:/Sound Design/Ambience/sfx_ambience
   Guid:
-    Data1: 976209731
-    Data2: 1262578723
-    Data3: 470912414
-    Data4: 1303265473
+    Data1: -1243746718
+    Data2: 1254849893
+    Data3: 1409986959
+    Data4: -269278844
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 100
---- !u!114 &-6811316367364741212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-<<<<<<< Updated upstream
-  lastModified: 638336094106163921
-=======
-  lastModified: 638335750164530890
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 12524256
-  Exists: 1
---- !u!114 &-6305740602961135948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/General/sfx_character_footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/General/sfx_character_footsteps
-  Guid:
-    Data1: 1124677409
-    Data2: 1320384438
-    Data3: 505602950
-    Data4: -2123106215
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 630
---- !u!114 &-5600781205278346007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/General/sfx_character_jump
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/General/sfx_character_jump
-  Guid:
-    Data1: -1158500949
-    Data2: 1166947480
-    Data3: 1102142354
-    Data4: 666692593
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-5156155683098093123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_attack
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_attack
-  Guid:
-    Data1: -1110980230
-    Data2: 1314945519
-    Data3: 856952983
-    Data4: 1371577475
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4797350931000876560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_hit
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_hit
-  Guid:
-    Data1: 857945143
-    Data2: 1173714437
-    Data3: -1478438466
-    Data4: 1687518042
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4665401048271006716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_spawn
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_spawn
-  Guid:
-    Data1: 1828692670
-    Data2: 1089770798
-    Data3: 989860480
-    Data4: -334693342
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4203151166178585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_noises
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_noises
-  Guid:
-    Data1: 1876861077
-    Data2: 1126122297
-    Data3: -2071532658
-    Data4: -1080480314
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4068825929314167060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_attack
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_attack
-  Guid:
-    Data1: -1136500452
-    Data2: 1333408142
-    Data3: -1913826143
-    Data4: -553979773
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-3547166750345842604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_attack
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_attack
-  Guid:
-    Data1: -718937397
-    Data2: 1109016465
-    Data3: 1051313315
-    Data4: 2135149934
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 100
---- !u!114 &-3102897158713711053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_attack
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_attack
-  Guid:
-    Data1: -1125058404
-    Data2: 1074465362
-    Data3: -1526774628
-    Data4: 1640921542
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 100
---- !u!114 &-3026504373170244425
+--- !u!114 &-6528091694215486874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,7 +73,7 @@ MonoBehaviour:
     Data3: -528883068
     Data4: 399164537
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -348,7 +81,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-2675083156555161021
+--- !u!114 &-6457937904381067887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_throw
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_throw
+  Guid:
+    Data1: 273342970
+    Data2: 1225291365
+    Data3: -343709789
+    Data4: 1130644002
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
+--- !u!114 &-5208386871030421986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638335826046111564
+  FileSizes:
+  - Name: Desktop
+    Value: 12524256
+  Exists: 1
+--- !u!114 &-5170719434010007440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,7 +147,7 @@ MonoBehaviour:
     Data3: -737491534
     Data4: 2066418948
   Banks:
-  - {fileID: -564994515729920819}
+  - {fileID: 7274151528177680828}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -375,7 +155,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-1495109822067832257
+--- !u!114 &-5004936959324720364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,16 +165,97 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_death
+  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_attack
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_death
+  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_attack
+  Guid:
+    Data1: -1125058404
+    Data2: 1074465362
+    Data3: -1526774628
+    Data4: 1640921542
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
+--- !u!114 &-4861728165917067365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu/mus_menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu/mus_menu
+  Guid:
+    Data1: 1025122611
+    Data2: 1122880915
+    Data3: -1466557265
+    Data4: -1712695987
+  Banks:
+  - {fileID: -5208386871030421986}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76800
+--- !u!114 &-4743075759467304735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/General/sfx_character_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/General/sfx_character_footsteps
+  Guid:
+    Data1: 1124677409
+    Data2: 1320384438
+    Data3: 505602950
+    Data4: -2123106215
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &-4567719136673039848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_explosion
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_explosion
   Guid:
     Data1: -734520510
     Data2: 1183308711
     Data3: 584093578
     Data4: 1427046176
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -402,7 +263,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-1467408882890797055
+--- !u!114 &-3754359630188084263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,16 +273,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Artifact/sfx_artifact_destruction
+  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Artifact/sfx_artifact_destruction
+  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
   Guid:
-    Data1: -1546410762
-    Data2: 1246834621
-    Data3: -565411657
-    Data4: -144590965
+    Data1: 1248910052
+    Data2: 1154255860
+    Data3: 1055198130
+    Data4: 549787076
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -429,7 +290,115 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-1289504927109614895
+--- !u!114 &-2898841884132333764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/UI/sfx_ui_hover_over
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/UI/sfx_ui_hover_over
+  Guid:
+    Data1: 1056477787
+    Data2: 1107059868
+    Data3: 1558817190
+    Data4: 1036867379
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2538496551955750093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/General/sfx_character_jump
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/General/sfx_character_jump
+  Guid:
+    Data1: -1158500949
+    Data2: 1166947480
+    Data3: 1102142354
+    Data4: 666692593
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &-2211027508834996927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_attack
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_attack
+  Guid:
+    Data1: -1136500452
+    Data2: 1333408142
+    Data3: -1913826143
+    Data4: -553979773
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-1642102757124844487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Between Waves
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Between Waves
+  Guid:
+    Data1: -702938958
+    Data2: 1212782322
+    Data3: -9819259
+    Data4: -220285157
+  Banks:
+  - {fileID: 7274151528177680828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-260022228206355496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -448,7 +417,7 @@ MonoBehaviour:
     Data3: 1523928200
     Data4: -946956136
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -456,7 +425,89 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-816707525313536818
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 1752163741518571622}
+  - {fileID: 7274151528177680828}
+  - {fileID: -5208386871030421986}
+  - {fileID: 2991650478823197456}
+  EditorEvents:
+  - {fileID: -5170719434010007440}
+  - {fileID: -1642102757124844487}
+  - {fileID: -4861728165917067365}
+  - {fileID: 6944407047213141331}
+  - {fileID: 558642059375105555}
+  - {fileID: 413418559091852978}
+  - {fileID: 5954626686335167467}
+  - {fileID: -6528091694215486874}
+  - {fileID: -2211027508834996927}
+  - {fileID: -4743075759467304735}
+  - {fileID: -4567719136673039848}
+  - {fileID: 8505273854159358030}
+  - {fileID: 2749265288470665615}
+  - {fileID: -2898841884132333764}
+  - {fileID: 6828895105513030375}
+  - {fileID: -6764033845275671621}
+  - {fileID: 8979454469712733753}
+  - {fileID: 1533314471753330919}
+  - {fileID: 5845177949363878521}
+  - {fileID: 4501660162174541980}
+  - {fileID: -5004936959324720364}
+  - {fileID: 4801207207153106592}
+  - {fileID: -2538496551955750093}
+  - {fileID: -9133308243443580627}
+  - {fileID: 2850376537801505499}
+  - {fileID: 7139895774256884837}
+  - {fileID: 3172423822708683032}
+  - {fileID: -3754359630188084263}
+  - {fileID: -260022228206355496}
+  - {fileID: 5511451607743235466}
+  - {fileID: 8348376125117528226}
+  - {fileID: 5013637412607874775}
+  - {fileID: -6457937904381067887}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 7274151528177680828}
+  StringsBanks:
+  - {fileID: 1752163741518571622}
+  cacheTime: 638335826046131493
+  cacheVersion: 131603
+--- !u!114 &219894146551927356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mus_gameplay/Wave Intensity
+  m_EditorClassIdentifier: 
+  Name: Wave Intensity
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 1693876243
+    data2: 2709233731
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &413418559091852978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -466,16 +517,117 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Artifact/sfx_artifact_start
+  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_wick
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Artifact/sfx_artifact_start
+  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_wick
   Guid:
-    Data1: -807601420
-    Data2: 1205640248
-    Data3: 141178510
-    Data4: 143797572
+    Data1: -1042359295
+    Data2: 1188968333
+    Data3: 1737319045
+    Data4: -210690957
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &558642059375105555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Fanfares/mus_defeat
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Fanfares/mus_defeat
+  Guid:
+    Data1: -314568785
+    Data2: 1102559184
+    Data3: -81646429
+    Data4: 1032839923
+  Banks:
+  - {fileID: -5208386871030421986}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &1533314471753330919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_attack
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_attack
+  Guid:
+    Data1: -1110980230
+    Data2: 1314945519
+    Data3: 856952983
+    Data4: 1371577475
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &1752163741518571622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638335826045039484
+  FileSizes:
+  - Name: Desktop
+    Value: 2722
+  Exists: 1
+--- !u!114 &2749265288470665615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/UI/sfx_ui_play
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/UI/sfx_ui_play
+  Guid:
+    Data1: 244366930
+    Data2: 1203990977
+    Data3: 151455620
+    Data4: 115272260
+  Banks:
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -483,7 +635,325 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-564994515729920819
+--- !u!114 &2850376537801505499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_end
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Artifact/sfx_artifact_end
+  Guid:
+    Data1: 1990694835
+    Data2: 1253349928
+    Data3: 1658821296
+    Data4: -1107175622
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2991650478823197456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638335826046131493
+  FileSizes:
+  - Name: Desktop
+    Value: 97376
+  Exists: 1
+--- !u!114 &3172423822708683032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_attack
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_attack
+  Guid:
+    Data1: -718937397
+    Data2: 1109016465
+    Data3: 1051313315
+    Data4: 2135149934
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
+--- !u!114 &4501660162174541980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_noises
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_noises
+  Guid:
+    Data1: 1876861077
+    Data2: 1126122297
+    Data3: -2071532658
+    Data4: -1080480314
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &4801207207153106592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_noises
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_noises
+  Guid:
+    Data1: 2012667561
+    Data2: 1099083259
+    Data3: -628974451
+    Data4: -918897682
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5013637412607874775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_destruction
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Artifact/sfx_artifact_destruction
+  Guid:
+    Data1: -1546410762
+    Data2: 1246834621
+    Data3: -565411657
+    Data4: -144590965
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5511451607743235466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_noises
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_noises
+  Guid:
+    Data1: 678810607
+    Data2: 1124645952
+    Data3: -688794969
+    Data4: 1121031294
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5845177949363878521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_slash
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_slash
+  Guid:
+    Data1: 1487726203
+    Data2: 1081321572
+    Data3: -103801430
+    Data4: -155227217
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5954626686335167467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_spawn
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_spawn
+  Guid:
+    Data1: -162410237
+    Data2: 1271204351
+    Data3: 335379605
+    Data4: -269109593
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &6828895105513030375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_death
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_death
+  Guid:
+    Data1: 1258214753
+    Data2: 1201817168
+    Data3: 1287042709
+    Data4: 1401116587
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &6944407047213141331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Gameplay/mus_gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Gameplay/mus_gameplay
+  Guid:
+    Data1: -1132850320
+    Data2: 1316791591
+    Data3: 1564557211
+    Data4: 70752457
+  Banks:
+  - {fileID: -5208386871030421986}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 219894146551927356}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 199111
+--- !u!114 &7139895774256884837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_spawn
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_spawn
+  Guid:
+    Data1: 1828692670
+    Data2: 1089770798
+    Data3: 989860480
+    Data4: -334693342
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &7274151528177680828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -503,31 +973,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3930
   Exists: 1
---- !u!114 &-311226750573415257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mus_gameplay/Wave Intensity
-  m_EditorClassIdentifier: 
-  Name: Wave Intensity
-  StudioPath: 
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 1693876243
-    data2: 2709233731
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-263867969778589268
+--- !u!114 &8348376125117528226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,108 +983,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_noises
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_start
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_noises
+  Path: event:/Sound Design/Artifact/sfx_artifact_start
   Guid:
-    Data1: 678810607
-    Data2: 1124645952
-    Data3: -688794969
-    Data4: 1121031294
+    Data1: -807601420
+    Data2: 1205640248
+    Data3: 141178510
+    Data4: 143797572
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 7204074291728855098}
-  - {fileID: -564994515729920819}
-  - {fileID: -6811316367364741212}
-  - {fileID: 538128785970648780}
-  EditorEvents:
-  - {fileID: 5819344619472549874}
-  - {fileID: 4796026275910177023}
-  - {fileID: -3026504373170244425}
-  - {fileID: -4068825929314167060}
-  - {fileID: -6305740602961135948}
-  - {fileID: 4777934560517889836}
-  - {fileID: -4797350931000876560}
-  - {fileID: -1495109822067832257}
-  - {fileID: -6924238525168052879}
-  - {fileID: 7992619180810420158}
-  - {fileID: 8922841338497809785}
-  - {fileID: 1778006865500324320}
-  - {fileID: 9218296940387578016}
-  - {fileID: -2675083156555161021}
-  - {fileID: 2697873214679398641}
-  - {fileID: 5636082019182823406}
-  - {fileID: -5156155683098093123}
-  - {fileID: 1690146928365405117}
-  - {fileID: -4203151166178585548}
-  - {fileID: -3102897158713711053}
-  - {fileID: 7964675030650643531}
-  - {fileID: 716244296977018345}
-  - {fileID: -7403054145788622400}
-  - {fileID: -4665401048271006716}
-  - {fileID: -3547166750345842604}
-  - {fileID: -1289504927109614895}
-  - {fileID: -263867969778589268}
-  - {fileID: -1467408882890797055}
-  - {fileID: 3919131302369125669}
-  - {fileID: -816707525313536818}
-  - {fileID: 4166784172225926360}
-  - {fileID: 4482034463210913546}
-  - {fileID: -5600781205278346007}
-  - {fileID: 5398040962318681030}
-  - {fileID: 1272545333410937055}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -564994515729920819}
-  StringsBanks:
-  - {fileID: 7204074291728855098}
-<<<<<<< Updated upstream
-  cacheTime: 638336094106163921
-=======
-  cacheTime: 638335750164550573
->>>>>>> Stashed changes
-  cacheVersion: 131603
---- !u!114 &538128785970648780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638335750164550573
-  FileSizes:
-  - Name: Desktop
-    Value: 76128
-  Exists: 1
---- !u!114 &716244296977018345
+--- !u!114 &8505273854159358030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -648,129 +1010,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_noises
+  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_spawn
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_noises
+  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_spawn
   Guid:
-    Data1: 2012667561
-    Data2: 1099083259
-    Data3: -628974451
-    Data4: -918897682
+    Data1: 976209731
+    Data2: 1262578723
+    Data3: 470912414
+    Data4: 1303265473
   Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
---- !u!114 &1272545333410937055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_dash
-  Guid:
-    Data1: 1248910052
-    Data2: 1154255860
-    Data3: 1055198130
-    Data4: 549787076
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &1690146928365405117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_hit
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_hit
-  Guid:
-    Data1: 1487726203
-    Data2: 1081321572
-    Data3: -103801430
-    Data4: -155227217
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &1778006865500324320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_death
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_death
-  Guid:
-    Data1: 1258214753
-    Data2: 1201817168
-    Data3: 1287042709
-    Data4: 1401116587
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &1918008285846995227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mus_gameplay/Wave Intensity
-  m_EditorClassIdentifier: 
-  Name: Wave Intensity
-  StudioPath: 
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 1693876243
-    data2: 2709233731
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2697873214679398641
+  Length: 100
+--- !u!114 &8979454469712733753
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -789,363 +1046,7 @@ MonoBehaviour:
     Data3: -1477604167
     Data4: -1400028364
   Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &3919131302369125669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_throw
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Main Character/Weapons/Shurikens/sfx_weapon_shurikens_throw
-  Guid:
-    Data1: 273342970
-    Data2: 1225291365
-    Data3: -343709789
-    Data4: 1130644002
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 100
---- !u!114 &4166784172225926360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Between Waves
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Between Waves
-  Guid:
-    Data1: -702938958
-    Data2: 1212782322
-    Data3: -9819259
-    Data4: -220285157
-  Banks:
-  - {fileID: -564994515729920819}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &4482034463210913546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Fanfares/mus_defeat
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Fanfares/mus_defeat
-  Guid:
-    Data1: -314568785
-    Data2: 1102559184
-    Data3: -81646429
-    Data4: 1032839923
-  Banks:
-  - {fileID: -6811316367364741212}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6000
---- !u!114 &4777934560517889836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Menu/mus_menu
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Menu/mus_menu
-  Guid:
-    Data1: 1025122611
-    Data2: 1122880915
-    Data3: -1466557265
-    Data4: -1712695987
-  Banks:
-  - {fileID: -6811316367364741212}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 76800
---- !u!114 &4796026275910177023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_spawn
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Standard Pumpkin/sfx_pumpkin_standard_spawn
-  Guid:
-    Data1: -162410237
-    Data2: 1271204351
-    Data3: 335379605
-    Data4: -269109593
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &5398040962318681030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Artifact/sfx_artifact_end
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Artifact/sfx_artifact_end
-  Guid:
-    Data1: 1990694835
-    Data2: 1253349928
-    Data3: 1658821296
-    Data4: -1107175622
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &5636082019182823406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Gameplay/mus_gameplay
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Gameplay/mus_gameplay
-  Guid:
-    Data1: -1132850320
-    Data2: 1316791591
-    Data3: 1564557211
-    Data4: 70752457
-  Banks:
-  - {fileID: -6811316367364741212}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-<<<<<<< Updated upstream
-  - {fileID: -311226750573415257}
-=======
-  - {fileID: 1918008285846995227}
->>>>>>> Stashed changes
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 199111
---- !u!114 &5819344619472549874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_wick
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Bomb Pumpkin/sfx_pumpkin_bomb_wick
-  Guid:
-    Data1: -1042359295
-    Data2: 1188968333
-    Data3: 1737319045
-    Data4: -210690957
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7204074291728855098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 638336094104568187
-  FileSizes:
-  - Name: Desktop
-    Value: 2684
-=======
-  lastModified: 638335750163986902
-  FileSizes:
-  - Name: Desktop
-    Value: 2800
->>>>>>> Stashed changes
-  Exists: 1
---- !u!114 &7964675030650643531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_freeze
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Pumpkins/Ice Pumpkin/sfx_pumpkin_ice_freeze
-  Guid:
-    Data1: -1578313307
-    Data2: 1287318852
-    Data3: -684717675
-    Data4: -1296371248
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7992619180810420158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/UI/sfx_ui_play
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/UI/sfx_ui_play
-  Guid:
-    Data1: 244366930
-    Data2: 1203990977
-    Data3: 151455620
-    Data4: 115272260
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &8922841338497809785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/UI/sfx_ui_hover_over
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/UI/sfx_ui_hover_over
-  Guid:
-    Data1: 1056477787
-    Data2: 1107059868
-    Data3: 1558817190
-    Data4: 1036867379
-  Banks:
-  - {fileID: 538128785970648780}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &9218296940387578016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Ambience/sfx_ambience
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Ambience/sfx_ambience
-  Guid:
-    Data1: -1243746718
-    Data2: 1254849893
-    Data3: 1409986959
-    Data4: -269278844
-  Banks:
-  - {fileID: 538128785970648780}
+  - {fileID: 2991650478823197456}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
