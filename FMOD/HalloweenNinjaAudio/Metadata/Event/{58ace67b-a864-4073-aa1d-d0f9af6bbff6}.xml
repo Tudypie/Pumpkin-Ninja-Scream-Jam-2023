@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{58ace67b-a864-4073-aa1d-d0f9af6bbff6}">
 		<property name="note">
-			<value>Sounds for katana hits (grass, stone, wood and pumpkin)</value>
+			<value>Sounds for katana hits on enemies</value>
 		</property>
 		<property name="name">
 			<value>sfx_weapon_katana_slash</value>
