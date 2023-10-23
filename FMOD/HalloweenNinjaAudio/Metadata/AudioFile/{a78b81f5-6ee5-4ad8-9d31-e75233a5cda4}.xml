@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{90ef4b5e-a085-44a8-8bf8-f720d693a421}">
+	<object class="AudioFile" id="{a78b81f5-6ee5-4ad8-9d31-e75233a5cda4}">
 		<property name="assetPath">
 			<value>SFX/Scream Jam 2023 - sfx_gate_open.wav</value>
 		</property>
