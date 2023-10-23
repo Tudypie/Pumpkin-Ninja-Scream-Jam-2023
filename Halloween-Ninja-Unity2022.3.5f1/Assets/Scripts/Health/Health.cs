@@ -41,7 +41,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currenthealth -= damage;
+        currenthealth = Mathf.Clamp(currenthealth - damage, 0, maxhealth);
         OnTakeDamage?.Invoke(this, new Health.DamageEventArgs(damage));
 
         if (currenthealth <= 0) Death();
