@@ -12,6 +12,11 @@ public abstract class EnemyBehaviour : MonoBehaviour
         nma = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
+    public void Setup(Transform target)
+    {
+        this.target = target;
+    }
+
     void Start()
     {
         if(!target) target = GameObject.FindGameObjectWithTag("DefensePointTarget").transform;

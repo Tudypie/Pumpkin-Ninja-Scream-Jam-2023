@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100
---- !u!114 &-6764033845275671621
+--- !u!114 &-8103881242248266284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,23 +37,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Ambience/sfx_ambience
+  m_Name: event:/Sound Design/Ambient/sfx_gate_open
   m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Ambience/sfx_ambience
+  Path: event:/Sound Design/Ambient/sfx_gate_open
   Guid:
-    Data1: -1243746718
-    Data2: 1254849893
-    Data3: 1409986959
-    Data4: -269278844
+    Data1: -810408085
+    Data2: 1243715776
+    Data3: -1064850796
+    Data4: 1479991735
   Banks:
   - {fileID: 2991650478823197456}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 5001
 --- !u!114 &-6528091694215486874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +398,60 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-1013510386211197074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Ambient/sfx_gate_close
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Ambient/sfx_gate_close
+  Guid:
+    Data1: 2053511853
+    Data2: 1278880609
+    Data3: -18335093
+    Data4: 703262325
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5001
+--- !u!114 &-645187550453709878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Ambient/sfx_ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Ambient/sfx_ambience
+  Guid:
+    Data1: -1243746718
+    Data2: 1254849893
+    Data3: 1409986959
+    Data4: -269278844
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60000
 --- !u!114 &-260022228206355496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +512,6 @@ MonoBehaviour:
   - {fileID: 2749265288470665615}
   - {fileID: -2898841884132333764}
   - {fileID: 6828895105513030375}
-  - {fileID: -6764033845275671621}
   - {fileID: 8979454469712733753}
   - {fileID: 1533314471753330919}
   - {fileID: 5845177949363878521}
@@ -476,12 +529,15 @@ MonoBehaviour:
   - {fileID: 8348376125117528226}
   - {fileID: 5013637412607874775}
   - {fileID: -6457937904381067887}
+  - {fileID: -645187550453709878}
+  - {fileID: -8103881242248266284}
+  - {fileID: -1013510386211197074}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7274151528177680828}
   StringsBanks:
   - {fileID: 1752163741518571622}
-  cacheTime: 638335826046131493
+  cacheTime: 638336050723779618
   cacheVersion: 131603
 --- !u!114 &219894146551927356
 MonoBehaviour:
@@ -603,10 +659,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638335826045039484
+  lastModified: 638336050723699727
   FileSizes:
   - Name: Desktop
-    Value: 2722
+    Value: 2822
   Exists: 1
 --- !u!114 &2749265288470665615
 MonoBehaviour:
@@ -677,10 +733,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638335826046131493
+  lastModified: 638336050723779618
   FileSizes:
   - Name: Desktop
-    Value: 97376
+    Value: 984224
   Exists: 1
 --- !u!114 &3172423822708683032
 MonoBehaviour:

@@ -127,7 +127,7 @@ Animator:
   m_GameObject: {fileID: 2186791098574836061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 947748c78fc90524a8657dc702c06087, type: 2}
+  m_Controller: {fileID: 9100000, guid: 16da03a3ed7ced4499377e1bb502b70d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2186791098574836061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b612ecbc6204d04fa81406df0394d6d, type: 3}
   m_Name: 
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 4081462060773568496}
   - component: {fileID: 6737717831555489431}
   m_Layer: 7
-  m_Name: HoppingPumpkin
+  m_Name: TankyHoppingPumpkin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1518516025509432295}
@@ -315,8 +315,8 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7825192112361741151}
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.4
+  m_AgentTypeID: -334000983
+  m_Radius: 1.5
   m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: EnemyFollow
   target: {fileID: 0}
-  followSpeed: 4.5
+  followSpeed: 2
 --- !u!114 &2377547536642745323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d8e37c80d82a84cb0eeb7e59d12f4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 30
-  currenthealth: 30
+  maxhealth: 150
+  currenthealth: 150
   destroyOnDeath: 1
 --- !u!114 &1551696098280710796
 MonoBehaviour:
@@ -542,7 +542,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd22ffb361953a04d99c8f449cfe52cc, type: 2}
+  - {fileID: 2100000, guid: bd311eca666879b408044cada8b624da, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
