@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c07784cc-529a-4589-8e63-1c34ba5a4c5d}">
 		<property name="assetPath">
-			<value>Scream Jam 2023 - sfx_ambience.wav</value>
+			<value>SFX/Scream Jam 2023 - sfx_ambience.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

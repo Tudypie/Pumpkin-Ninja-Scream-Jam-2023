@@ -5,10 +5,10 @@
 			<value>The sound that makes when the wave ends</value>
 		</property>
 		<property name="name">
-			<value>sfx_artifact_end</value>
+			<value>sfx_artifact_wave_end</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{aee666c2-394c-4492-8e28-a37da0200599}</destination>
@@ -67,7 +67,7 @@
 	<object class="MarkerTrack" id="{5d3b64d7-2608-4b4e-9b6b-533707ca2068}" />
 	<object class="GroupTrack" id="{ac0b71f4-e98e-4247-b369-31405e291d56}">
 		<relationship name="modules">
-			<destination>{946a7b22-fc39-4b97-b9da-841fd4c6235b}</destination>
+			<destination>{9ffbcc1b-cc78-4577-a42d-bc2a3b736bb5}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8638ab50-7006-45ba-a036-d9e5854e4003}</destination>
@@ -75,7 +75,7 @@
 	</object>
 	<object class="Timeline" id="{b5865564-70a6-4004-b239-c7c3684ce4f8}">
 		<relationship name="modules">
-			<destination>{946a7b22-fc39-4b97-b9da-841fd4c6235b}</destination>
+			<destination>{9ffbcc1b-cc78-4577-a42d-bc2a3b736bb5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3d6f90af-93ec-4101-9216-84ede38960ff}">
@@ -95,10 +95,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{37bc4f6e-181d-43fa-a097-b85f3249cb82}" />
-	<object class="SingleSound" id="{946a7b22-fc39-4b97-b9da-841fd4c6235b}">
+	<object class="SingleSound" id="{9ffbcc1b-cc78-4577-a42d-bc2a3b736bb5}">
 		<property name="length">
-			<value>2</value>
+			<value>9.4721315192743756</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{9c1aa244-0e05-408e-9fd8-6db684b865a1}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8638ab50-7006-45ba-a036-d9e5854e4003}">
 		<property name="name">

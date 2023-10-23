@@ -5,10 +5,10 @@
 			<value>The sound that makes when the player first interacts with the artifact to start the game</value>
 		</property>
 		<property name="name">
-			<value>sfx_artifact_start</value>
+			<value>sfx_artifact_wave_start</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{aee666c2-394c-4492-8e28-a37da0200599}</destination>
@@ -67,7 +67,7 @@
 	<object class="MarkerTrack" id="{f65c12a2-aa69-4fce-96c7-552ae7fab2d1}" />
 	<object class="GroupTrack" id="{12d834a1-2666-4c49-9930-c462cabe4581}">
 		<relationship name="modules">
-			<destination>{03ef5b64-1561-4e20-8dcd-bfa9edbb267a}</destination>
+			<destination>{bac2d201-d0f8-4d00-9578-97676dfbb66b}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a77fc9e8-bd56-4077-a6bf-99ab9ea06b7f}</destination>
@@ -75,7 +75,7 @@
 	</object>
 	<object class="Timeline" id="{9d0eda20-d0c2-4b01-ab29-e418a35f006c}">
 		<relationship name="modules">
-			<destination>{03ef5b64-1561-4e20-8dcd-bfa9edbb267a}</destination>
+			<destination>{bac2d201-d0f8-4d00-9578-97676dfbb66b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d4378966-72c2-443c-ac55-e431da06ed4b}">
@@ -95,10 +95,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8e21fa1a-229c-47c6-9985-a962f6e23c79}" />
-	<object class="SingleSound" id="{03ef5b64-1561-4e20-8dcd-bfa9edbb267a}">
+	<object class="SingleSound" id="{bac2d201-d0f8-4d00-9578-97676dfbb66b}">
 		<property name="length">
-			<value>2</value>
+			<value>6.7658276643990929</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{da975ab6-0c2f-428d-8421-53823fb56e79}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a77fc9e8-bd56-4077-a6bf-99ab9ea06b7f}">
 		<property name="name">
