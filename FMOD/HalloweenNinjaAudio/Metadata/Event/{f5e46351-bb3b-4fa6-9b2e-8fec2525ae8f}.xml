@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{f5e46351-bb3b-4fa6-9b2e-8fec2525ae8f}">
+		<property name="note">
+			<value>Boss laughs sounds</value>
+		</property>
 		<property name="name">
 			<value>sfx_boss_laughs</value>
 		</property>
@@ -8,7 +11,12 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{c1335b00-820d-4651-bc8c-f36bfb2c0967}</destination>
+			<destination>{1627d4af-522e-4449-9127-75b7afc89a41}</destination>
+		</relationship>
+		<relationship name="tags">
+			<destination>{3d426a47-7a68-48f0-aa9e-a172e01cd6ac}</destination>
+			<destination>{b4666b50-187a-4d62-8b6b-337c0f736bff}</destination>
+			<destination>{64d53321-aaed-48fd-8c8c-e21b98ab77fc}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{8aab16fb-6e52-4985-864d-6f2844d8d739}</destination>

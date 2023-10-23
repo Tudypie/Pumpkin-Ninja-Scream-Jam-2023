@@ -20,6 +20,8 @@
 			<destination>{d2f34ae7-616a-4ce2-bad5-8fd32379cc14}</destination>
 			<destination>{b935bbe6-f5c5-4b9e-be9f-adba1e0d052c}</destination>
 			<destination>{9597f8a6-9316-4419-9526-c0101bdd4bd8}</destination>
+			<destination>{64d53321-aaed-48fd-8c8c-e21b98ab77fc}</destination>
+			<destination>{2d1e5d22-4a29-4ed9-b86f-dcdfea5ccdc7}</destination>
 		</relationship>
 	</object>
 	<object class="Tag" id="{19d4b76e-26dc-46ba-a003-f48fd631242d}">
@@ -95,6 +97,16 @@
 	<object class="Tag" id="{9597f8a6-9316-4419-9526-c0101bdd4bd8}">
 		<property name="name">
 			<value>Ambient</value>
+		</property>
+	</object>
+	<object class="Tag" id="{64d53321-aaed-48fd-8c8c-e21b98ab77fc}">
+		<property name="name">
+			<value>Boss</value>
+		</property>
+	</object>
+	<object class="Tag" id="{2d1e5d22-4a29-4ed9-b86f-dcdfea5ccdc7}">
+		<property name="name">
+			<value>Spawn</value>
 		</property>
 	</object>
 </objects>
