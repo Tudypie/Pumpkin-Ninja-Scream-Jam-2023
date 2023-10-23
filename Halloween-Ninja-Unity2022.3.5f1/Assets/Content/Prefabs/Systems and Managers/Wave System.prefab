@@ -471,7 +471,7 @@ MonoBehaviour:
     spawnChance: 20
     unlockAtWave: 1
   - name: Fast Rolling Pumpkin
-    prefab: {fileID: 6473225530025871408, guid: 7f3b0352675fb5a42aaff963688a97bb, type: 3}
+    prefab: {fileID: 6473225530025871408, guid: f1fb7c27df7decd4bb5875a038cb380e, type: 3}
     spawnSound:
       Guid:
         Data1: 0

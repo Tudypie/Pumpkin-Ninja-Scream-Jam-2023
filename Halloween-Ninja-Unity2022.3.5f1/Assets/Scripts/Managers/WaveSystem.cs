@@ -190,8 +190,6 @@ public class WaveSystem : MonoBehaviour
             chanceCounter += enemy.spawnChance;
             if (randomSpawnValue <= chanceCounter)
             {
-                FMODAudio.Instance.PlayAudio(enemy.spawnSound);
-
                 int randomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                 int newRandomArea = -1;
                 int enemiesToSpawn = (int)Random.Range(enemiesPerSpawn / 2, enemiesPerSpawn+1);
@@ -202,6 +200,7 @@ public class WaveSystem : MonoBehaviour
                     Vector3 randomPosInArea = availableEnemySpawnAreas[randomArea].spawnpoint.position + Random.insideUnitSphere * spawnRadius;
                     randomPosInArea.y = availableEnemySpawnAreas[0].spawnpoint.position.y;
                     GameObject spawnedEnemy = Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
+                    FMODAudio.Instance.PlayAudio(enemy.spawnSound, spawnedEnemy.transform.position);
                     enemiesSpawnedInCurrentWave.Add(spawnedEnemy);
                     
                     if(i >= maxEnemiesInArea-1 && newRandomArea == -1)
