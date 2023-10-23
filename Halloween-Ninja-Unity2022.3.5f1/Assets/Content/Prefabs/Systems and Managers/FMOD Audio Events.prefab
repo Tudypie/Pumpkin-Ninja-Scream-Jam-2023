@@ -64,6 +64,13 @@ MonoBehaviour:
       Data3: 1658821296
       Data4: -1107175622
     Path: event:/Sound Design/Artifact/sfx_artifact_wave_end
+  gateOpen:
+    Guid:
+      Data1: -810408085
+      Data2: 1243715776
+      Data3: -1064850796
+      Data4: 1479991735
+    Path: event:/Sound Design/Ambient/sfx_gate_open
   characterFootsteps:
     Guid:
       Data1: 1124677409
@@ -122,11 +129,11 @@ MonoBehaviour:
     Path: event:/Sound Design/Artifact/sfx_artifact_destruction
   pumpkinExplosion:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1487726203
+      Data2: 1081321572
+      Data3: -103801430
+      Data4: -155227217
+    Path: event:/Sound Design/Main Character/Weapons/Katana/sfx_weapon_katana_slash
   betweenWavesSnapshot: {fileID: 3159426724195791907}
 --- !u!1 &2124073120466316171
 GameObject:

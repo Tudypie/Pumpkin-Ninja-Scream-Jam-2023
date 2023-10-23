@@ -58,7 +58,7 @@ public class Katana : MonoBehaviour
         if (hitHealth == null) return;
 
         hitHealth.TakeDamage(damage);
-        //FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
         Debug.Log("Hit Normal Slash");
 
     }

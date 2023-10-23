@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
+using FMODUnity;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class WaveSystem : MonoBehaviour
     {
         public string name;
         public GameObject prefab;
+        public EventReference spawnSound;
         [Tooltip("[value]spawnChance in [value]totalSpawnChance")]
         public float spawnChance;
         public int unlockAtWave;
@@ -30,7 +32,7 @@ public class WaveSystem : MonoBehaviour
     }
 
     [Header("Wave Debug")]
-    [SerializeField] private bool waveIsInProgress;
+    public bool waveIsInProgress;
     [SerializeField] private int currentWaveNumber = 1;
     [SerializeField] private int enemiesKilledInCurrentWave = 0;
     [SerializeField] private List<GameObject> enemiesSpawnedInCurrentWave = new List<GameObject>();
@@ -46,6 +48,7 @@ public class WaveSystem : MonoBehaviour
     [Header("References")]
     [SerializeField] private TMP_Text waveTimerText;
     [SerializeField] private TMP_Text waveText;
+    [SerializeField] private GameObject minimap;
     [SerializeField] private DefensePoint defensePoint;
     private Interactable defensePointInteractable;
 
@@ -98,12 +101,21 @@ public class WaveSystem : MonoBehaviour
         }
 
         defensePointInteractable = defensePoint.gameObject.GetComponent<Interactable>();
-        waveTimerText.text = gameStartMessage;
+        defensePointInteractable.ableToInteract = false;
+        waveTimerText.text = "";
     }
 
     #endregion
 
     #region Public Methods
+
+    public void StartGame()
+    {
+        defensePointInteractable.ableToInteract = true;
+        waveTimerText.text = gameStartMessage;
+        waveTimerText.GetComponent<Animator>().Play("TextScaleIn");
+        minimap.SetActive(false);
+    }
 
     public void NewWave()
     {
@@ -114,11 +126,14 @@ public class WaveSystem : MonoBehaviour
         FMODAudio.Instance.betweenWavesSnapshot.Stop();
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveStart);
 
+        minimap.SetActive(true);
+
         foreach (Area area in enemySpawnAreas)
         {
-            if (currentWaveNumber >= area.unlockAtWave)
+            if (currentWaveNumber == area.unlockAtWave)
             {
                 area.gateAnimator.Play("DoubleGateOpen");
+                FMODAudio.Instance.PlayAudio(FMODAudio.Instance.gateOpen);
                 area.cardinalPointOnMinimap.color = Color.red;
                 availableEnemySpawnAreas.Add(area);
                 Debug.Log("Unlocked area " + area.name);
@@ -128,7 +143,7 @@ public class WaveSystem : MonoBehaviour
 
         foreach(Enemy enemy in enemies)
         {
-            if(currentWaveNumber >= enemy.unlockAtWave)
+            if(currentWaveNumber == enemy.unlockAtWave)
             {
                 spawnableEnemies.Add(enemy);
                 Debug.Log("Unlocked enemy " + enemy.name);
@@ -175,10 +190,13 @@ public class WaveSystem : MonoBehaviour
             chanceCounter += enemy.spawnChance;
             if (randomSpawnValue <= chanceCounter)
             {
+                FMODAudio.Instance.PlayAudio(enemy.spawnSound);
+
                 int randomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                 int newRandomArea = -1;
                 int enemiesToSpawn = (int)Random.Range(enemiesPerSpawn / 2, enemiesPerSpawn+1);
                 enemiesToSpawn = Mathf.Clamp(enemiesToSpawn, 1, (int)enemiesPerSpawnMaximum);
+
                 for (int i = 0; i < enemiesToSpawn; i++)
                 {
                     Vector3 randomPosInArea = availableEnemySpawnAreas[randomArea].spawnpoint.position + Random.insideUnitSphere * spawnRadius;
@@ -191,9 +209,11 @@ public class WaveSystem : MonoBehaviour
                         newRandomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                         while (newRandomArea == randomArea)
                             newRandomArea = Random.Range(0, availableEnemySpawnAreas.Count);
+
                         randomArea = newRandomArea;
                     }
                 }
+
                 Debug.Log("Spawned " + enemiesToSpawn + " enemies at " + availableEnemySpawnAreas[randomArea].name + " gate");
                 break;
             }
@@ -222,6 +242,8 @@ public class WaveSystem : MonoBehaviour
 
         FMODAudio.Instance.betweenWavesSnapshot.Play();
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveEnd);
+
+        minimap.SetActive(false);
 
         /*foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
         {

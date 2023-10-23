@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04111749, g: 0.072494544, b: 0.1256555, a: 1}
+  m_IndirectSpecularColor: {r: 0.041120112, g: 0.07249693, b: 0.1256583, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7305,7 +7305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &186019432
 Transform:
   m_ObjectHideFlags: 0
@@ -10022,6 +10022,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3784063119089933524, guid: d512a7ab8074d8d45bed7f85dcb23694, type: 3}
   m_PrefabInstance: {fileID: 358840281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &363469612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 363469614}
+  - component: {fileID: 363469613}
+  m_Layer: 0
+  m_Name: ScreenshotSaver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &363469613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363469612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b2dbbba93d7424b91414f957f17175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: Screenshots/
+  size: 1
+--- !u!4 &363469614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363469612}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8416638, y: 2.920414, z: -9.541854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &376708206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30696,7 +30742,7 @@ Transform:
   m_GameObject: {fileID: 1607035516}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99579936, z: -0.091562055, w: 0}
-  m_LocalPosition: {x: 0, y: 2.87, z: 18.82}
+  m_LocalPosition: {x: 0, y: 2.87, z: 20.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38287,3 +38333,4 @@ SceneRoots:
   - {fileID: 131266}
   - {fileID: 1588379582}
   - {fileID: 1008636630}
+  - {fileID: 363469614}

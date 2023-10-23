@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5691278860786393370}
   - component: {fileID: 3811213559931533353}
   - component: {fileID: 6530133966627273684}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ShurikenProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba027c518a0a8fe4290c71e3cc1e6d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!54 &3811213559931533353
 Rigidbody:
   m_ObjectHideFlags: 0
