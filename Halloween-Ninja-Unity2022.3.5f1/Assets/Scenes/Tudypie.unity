@@ -11552,7 +11552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnStart: 1
-  delay: 1.5
+  delay: 1
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -28374,52 +28374,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3784063119089933524, guid: d512a7ab8074d8d45bed7f85dcb23694, type: 3}
   m_PrefabInstance: {fileID: 1408835763}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1411539413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1411539414}
-  - component: {fileID: 1411539415}
-  m_Layer: 0
-  m_Name: ScreenshotSaver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1411539414
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411539413}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8416638, y: 2.920414, z: -9.541854}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1411539415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411539413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5b2dbbba93d7424b91414f957f17175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path: Screenshots/
-  size: 1
 --- !u!1001 &1413839093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31685,7 +31639,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1.5
+          m_FloatArgument: 1
           m_StringArgument: TextScaleOut
           m_BoolArgument: 0
         m_CallState: 2
@@ -38025,6 +37979,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1083922464}
     - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[0].spawnSound.Path
+      value: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_annoying
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[1].spawnSound.Path
+      value: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_fast
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[2].spawnSound.Path
+      value: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_flying
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[3].spawnSound.Path
+      value: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_tanky
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[4].spawnSound.Path
+      value: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_fat
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
       propertyPath: enemySpawnAreas.Array.data[0].gateAnimator
       value: 
       objectReference: {fileID: 1657593566}
@@ -38040,6 +38014,86 @@ PrefabInstance:
       propertyPath: enemySpawnAreas.Array.data[3].gateAnimator
       value: 
       objectReference: {fileID: 1999080798}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[0].spawnSound.Guid.Data1
+      value: -1290011213
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[0].spawnSound.Guid.Data2
+      value: 1153706844
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[0].spawnSound.Guid.Data3
+      value: -477463935
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[0].spawnSound.Guid.Data4
+      value: 582754191
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[1].spawnSound.Guid.Data1
+      value: 410862253
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[1].spawnSound.Guid.Data2
+      value: 1329226065
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[1].spawnSound.Guid.Data3
+      value: 951607734
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[1].spawnSound.Guid.Data4
+      value: 949650789
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[2].spawnSound.Guid.Data1
+      value: 720539211
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[2].spawnSound.Guid.Data2
+      value: 1257682865
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[2].spawnSound.Guid.Data3
+      value: 1007606685
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[2].spawnSound.Guid.Data4
+      value: 1549746157
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[3].spawnSound.Guid.Data1
+      value: -1975879995
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[3].spawnSound.Guid.Data2
+      value: 1219994405
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[3].spawnSound.Guid.Data3
+      value: -2063175024
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[3].spawnSound.Guid.Data4
+      value: -638834915
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[4].spawnSound.Guid.Data1
+      value: -429983599
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[4].spawnSound.Guid.Data2
+      value: 1075747532
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[4].spawnSound.Guid.Data3
+      value: -762358619
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
+      propertyPath: enemies.Array.data[4].spawnSound.Guid.Data4
+      value: -592687535
+      objectReference: {fileID: 0}
     - target: {fileID: 9129741893549474604, guid: 2cbef2448efe36c4ea544a63d48fefcf, type: 3}
       propertyPath: enemySpawnAreas.Array.data[0].cardinalPointOnMinimap
       value: 
@@ -38191,7 +38245,6 @@ SceneRoots:
   - {fileID: 5108395828618902741}
   - {fileID: 1892089502806603150}
   - {fileID: 7503533275830700003}
-  - {fileID: 1411539414}
   - {fileID: 669562680}
   - {fileID: 370996252}
   - {fileID: 1531843977}
