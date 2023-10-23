@@ -5,7 +5,7 @@
 			<value>Gate shutting sound</value>
 		</property>
 		<property name="name">
-			<value>sfx_shut_gate</value>
+			<value>sfx_gate_close</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -67,7 +67,7 @@
 	<object class="MarkerTrack" id="{361fddfe-dd36-43e1-a710-84a7905a74de}" />
 	<object class="GroupTrack" id="{90c09cd0-8111-487b-adb0-98f185fafa56}">
 		<relationship name="modules">
-			<destination>{2e5843b3-1831-4b15-9112-0524889bfef3}</destination>
+			<destination>{bbe3938f-2123-4c39-9ec5-23700fb32f5c}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e7258bf0-50ac-4adc-9f2d-16f966c0ca71}</destination>
@@ -75,7 +75,7 @@
 	</object>
 	<object class="Timeline" id="{ee531e4b-d5ec-47ba-bd5c-9436d407a9dd}">
 		<relationship name="modules">
-			<destination>{2e5843b3-1831-4b15-9112-0524889bfef3}</destination>
+			<destination>{bbe3938f-2123-4c39-9ec5-23700fb32f5c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3d318c00-a626-4689-8e3e-5912d3084a0d}">
@@ -95,10 +95,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3f7d44a3-3c31-49fe-b9a5-111c3b8c57e0}" />
-	<object class="SingleSound" id="{2e5843b3-1831-4b15-9112-0524889bfef3}">
+	<object class="SingleSound" id="{bbe3938f-2123-4c39-9ec5-23700fb32f5c}">
 		<property name="length">
-			<value>2</value>
+			<value>5.0009977324263035</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{2d137e5c-24c5-430e-9a67-8d4bc962edc9}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{e7258bf0-50ac-4adc-9f2d-16f966c0ca71}">
 		<property name="name">

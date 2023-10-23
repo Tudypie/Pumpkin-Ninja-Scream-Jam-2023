@@ -5,7 +5,7 @@
 			<value>Slam opening gate sound</value>
 		</property>
 		<property name="name">
-			<value>sfx_slam_gate</value>
+			<value>sfx_gate_open</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -67,7 +67,7 @@
 	<object class="MarkerTrack" id="{2a74e617-60c6-4e57-b6a9-16ce07c4c744}" />
 	<object class="GroupTrack" id="{e28fd0c4-ef99-449e-b43b-cf5d053452a4}">
 		<relationship name="modules">
-			<destination>{fd90c406-e35a-4f29-a9d6-f98a7702a0f3}</destination>
+			<destination>{b2dbe6db-619e-475c-bd9b-481c27855baa}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1e0b85b7-ee0b-43eb-98f5-15f27dc8d545}</destination>
@@ -75,7 +75,7 @@
 	</object>
 	<object class="Timeline" id="{fea893c2-3c48-424c-8954-0f987a9b9385}">
 		<relationship name="modules">
-			<destination>{fd90c406-e35a-4f29-a9d6-f98a7702a0f3}</destination>
+			<destination>{b2dbe6db-619e-475c-bd9b-481c27855baa}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{cdc394fe-f943-4378-a498-9af89bb2b3b7}">
@@ -95,10 +95,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c772b091-caa8-44ac-b71f-0fdd2e362480}" />
-	<object class="SingleSound" id="{fd90c406-e35a-4f29-a9d6-f98a7702a0f3}">
+	<object class="SingleSound" id="{b2dbe6db-619e-475c-bd9b-481c27855baa}">
 		<property name="length">
-			<value>2</value>
+			<value>5.0009977324263035</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{42e98154-95fb-4743-b2f8-b5b49ceb7a0a}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1e0b85b7-ee0b-43eb-98f5-15f27dc8d545}">
 		<property name="name">
