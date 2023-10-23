@@ -130,9 +130,10 @@ public class Katana : MonoBehaviour
     void KatanaStrike()
     {
         bool isTagged = false;
+        hitThisAttack = new List<GameObject>();
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, dashSpeed*0.75f, dashMask))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, dashSpeed*5f, dashMask))
         {
             isTagged = hit.collider.transform.GetComponentInParent<ShurikenTag>().tagged;
         }
