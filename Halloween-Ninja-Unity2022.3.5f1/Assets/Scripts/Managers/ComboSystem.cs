@@ -35,6 +35,13 @@ public class ComboSystem : MonoBehaviour
 
     private void Update()
     {
+        if(!WaveSystem.Instance.waveIsInProgress) 
+        {
+            comboText.transform.parent.gameObject.SetActive(false);
+            return; 
+        }
+        comboText.transform.parent.gameObject.SetActive(true);
+
         comboText.text = "x" + currentCombo; 
         comboFillCircle.fillAmount = (currentComboTimer / comboTimer);
 

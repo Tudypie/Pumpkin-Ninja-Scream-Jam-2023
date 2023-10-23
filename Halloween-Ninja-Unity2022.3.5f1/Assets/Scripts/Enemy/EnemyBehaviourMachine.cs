@@ -52,7 +52,7 @@ public class EnemyBehaviourMachine : MonoBehaviour
     {
         WaveSystem.Instance.KillEnemy();
         ComboSystem.Instance.AddCombo();
-        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.pumpkinExplosion);
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.pumpkinExplosion, transform.position);
     }
 
     public void ChangeState(string newStateName)

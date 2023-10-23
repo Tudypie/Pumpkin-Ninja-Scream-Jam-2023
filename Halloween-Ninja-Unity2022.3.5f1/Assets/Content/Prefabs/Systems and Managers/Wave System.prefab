@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 5385862663163230099}
   - component: {fileID: 2596731805337686363}
   - component: {fileID: 6924805577318692004}
+  - component: {fileID: 7466007485532598664}
   m_Layer: 0
   m_Name: WaveTimerText
   m_TagString: Untagged
@@ -165,6 +166,27 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &7466007485532598664
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855957416243562291}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 542ab492870516e48a524c085821fe7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3516531578781862796
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,14 +442,15 @@ MonoBehaviour:
   chanceCounter: 0
   waveTimerText: {fileID: 6924805577318692004}
   waveText: {fileID: 9110839061448393712}
+  minimap: {fileID: 0}
   defensePoint: {fileID: 0}
   enemiesPerSpawn: 1
-  enemiesPerSpawnMaximum: 6
+  enemiesPerSpawnMaximum: 5
   enemiesPerSpawnIncrease: 0.5
   maxEnemiesInArea: 3
   spawnRate: 4
   spawnRateMinimum: 2
-  spawnRateDecrease: 0.25
+  spawnRateDecrease: 0.2
   waveDuration: 20
   waveDurationMaximum: 120
   waveDurationIncrease: 5
@@ -438,22 +461,57 @@ MonoBehaviour:
   enemies:
   - name: Annoying Hopping Pumpkin
     prefab: {fileID: 7825192112361741151, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
+    spawnSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     spawnChance: 20
     unlockAtWave: 1
   - name: Fast Rolling Pumpkin
     prefab: {fileID: 6473225530025871408, guid: 7f3b0352675fb5a42aaff963688a97bb, type: 3}
+    spawnSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     spawnChance: 20
     unlockAtWave: 2
-  - name: Tanky Hopping Pumpkin
-    prefab: {fileID: 7825192112361741151, guid: 260f8f8634246dc4f97e843ea659d377, type: 3}
-    spawnChance: 20
-    unlockAtWave: 4
   - name: Flying Pumpkin
     prefab: {fileID: 7825192112361741151, guid: 254cc8b319e7e1a479b0209e70a3d6de, type: 3}
+    spawnSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    spawnChance: 20
+    unlockAtWave: 3
+  - name: Tanky Hopping Pumpkin
+    prefab: {fileID: 7825192112361741151, guid: 260f8f8634246dc4f97e843ea659d377, type: 3}
+    spawnSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     spawnChance: 20
     unlockAtWave: 4
   - name: Fat Rolling Pumpkin
     prefab: {fileID: 6473225530025871408, guid: f1fb7c27df7decd4bb5875a038cb380e, type: 3}
+    spawnSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     spawnChance: 20
     unlockAtWave: 5
   spawnableEnemies: []

@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyToReplace: {fileID: 5027694960162563666}
-  bodyToReplaceWith: {fileID: 2163228715338391821, guid: 644b688d300327e4b9d408c43f0df432, type: 3}
+  bodyToReplaceWith: {fileID: 2163228715338391821, guid: 18c3cd8b198bae943852fa1fa1452457, type: 3}
 --- !u!114 &3530049247211455324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bd311eca666879b408044cada8b624da, type: 2}
+  - {fileID: 2100000, guid: cd22ffb361953a04d99c8f449cfe52cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

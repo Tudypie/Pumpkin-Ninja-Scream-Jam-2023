@@ -10,11 +10,12 @@ public class ScreenshotSaver : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             path += "screenshot ";
             path += System.Guid.NewGuid().ToString() + ".png";
             ScreenCapture.CaptureScreenshot(path, size);
+            path = "";
         }
     }
 }

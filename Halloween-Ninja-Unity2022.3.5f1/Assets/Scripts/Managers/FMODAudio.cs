@@ -15,6 +15,7 @@ public class FMODAudio : MonoBehaviour
     [Header("Misc")]
     public EventReference waveStart;
     public EventReference waveEnd;
+    public EventReference gateOpen;
 
     [Header("Character")]
     public EventReference characterFootsteps;
@@ -50,7 +51,6 @@ public class FMODAudio : MonoBehaviour
     public void PlayAudio(EventReference sound)
     {
         RuntimeManager.PlayOneShot(sound, transform.position);
-        Debug.Log(sound);
     }
 
     public void PlayAudio(EventReference sound, Vector3 worldPos)
