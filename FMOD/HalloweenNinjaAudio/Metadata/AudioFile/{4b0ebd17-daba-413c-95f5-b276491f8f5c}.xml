@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4b0ebd17-daba-413c-95f5-b276491f8f5c}">
+		<property name="assetPath">
+			<value>SFX/Scream Jam 2023 - sfx_pumpkin_annoying.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.8480045351473926</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6944cdb5-07d6-480e-acf3-5314af6164c7}</destination>
+		</relationship>
+	</object>
+</objects>
