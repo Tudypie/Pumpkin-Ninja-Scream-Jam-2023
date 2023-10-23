@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LoseGame : MonoBehaviour
+public class LoseSystem : MonoBehaviour
 {
     [SerializeField] Image deathScreen;
 
@@ -10,7 +10,7 @@ public class LoseGame : MonoBehaviour
 
     public bool Lose { get; set; }
 
-    public static LoseGame Instance { get; private set; }
+    public static LoseSystem Instance { get; private set; }
 
     private void Awake()
     {
@@ -49,10 +49,10 @@ public class LoseGame : MonoBehaviour
         }
     }
 
-    public void OnLose()
+    public void Defeat()
     {
         Lose = true;
-        WaveSystem.Instance.EndWaveSystem();
-        FMODAudio.Instance.defeatSoundtrack.Play();
+        WaveSystem.Instance.Defeat();
+        MusicManager.Instance.Defeat();
     }
 }

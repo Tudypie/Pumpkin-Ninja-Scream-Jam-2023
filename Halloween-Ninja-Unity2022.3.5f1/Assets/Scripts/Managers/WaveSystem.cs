@@ -114,7 +114,7 @@ public class WaveSystem : MonoBehaviour
         enemiesKilledInCurrentWave++;
     }
 
-    public void EndWaveSystem()
+    public void Defeat()
     {
         waveIsInProgress = false;
         waveTimerText.text = "Game Over.";
@@ -126,7 +126,7 @@ public class WaveSystem : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if(LoseGame.Instance.Lose) { return; }
+        if(LoseSystem.Instance.Lose) { return; }
 
         if (spawnableEnemies.Count == 0)
         {
@@ -185,7 +185,7 @@ public class WaveSystem : MonoBehaviour
 
     private void EndWave()
     {
-        if (LoseGame.Instance.Lose) { return; }
+        if (LoseSystem.Instance.Lose) { return; }
 
         waveIsInProgress = false;
         waveText.text = "Wave " + currentWaveNumber + " Completed";
@@ -195,11 +195,11 @@ public class WaveSystem : MonoBehaviour
         FMODAudio.Instance.betweenWavesSnapshot.Play();
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveEnd);
 
-        foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
+        /*foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
         {
             if (enemy != null)
                 enemy.GetComponent<Health>().Death();
-        }
+        }*/
 
         enemiesSpawnedInCurrentWave = new List<GameObject>();
         enemiesKilledInCurrentWave = 0;
@@ -235,6 +235,14 @@ public class WaveSystem : MonoBehaviour
             yield return null;
         }
         CancelInvoke();
+
+        while (enemiesKilledInCurrentWave < enemiesSpawnedInCurrentWave.Count)
+        {
+            int enemiesLeftToKill = enemiesSpawnedInCurrentWave.Count - enemiesKilledInCurrentWave;
+            string message = enemiesLeftToKill == 1 ? "enemy left to kill" : "enemies left to kill";
+            waveTimerText.text = enemiesLeftToKill + " " + message;
+            yield return null;
+        } 
         EndWave();
     }
 

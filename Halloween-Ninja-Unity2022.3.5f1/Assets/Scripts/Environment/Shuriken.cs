@@ -6,16 +6,15 @@ public class Shuriken : MonoBehaviour
 {
     
     [SerializeField] float damage = 10f;
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player")) { return; }
-
-        Destroy(this);
-    }
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("DefensePoint")) { return; }
+        if (other.gameObject.CompareTag("Player")
+            || other.gameObject.CompareTag("DefensePoint")
+            || other.gameObject.CompareTag("DamageBox")) 
+        { 
+            return; 
+        }
 
         Health health = other.gameObject.GetComponentInParent<Health>();
         if (health)
