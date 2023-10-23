@@ -102,15 +102,12 @@
 			<value>0.75</value>
 		</property>
 		<relationship name="sounds">
-			<destination>{699db8e4-3172-4d2f-b0c6-f15bfd10c53b}</destination>
-			<destination>{6c37d901-ed68-423d-99fe-2ea57ba90d27}</destination>
-			<destination>{9fc340ee-c80f-461d-b0a9-83500b71425d}</destination>
+			<destination>{09127095-4e34-47eb-84b1-c5eee7e17413}</destination>
+			<destination>{8dcd89e1-f4f5-41cf-86a1-51ea0d0265e1}</destination>
+			<destination>{1ca040ab-574b-4a17-88c1-be218e4d3cd8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d5fc90f2-9972-46a4-91d7-c5f6be24d69e}">
-		<property name="volume">
-			<value>-8</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -132,19 +129,19 @@
 	</object>
 	<object class="MixerBusPanner" id="{90a4c27d-aa0d-412d-a1ed-ca81e05d69a3}" />
 	<object class="MixerBusFader" id="{729842ef-94c5-4732-87b2-18e3a60cd8a2}" />
-	<object class="SingleSound" id="{699db8e4-3172-4d2f-b0c6-f15bfd10c53b}">
+	<object class="SingleSound" id="{09127095-4e34-47eb-84b1-c5eee7e17413}">
 		<relationship name="audioFile">
-			<destination>{f3a72b94-a7ec-4490-920c-616cd1223ad6}</destination>
+			<destination>{e40fb46f-753a-424b-919a-5a852530ec7a}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{6c37d901-ed68-423d-99fe-2ea57ba90d27}">
+	<object class="SingleSound" id="{8dcd89e1-f4f5-41cf-86a1-51ea0d0265e1}">
 		<relationship name="audioFile">
-			<destination>{1df6466d-4801-4153-9b9e-6d7e8cca3666}</destination>
+			<destination>{1a3eac84-97f2-46bd-bf57-7a1ae41f7940}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{9fc340ee-c80f-461d-b0a9-83500b71425d}">
+	<object class="SingleSound" id="{1ca040ab-574b-4a17-88c1-be218e4d3cd8}">
 		<relationship name="audioFile">
-			<destination>{401fc648-07a6-4fc2-9740-547b28598ced}</destination>
+			<destination>{dd232d2e-2bb6-49c7-8d1f-d106bbd690eb}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{45a21179-574e-40e8-856e-223e491db4db}">

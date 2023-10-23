@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{1df6466d-4801-4153-9b9e-6d7e8cca3666}">
+	<object class="AudioFile" id="{8f041a71-fc3e-4ddf-b834-bb509c8a4811}">
 		<property name="assetPath">
-			<value>SFX/Scream Jam 2023 - sfx_shuriken_2.wav</value>
+			<value>Scream Jam 2023 - sfx_katana_attack_3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.75</value>
+			<value>1.29</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6944cdb5-07d6-480e-acf3-5314af6164c7}</destination>
