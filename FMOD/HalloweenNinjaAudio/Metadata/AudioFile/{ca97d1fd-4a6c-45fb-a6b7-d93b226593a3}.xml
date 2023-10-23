@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{0146ec7b-8c18-480f-ad23-373ce178faed}">
+	<object class="AudioFile" id="{ca97d1fd-4a6c-45fb-a6b7-d93b226593a3}">
 		<property name="assetPath">
-			<value>SFX/Scream Jam 2023 - sfx_katana_slash_8.wav</value>
+			<value>Scream Jam 2023 - sfx_katana_slash_1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
