@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{ce45f0f3-7fc4-44b8-8091-375276a0d316}">
+	<object class="AudioFile" id="{841df0fa-d74f-4307-ad97-d1c633b40772}">
 		<property name="assetPath">
-			<value>Scream Jam 2023 - sfx_pumpkin_fast.wav</value>
+			<value>SFX/Scream Jam 2023 - sfx_katana_dash.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>8.8480045351473926</value>
+			<value>3.2265532879818593</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6944cdb5-07d6-480e-acf3-5314af6164c7}</destination>
