@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
-using FMODUnity;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -17,6 +16,17 @@ public class WaveSystem : MonoBehaviour
         public GameObject prefab;
         [Tooltip("[value]spawnChance in [value]totalSpawnChance")]
         public float spawnChance;
+        public int unlockAtWave;
+    }
+
+    [Serializable]
+    public struct Area
+    {
+        public string name;
+        public int unlockAtWave;
+        public Transform spawnpoint;
+        public Animator gateAnimator;
+        public TMP_Text cardinalPointOnMinimap;
     }
 
     [Header("Wave Debug")]
@@ -65,8 +75,10 @@ public class WaveSystem : MonoBehaviour
     [SerializeField] private List<Enemy> spawnableEnemies;
 
     [Header("Areas")]
-    [SerializeField] private Transform[] enemySpawnAreas;
+    [SerializeField] private Area[] enemySpawnAreas;
+    [SerializeField] private List<Area> availableEnemySpawnAreas;
     [SerializeField] private float spawnRadius = 5.0f;
+
 
     public static WaveSystem Instance;
 
@@ -86,10 +98,6 @@ public class WaveSystem : MonoBehaviour
         }
 
         defensePointInteractable = defensePoint.gameObject.GetComponent<Interactable>();
-
-        foreach (Enemy enemy in enemies)
-            spawnableEnemies.Add(enemy);
-
         waveTimerText.text = gameStartMessage;
     }
 
@@ -102,12 +110,33 @@ public class WaveSystem : MonoBehaviour
         waveIsInProgress = true;
         waveText.text = "Wave " + currentWaveNumber;
         waveText.gameObject.GetComponent<Animator>().Play("TextScaleInAndOut");
+
         FMODAudio.Instance.betweenWavesSnapshot.Stop();
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveStart);
+
+        foreach (Area area in enemySpawnAreas)
+        {
+            if (currentWaveNumber >= area.unlockAtWave)
+            {
+                area.gateAnimator.Play("DoubleGateOpen");
+                area.cardinalPointOnMinimap.color = Color.red;
+                availableEnemySpawnAreas.Add(area);
+                Debug.Log("Unlocked area " + area.name);
+            }
+
+        }
+
+        foreach(Enemy enemy in enemies)
+        {
+            if(currentWaveNumber >= enemy.unlockAtWave)
+            {
+                spawnableEnemies.Add(enemy);
+                Debug.Log("Unlocked enemy " + enemy.name);
+            }
+        }
+
         StartCoroutine(WaveRoutine(waveDuration));
     } 
-
-    public void NewSpawnableEnemy(int enemyIndex) => spawnableEnemies.Add(enemies[enemyIndex]);
 
     public void KillEnemy()
     {
@@ -146,27 +175,26 @@ public class WaveSystem : MonoBehaviour
             chanceCounter += enemy.spawnChance;
             if (randomSpawnValue <= chanceCounter)
             {
-                int randomArea = Random.Range(0, enemySpawnAreas.Length);
+                int randomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                 int newRandomArea = -1;
                 int enemiesToSpawn = (int)Random.Range(enemiesPerSpawn / 2, enemiesPerSpawn+1);
                 enemiesToSpawn = Mathf.Clamp(enemiesToSpawn, 1, (int)enemiesPerSpawnMaximum);
                 for (int i = 0; i < enemiesToSpawn; i++)
                 {
-                    Vector3 randomPosInArea = enemySpawnAreas[randomArea].position + Random.insideUnitSphere * spawnRadius;
-                    randomPosInArea.y = enemySpawnAreas[0].position.y;
+                    Vector3 randomPosInArea = availableEnemySpawnAreas[randomArea].spawnpoint.position + Random.insideUnitSphere * spawnRadius;
+                    randomPosInArea.y = availableEnemySpawnAreas[0].spawnpoint.position.y;
                     GameObject spawnedEnemy = Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
                     enemiesSpawnedInCurrentWave.Add(spawnedEnemy);
                     
                     if(i >= maxEnemiesInArea-1 && newRandomArea == -1)
                     {
-                        newRandomArea = Random.Range(0, enemySpawnAreas.Length);
+                        newRandomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                         while (newRandomArea == randomArea)
-                            newRandomArea = Random.Range(0, enemySpawnAreas.Length);
+                            newRandomArea = Random.Range(0, availableEnemySpawnAreas.Count);
                         randomArea = newRandomArea;
                     }
-
                 }
-                Debug.Log("Spawned " + enemiesToSpawn + " enemies at " + enemySpawnAreas[randomArea].name + " gate");
+                Debug.Log("Spawned " + enemiesToSpawn + " enemies at " + availableEnemySpawnAreas[randomArea].name + " gate");
                 break;
             }
         }
