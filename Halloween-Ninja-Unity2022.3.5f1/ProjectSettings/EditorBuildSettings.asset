@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: ab769d55cdc31544dafe8e3fca01469d
+    guid: ea03fb42521f8254f907a2db5ec33891
   - enabled: 1
     path: Assets/Scenes/Tudypie.unity
     guid: d605439144a04454db81bcfa724625ef

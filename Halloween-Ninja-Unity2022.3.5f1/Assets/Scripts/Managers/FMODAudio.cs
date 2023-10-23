@@ -9,6 +9,7 @@ public class FMODAudio : MonoBehaviour
     [Header("Soundtracks")]
     public StudioEventEmitter menuSoundtrack;
     public StudioEventEmitter gameplaySoundtrack;
+    public StudioEventEmitter ambienceSoundtrack;
     public StudioEventEmitter defeatSoundtrack;
 
     [Header("Misc")]

@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 100
+  Length: 5412
 --- !u!114 &-8103881242248266284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638335826046111564
+  lastModified: 638336158638558545
   FileSizes:
   - Name: Desktop
     Value: 12524256
@@ -520,25 +520,52 @@ MonoBehaviour:
   - {fileID: 4801207207153106592}
   - {fileID: -2538496551955750093}
   - {fileID: -9133308243443580627}
-  - {fileID: 2850376537801505499}
   - {fileID: 7139895774256884837}
   - {fileID: 3172423822708683032}
   - {fileID: -3754359630188084263}
   - {fileID: -260022228206355496}
   - {fileID: 5511451607743235466}
-  - {fileID: 8348376125117528226}
   - {fileID: 5013637412607874775}
   - {fileID: -6457937904381067887}
   - {fileID: -645187550453709878}
   - {fileID: -8103881242248266284}
   - {fileID: -1013510386211197074}
+  - {fileID: 8523673012907451779}
+  - {fileID: 217109484667554667}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7274151528177680828}
   StringsBanks:
   - {fileID: 1752163741518571622}
-  cacheTime: 638336050723779618
+  cacheTime: 638336466541458947
   cacheVersion: 131603
+--- !u!114 &217109484667554667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_wave_start
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Artifact/sfx_artifact_wave_start
+  Guid:
+    Data1: -807601420
+    Data2: 1205640248
+    Data3: 141178510
+    Data4: 143797572
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6765
 --- !u!114 &219894146551927356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,10 +686,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638336050723699727
+  lastModified: 638336466541372303
   FileSizes:
   - Name: Desktop
-    Value: 2822
+    Value: 2838
   Exists: 1
 --- !u!114 &2749265288470665615
 MonoBehaviour:
@@ -691,33 +718,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &2850376537801505499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Artifact/sfx_artifact_end
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Artifact/sfx_artifact_end
-  Guid:
-    Data1: 1990694835
-    Data2: 1253349928
-    Data3: 1658821296
-    Data4: -1107175622
-  Banks:
-  - {fileID: 2991650478823197456}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &2991650478823197456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,10 +733,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638336050723779618
+  lastModified: 638336466541458947
   FileSizes:
   - Name: Desktop
-    Value: 984224
+    Value: 1378912
   Exists: 1
 --- !u!114 &3172423822708683032
 MonoBehaviour:
@@ -845,7 +845,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 8000
 --- !u!114 &5511451607743235466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1024,38 +1024,11 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638335750163917333
+  lastModified: 638336158636865139
   FileSizes:
   - Name: Desktop
     Value: 3930
   Exists: 1
---- !u!114 &8348376125117528226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Design/Artifact/sfx_artifact_start
-  m_EditorClassIdentifier: 
-  Path: event:/Sound Design/Artifact/sfx_artifact_start
-  Guid:
-    Data1: -807601420
-    Data2: 1205640248
-    Data3: 141178510
-    Data4: 143797572
-  Banks:
-  - {fileID: 2991650478823197456}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &8505273854159358030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1056,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100
+--- !u!114 &8523673012907451779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/Artifact/sfx_artifact_wave_end
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/Artifact/sfx_artifact_wave_end
+  Guid:
+    Data1: 1990694835
+    Data2: 1253349928
+    Data3: 1658821296
+    Data4: -1107175622
+  Banks:
+  - {fileID: 2991650478823197456}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9472
 --- !u!114 &8979454469712733753
 MonoBehaviour:
   m_ObjectHideFlags: 0

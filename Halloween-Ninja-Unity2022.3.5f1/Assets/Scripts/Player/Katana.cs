@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Katana : MonoBehaviour
@@ -16,10 +17,19 @@ public class Katana : MonoBehaviour
     [SerializeField] GameObject DashUI;
 
     List<GameObject> hitThisAttack = new List<GameObject>();
-    
+
+    //Slow Motion
+    [Header("Slow Motion")]
+    [SerializeField] bool useSlowMotioEffect = true;
+    [SerializeField] float slowMotionTimeScale = 0.5f;
+    [SerializeField] float slowMotionDuration = 1.5f;
+    float lastTime, elapsed;
+    bool slowDownTime = false;
+
+
     float nextAttackTime = 0;
     float attackCooldown = 0.5f;
-    float attackBeginTime = 0.05f;
+    float attackBeginTime = 0f;
     float attackEndTime = 0.3f;
     bool canSlashDamage = false;
     bool canDashSlashDamage = false;
@@ -28,7 +38,7 @@ public class Katana : MonoBehaviour
     {
         slashTrigger.OnTriggerEnterEvent += SlashTriggerRelay_OnTriggerEnter;
         slashTrigger.enabled = false;
-        
+
         dashSlashTrigger.OnTriggerEnterEvent += DashSlashTriggerRelay_OnTriggerEnter;
         dashSlashTrigger.enabled = false;
     }
@@ -48,6 +58,7 @@ public class Katana : MonoBehaviour
         if (hitHealth == null) return;
 
         hitHealth.TakeDamage(damage);
+        //FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
         Debug.Log("Hit Normal Slash");
 
     }
@@ -65,14 +76,15 @@ public class Katana : MonoBehaviour
         Health hitHealth = hitGameGbject.GetComponentInParent<Health>();
         if (hitHealth == null) return;
 
-        hitHealth.TakeDamage(damage*3);
+        hitHealth.TakeDamage(damage * 3);
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
         Debug.Log("Hit Dash Slash");
 
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(attackKey) && Time.time > nextAttackTime)
+        if (Input.GetKeyDown(attackKey) && Time.time > nextAttackTime)
         {
             KatanaStrike();
         }
@@ -84,6 +96,35 @@ public class Katana : MonoBehaviour
             isTagged = hit.collider.transform.GetComponentInParent<ShurikenTag>().tagged;
         }
         DashUI.SetActive(isTagged);
+    }
+
+    void FixedUpdate()
+    {
+        if (!slowDownTime || !useSlowMotioEffect) { return; }
+
+        if (lastTime == 0)
+        {
+            lastTime = Time.realtimeSinceStartup;
+        }
+        else
+        {
+            elapsed += Time.realtimeSinceStartup - lastTime;
+            lastTime = Time.realtimeSinceStartup;
+            Time.timeScale = slowMotionTimeScale;
+        }
+
+        if (elapsed >= slowMotionDuration)
+        {
+            Time.timeScale = 1f;
+            slowDownTime = false;
+        }
+    }
+
+    void SlowMotion()
+    {
+        slowDownTime = true;
+        lastTime = 0;
+        elapsed = 0;
     }
 
     void KatanaStrike()
@@ -120,6 +161,7 @@ public class Katana : MonoBehaviour
         nextAttackTime = Time.time + attackCooldown;
         anim.SetTrigger("Melee1");
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaDash, transform.position);
+        SlowMotion();
 
         Vector3 targetPosition = transform.position + transform.forward * 8;
         Vector3 dashVelocity = transform.forward * dashSpeed;

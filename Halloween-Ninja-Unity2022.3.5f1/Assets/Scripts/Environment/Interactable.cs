@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
 
     private void Awake()
     {
-        interactionController = GameObject.FindGameObjectWithTag("Player").GetComponent<InteractionController>();
+        interactionController = GameObject.FindObjectOfType<InteractionController>();
         coll = GetComponent<Collider>();
     }
 
