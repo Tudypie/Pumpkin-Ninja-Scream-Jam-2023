@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2377547536642745323, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: maxhealth
-      value: 70
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2377547536642745323, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: currenthealth
-      value: 70
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4081462060773568496, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
       propertyPath: damage

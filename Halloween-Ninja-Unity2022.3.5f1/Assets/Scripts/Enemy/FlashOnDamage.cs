@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class FlashOnDamage : MonoBehaviour
 {
@@ -24,6 +25,12 @@ public class FlashOnDamage : MonoBehaviour
             materials[i] = renderer.materials;
         }
         health.OnTakeDamage += Health_OnTakeDamage;
+        health.OnDeath += EndCoroutines;
+    }
+
+    private void EndCoroutines(object sender, EventArgs e)
+    {
+        StopAllCoroutines();
     }
 
     private void Health_OnTakeDamage(object sender, Health.DamageEventArgs e)
@@ -63,6 +70,7 @@ public class FlashOnDamage : MonoBehaviour
 
         for (int i = 0; i < renderers.Length; i++)
         {
+            if (!renderers[i]) return;
             renderers[i].materials = materials[i];
         }
     }

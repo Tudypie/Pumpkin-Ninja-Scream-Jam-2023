@@ -42,8 +42,14 @@ public class DefensePoint : MonoBehaviour
 
     private void DefensePointDeath(object sender, EventArgs e)
     {
-        LoseSystem.Instance.Defeat();
+        //LoseSystem.Instance.Defeat();
+        WaveSystem.Instance.StopAllCoroutines();
+        WaveSystem.Instance.Defeat();
+
+        MusicManager.Instance.EnterBossBattle();
+
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.defensePointDestruction, transform.position);
+
     }
 
     public void StartWave()

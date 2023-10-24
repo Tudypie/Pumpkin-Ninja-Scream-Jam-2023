@@ -23,7 +23,7 @@ public class Shuriken : MonoBehaviour
         float multiplier = 1;
         ShurikenTag shurikenTag = other.gameObject.GetComponentInParent<ShurikenTag>();
         if (shurikenTag)
-            shurikenTag.tagged = true;
+            shurikenTag.Tag();
 
         GetComponentInChildren<Animator>().speed = 0;
         Destroy(gameObject, 3f);
