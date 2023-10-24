@@ -12,14 +12,26 @@ public class MainMenu : MonoBehaviour
         FMODAudio.Instance.menuSoundtrack.Play();
     }
 
+    public void OnButtonHover()
+    {
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.hoverOver);
+    }
+
+    public void OnHoverButton()
+    {
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.hoverOver);
+    }
+
     public void OnPlayButtonClick()
     {
         StartCoroutine(StartGame());
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.playButton);
     }
     public void OnQuitButtonClick()
     {
         blackImageAnimator.Play("ImageFadeIn");
         FMODAudio.Instance.menuSoundtrack.Stop();
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.buttons);
         Invoke(nameof(QuitGame), 3f);
     }
 

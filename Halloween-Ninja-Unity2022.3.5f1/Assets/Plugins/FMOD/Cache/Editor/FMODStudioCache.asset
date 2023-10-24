@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5412
+--- !u!114 &-6897619877253817133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Gameplay/mus_boss
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Gameplay/mus_boss
+  Guid:
+    Data1: -1704639814
+    Data2: 1207146361
+    Data3: 2022520197
+    Data4: 1509657907
+  Banks:
+  - {fileID: -6811316367364741212}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 68571
 --- !u!114 &-6811316367364741212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +96,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638336482770476020
+  lastModified: 638336918615868373
   FileSizes:
   - Name: Desktop
-    Value: 12524928
+    Value: 13435136
   Exists: 1
 --- !u!114 &-6305740602961135948
 MonoBehaviour:
@@ -378,12 +405,13 @@ MonoBehaviour:
   - {fileID: 3466783280588891661}
   - {fileID: 9052759778837683338}
   - {fileID: 5147251805780561634}
+  - {fileID: -6897619877253817133}
   EditorParameters: []
   MasterBanks:
   - {fileID: -564994515729920819}
   StringsBanks:
   - {fileID: 7204074291728855098}
-  cacheTime: 638336896973467460
+  cacheTime: 638336918616130296
   cacheVersion: 131603
 --- !u!114 &538128785970648780
 MonoBehaviour:
@@ -400,7 +428,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638336896973467460
+  lastModified: 638336918616130296
   FileSizes:
   - Name: Desktop
     Value: 2531360
@@ -745,10 +773,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638336896973267994
+  lastModified: 638336918614670345
   FileSizes:
   - Name: Desktop
-    Value: 2456
+    Value: 2504
   Exists: 1
 --- !u!114 &7992619180810420158
 MonoBehaviour:

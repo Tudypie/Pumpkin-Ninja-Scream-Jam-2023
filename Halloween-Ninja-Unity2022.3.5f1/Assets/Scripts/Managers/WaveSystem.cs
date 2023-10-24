@@ -9,6 +9,7 @@ using FMODUnity;
 public class WaveSystem : MonoBehaviour
 {
     #region Parameters
+    [SerializeField] GameObject spawnPuff;
 
     [Serializable]
     public struct Enemy
@@ -205,6 +206,7 @@ public class WaveSystem : MonoBehaviour
                     Vector3 randomPosInArea = availableEnemySpawnAreas[randomArea].spawnpoint.position + Random.insideUnitSphere * spawnRadius;
                     randomPosInArea.y = availableEnemySpawnAreas[0].spawnpoint.position.y;
                     GameObject spawnedEnemy = Instantiate(enemy.prefab, randomPosInArea, Quaternion.identity);
+                    Instantiate(spawnPuff, randomPosInArea, Quaternion.identity);
                     FMODAudio.Instance.PlayAudio(enemy.spawnSound, spawnedEnemy.transform.position);
                     enemiesSpawnedInCurrentWave.Add(spawnedEnemy);
                     

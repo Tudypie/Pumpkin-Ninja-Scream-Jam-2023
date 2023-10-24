@@ -9,6 +9,7 @@ public class FMODAudio : MonoBehaviour
     [Header("Soundtracks")]
     public StudioEventEmitter menuSoundtrack;
     public StudioEventEmitter gameplaySoundtrack;
+    public StudioEventEmitter bossBattleSoundtrack;
     public StudioEventEmitter ambienceSoundtrack;
     public StudioEventEmitter defeatSoundtrack;
 
@@ -16,6 +17,11 @@ public class FMODAudio : MonoBehaviour
     public EventReference waveStart;
     public EventReference waveEnd;
     public EventReference gateOpen;
+
+    [Header("UI")]
+    public EventReference buttons;
+    public EventReference hoverOver;
+    public EventReference playButton;
 
     [Header("Character")]
     public EventReference characterFootsteps;

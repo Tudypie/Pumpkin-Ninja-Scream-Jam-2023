@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using FMODUnity;
 
 public class SpawnerProjectile : MonoBehaviour
 {
-
+    [SerializeField] Transform spawnExplosion;
     Transform enemyTarget;
 
     Transform prefabToSpawn;
@@ -43,8 +44,10 @@ public class SpawnerProjectile : MonoBehaviour
         {
 
             if (trailRenderer) trailRenderer.transform.parent = null;
+            Instantiate(spawnExplosion, targetPosition + Vector3.up * 0.3f, Quaternion.identity);
             Transform objectSpawned = Instantiate(prefabToSpawn, targetPosition + Vector3.up * 0.3f, Quaternion.identity);
             objectSpawned.GetComponent<EnemyBehaviour>().Setup(enemyTarget);
+            objectSpawned.GetComponent<DamageOnCollision>().damagePlayer = true;
 
             Destroy(gameObject);
         }
@@ -52,7 +55,7 @@ public class SpawnerProjectile : MonoBehaviour
 
     }
 
-    public void Setup(Vector3 targetPosition, Transform prefabToSpawn, Transform enemyTarget)
+    public void Setup(Vector3 targetPosition, Transform prefabToSpawn, Transform enemyTarget, EventReference spawnSound)
     {
         this.prefabToSpawn = prefabToSpawn;
 
@@ -62,6 +65,7 @@ public class SpawnerProjectile : MonoBehaviour
         totalDistance = Vector3.Distance(positionXZ, targetPosition);
 
         this.enemyTarget = enemyTarget;
+        FMODAudio.Instance.PlayAudio(spawnSound, transform.position);
     }
 
 

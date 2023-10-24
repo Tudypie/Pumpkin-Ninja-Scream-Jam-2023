@@ -387,14 +387,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0029bbbf6dc677c4db3381310001c08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnSounds:
+  - Guid:
+      Data1: -1290011213
+      Data2: 1153706844
+      Data3: -477463935
+      Data4: 582754191
+    Path: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_annoying
+  - Guid:
+      Data1: 720539211
+      Data2: 1257682865
+      Data3: 1007606685
+      Data4: 1549746157
+    Path: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_flying
+  - Guid:
+      Data1: -429983599
+      Data2: 1075747532
+      Data3: -762358619
+      Data4: -592687535
+    Path: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_fat
+  - Guid:
+      Data1: -1975879995
+      Data2: 1219994405
+      Data3: -2063175024
+      Data4: -638834915
+    Path: event:/Sound Design/Pumpkins/Spawn/sfx_spawn_pumpkin_tanky
   spawnerProjectile: {fileID: 2969398090660905548, guid: 46dd3fa42d64dd34c8267d22698da722, type: 3}
   enemyPrefabs:
   - {fileID: 8926778632086394726, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
   - {fileID: 8926778632086394726, guid: 254cc8b319e7e1a479b0209e70a3d6de, type: 3}
   - {fileID: 5669864015801779209, guid: f1fb7c27df7decd4bb5875a038cb380e, type: 3}
   - {fileID: 8926778632086394726, guid: 260f8f8634246dc4f97e843ea659d377, type: 3}
-  spawnFrequency: 2.5
-  burstSpawnRate: 1.5
+  spawnFrequency: 2
+  burstSpawnRate: 1.2
+  laugh:
+    Guid:
+      Data1: -169581743
+      Data2: 1336326971
+      Data3: -326160741
+      Data4: -1884412635
+    Path: event:/Sound Design/Pumpkins/Boss/sfx_boss_laughs
 --- !u!114 &7885334507065015536
 MonoBehaviour:
   m_ObjectHideFlags: 0

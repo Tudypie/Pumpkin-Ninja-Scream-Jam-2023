@@ -52,7 +52,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PumpkinGodFly Reverse
-  m_Speed: -0.25
+  m_Speed: -0.3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7946027739067880925}
@@ -228,7 +228,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PumpkinGodFly
-  m_Speed: 0.25
+  m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2959267747280374194}
@@ -261,9 +261,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.5
+  m_TransitionDuration: 0.50000095
   m_TransitionOffset: 0
-  m_ExitTime: 2
+  m_ExitTime: 0.78906065
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -337,9 +337,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.5
+  m_TransitionDuration: 0.50000095
   m_TransitionOffset: 0
-  m_ExitTime: 2
+  m_ExitTime: 0.73322374
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

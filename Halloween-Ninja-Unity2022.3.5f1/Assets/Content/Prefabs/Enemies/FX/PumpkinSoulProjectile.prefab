@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c4d615aa31610449953d8bef29b954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnExplosion: {fileID: 248121550795170698, guid: 96b4920c4646e1e43ade17f44216c89a, type: 3}
   trailRenderer: {fileID: 5083819615689051353}
   arcYAnimationCurve:
     serializedVersion: 2
@@ -133,7 +134,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc8b577c00f008142a30311a73982939, type: 2}
+  - {fileID: 2100000, guid: ffe914367356b8c49b71e9ae60c2c689, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 42938772}
   - component: {fileID: 42938771}
   - component: {fileID: 42938770}
+  - component: {fileID: 42938773}
   m_Layer: 10
   m_Name: MainMenu
   m_TagString: Untagged
@@ -218,6 +219,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 600703969}
+        m_TargetAssemblyTypeName: EndScreenButtons, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &42938771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +269,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42938768}
   m_CullTransparentMesh: 1
+--- !u!114 &42938773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42938768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 600703969}
+          m_TargetAssemblyTypeName: EndScreenButtons, Assembly-CSharp
+          m_MethodName: OnButtonHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &183983860
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +310,7 @@ GameObject:
   - component: {fileID: 183983864}
   - component: {fileID: 183983863}
   - component: {fileID: 183983862}
+  - component: {fileID: 183983865}
   m_Layer: 10
   m_Name: RestartButton
   m_TagString: Untagged
@@ -351,6 +394,18 @@ MonoBehaviour:
           m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 600703969}
+        m_TargetAssemblyTypeName: EndScreenButtons, Assembly-CSharp
+        m_MethodName: OnPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &183983863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +444,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183983860}
   m_CullTransparentMesh: 1
+--- !u!114 &183983865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183983860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 600703969}
+          m_TargetAssemblyTypeName: EndScreenButtons, Assembly-CSharp
+          m_MethodName: OnButtonHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &298940873
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600703966}
   - component: {fileID: 600703968}
+  - component: {fileID: 600703969}
   m_Layer: 10
   m_Name: DeathScreen
   m_TagString: Untagged
@@ -601,6 +686,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600703965}
   m_CullTransparentMesh: 1
+--- !u!114 &600703969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600703965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9c1c2b67fd0824ea9425bc49b582d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192136672
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +1010,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5437b9ff36891b54e8bea0950636d94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1593855952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1733975801721615391, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_Name
+      value: FMOD Audio Events
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059658157968992736, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e77ac16c194dec4f97f07a6f10ffcf9, type: 3}
 --- !u!1 &1621513910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,3 +1311,4 @@ SceneRoots:
   - {fileID: 2124639732}
   - {fileID: 490508936}
   - {fileID: 1534515880}
+  - {fileID: 1593855952}

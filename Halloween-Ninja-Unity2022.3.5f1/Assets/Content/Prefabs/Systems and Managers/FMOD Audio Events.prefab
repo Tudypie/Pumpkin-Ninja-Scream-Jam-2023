@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuSoundtrack: {fileID: 7033609432791299832}
   gameplaySoundtrack: {fileID: 8577389852076328327}
+  bossBattleSoundtrack: {fileID: 1700969406917214809}
   ambienceSoundtrack: {fileID: 1414454428556978866}
   defeatSoundtrack: {fileID: 8130618199655453459}
   waveStart:
@@ -71,6 +72,27 @@ MonoBehaviour:
       Data3: -1064850796
       Data4: 1479991735
     Path: event:/Sound Design/Ambient/sfx_gate_open
+  buttons:
+    Guid:
+      Data1: -322855188
+      Data2: 1211685905
+      Data3: 1523928200
+      Data4: -946956136
+    Path: event:/Sound Design/UI/sfx_ui_buttons
+  hoverOver:
+    Guid:
+      Data1: 1056477787
+      Data2: 1107059868
+      Data3: 1558817190
+      Data4: 1036867379
+    Path: event:/Sound Design/UI/sfx_ui_hover_over
+  playButton:
+    Guid:
+      Data1: 244366930
+      Data2: 1203990977
+      Data3: 151455620
+      Data4: 115272260
+    Path: event:/Sound Design/UI/sfx_ui_play
   characterFootsteps:
     Guid:
       Data1: 1124677409
@@ -166,6 +188,7 @@ Transform:
   m_Children:
   - {fileID: 6704032809830482813}
   - {fileID: 2395296505872023769}
+  - {fileID: 2322355080570626628}
   - {fileID: 2454805464791761698}
   - {fileID: 446363921208869248}
   m_Father: {fileID: 6059658157968992736}
@@ -296,6 +319,69 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!1 &4867531325550680259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2322355080570626628}
+  - component: {fileID: 1700969406917214809}
+  m_Layer: 0
+  m_Name: BossBattleMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2322355080570626628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4867531325550680259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3025985163637344836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700969406917214809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4867531325550680259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1704639814
+      Data2: 1207146361
+      Data3: 2022520197
+      Data4: 1509657907
+    Path: event:/Music/Gameplay/mus_boss
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6340455218719610170
 GameObject:
   m_ObjectHideFlags: 0

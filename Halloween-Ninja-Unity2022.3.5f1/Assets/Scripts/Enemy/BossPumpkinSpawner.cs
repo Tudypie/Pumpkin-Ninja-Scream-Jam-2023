@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using System;
+using FMODUnity;
 
 public class BossPumpkinSpawner : MonoBehaviour
 {
+    public EventReference[] spawnSounds;
     [SerializeField] Transform spawnerProjectile;
 
     [SerializeField] Transform[] enemyPrefabs;
@@ -25,6 +27,10 @@ public class BossPumpkinSpawner : MonoBehaviour
 
     int nextStageHealth = 90;
 
+    float nextLaughTime;
+
+    public EventReference laugh;
+
     private void Start()
     {
         player = GameObject.Find("Player").transform;
@@ -37,7 +43,11 @@ public class BossPumpkinSpawner : MonoBehaviour
     void Update()
     {
         if (Time.time > nextSpawnTime) SpawnPumpkin();
-
+        if (Time.time > nextLaughTime && transform.position.y > 10f)
+        {
+            nextLaughTime = Time.time + 5f;
+            FMODAudio.Instance.PlayAudio(laugh, player.position);
+        }
     }
 
     void SpawnPumpkin()
@@ -66,13 +76,15 @@ public class BossPumpkinSpawner : MonoBehaviour
         #endregion
 
         #region GetRandomPumpkin
-        Transform pumpkinToSpawn = enemyPrefabs[UnityEngine.Random.Range(0,enemyPrefabs.Length)];
+        int rng = UnityEngine.Random.Range(0, enemyPrefabs.Length);
+        Transform pumpkinToSpawn = enemyPrefabs[rng];
+        EventReference spawnSound = spawnSounds[rng];
         #endregion
 
         #region SpawnPumpkin
         Transform pumpkinSoul = Instantiate(spawnerProjectile, transform.position, Quaternion.identity);
 
-        pumpkinSoul.GetComponent<SpawnerProjectile>().Setup(spawnLocation,pumpkinToSpawn,player);
+        pumpkinSoul.GetComponent<SpawnerProjectile>().Setup(spawnLocation,pumpkinToSpawn,player, spawnSound);
         #endregion
 
     }

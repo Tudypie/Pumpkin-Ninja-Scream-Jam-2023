@@ -36,8 +36,8 @@ public class MusicManager : MonoBehaviour
     public void EnterBossBattle()
     {
         fmodaudio.defeatSoundtrack.Play();
-        //fmodaudio.gameplaySoundtrack.Stop();
-        //fmodaudio.menuSoundtrack.Play();
+        fmodaudio.gameplaySoundtrack.Stop();
+        fmodaudio.bossBattleSoundtrack.Play();
 
     }
 
