@@ -2,32 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
 
 public class BossPumpkinSpawner : MonoBehaviour
 {
     [SerializeField] Transform spawnerProjectile;
+
     [SerializeField] Transform[] enemyPrefabs;
     Transform player;
 
-    [SerializeField] float spawnFrequency = 2f;
+    [SerializeField] float spawnFrequency = 2.5f;
+    [SerializeField] float burstSpawnRate = 1.5f;
+
+    Health health;
+
     float pumpkinSpawnRange = 4;
 
+
     float nextSpawnTime;
+
+    float startSpawningTime;
+
+    int nextStageHealth = 90;
 
     private void Start()
     {
         player = GameObject.Find("Player").transform;
+        startSpawningTime = Time.time + 3f;
+        health = GetComponent<Health>();
+        health.OnTakeDamage += TakeDamage;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Time.time > nextSpawnTime) SpawnPumpkin();
+
     }
 
     void SpawnPumpkin()
     {
-        nextSpawnTime = Time.time + spawnFrequency;
+        
+        nextSpawnTime = (transform.position.y > 10f)? Time.time + burstSpawnRate : Time.time + spawnFrequency;
 
         #region GetRandomSpawnLocation
 
@@ -36,11 +52,11 @@ public class BossPumpkinSpawner : MonoBehaviour
         NavMesh.SamplePosition(transform.position, out hit, 100, NavMesh.AllAreas);
         defaultSpawnLocation = hit.position;
 
-        Vector3 offsetLocation = new Vector3(Random.Range(-pumpkinSpawnRange, pumpkinSpawnRange), 0, Random.Range(-pumpkinSpawnRange, pumpkinSpawnRange));
-        NavMesh.SamplePosition(transform.position + offsetLocation, out hit, 100, NavMesh.AllAreas);
+        Vector3 randomSpawnPosition = new Vector3(UnityEngine.Random.Range(-11.5f, 11.5f), 0, UnityEngine.Random.Range(-11.5f, 11.5f));
+        NavMesh.SamplePosition(randomSpawnPosition, out hit, 100, NavMesh.AllAreas);
 
         Vector3 spawnLocation;
-        if (hit.position.x < 11.5 && hit.position.x > -11.5 && hit.position.z < 11.5 && hit.position.x > -11.5)
+        if (transform.position.y > 10f)
             spawnLocation = hit.position;
         else
         {
@@ -50,7 +66,7 @@ public class BossPumpkinSpawner : MonoBehaviour
         #endregion
 
         #region GetRandomPumpkin
-        Transform pumpkinToSpawn = enemyPrefabs[Random.Range(0,enemyPrefabs.Length)];
+        Transform pumpkinToSpawn = enemyPrefabs[UnityEngine.Random.Range(0,enemyPrefabs.Length)];
         #endregion
 
         #region SpawnPumpkin
@@ -58,13 +74,18 @@ public class BossPumpkinSpawner : MonoBehaviour
 
         pumpkinSoul.GetComponent<SpawnerProjectile>().Setup(spawnLocation,pumpkinToSpawn,player);
         #endregion
+
     }
 
-    void SpawnPumpkinAtPosition(Vector3 position, Transform prefab)
+
+    void TakeDamage(object sender, EventArgs e)
     {
-        Transform spawnedPumpkin = Instantiate(prefab, position, Quaternion.identity);
-        spawnedPumpkin.GetComponent<EnemyBehaviour>().Setup(player);
-        
+        if (health.currenthealth < nextStageHealth)
+        {
+            nextStageHealth -= 10;
+            burstSpawnRate -= 0.1f;
+            spawnFrequency -= 0.1f;
+        }
     }
 
 }

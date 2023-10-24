@@ -32,4 +32,13 @@ public class MusicManager : MonoBehaviour
         fmodaudio.gameplaySoundtrack.Stop();
         fmodaudio.ambienceSoundtrack.Stop();
     }
+
+    public void EnterBossBattle()
+    {
+        fmodaudio.defeatSoundtrack.Play();
+        //fmodaudio.gameplaySoundtrack.Stop();
+        //fmodaudio.menuSoundtrack.Play();
+
+    }
+
 }

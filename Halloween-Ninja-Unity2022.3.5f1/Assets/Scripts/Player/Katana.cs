@@ -36,14 +36,14 @@ public class Katana : MonoBehaviour
 
     private void Start()
     {
-        slashTrigger.OnTriggerEnterEvent += SlashTriggerRelay_OnTriggerEnter;
+        slashTrigger.OnTriggerStayEvent += SlashTriggerRelay_OnTriggerStay;
         slashTrigger.enabled = false;
 
-        dashSlashTrigger.OnTriggerEnterEvent += DashSlashTriggerRelay_OnTriggerEnter;
+        dashSlashTrigger.OnTriggerStayEvent += DashSlashTriggerRelay_OnTriggerStay;
         dashSlashTrigger.enabled = false;
     }
 
-    private void SlashTriggerRelay_OnTriggerEnter(object sender, TriggerRelay.CollisionEvent e)
+    private void SlashTriggerRelay_OnTriggerStay(object sender, TriggerRelay.CollisionEvent e)
     {
 
         if (!canSlashDamage) return;
@@ -59,16 +59,17 @@ public class Katana : MonoBehaviour
 
         hitHealth.TakeDamage(damage);
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
-        Debug.Log("Hit Normal Slash");
+        //Debug.Log("Hit Normal Slash");
 
     }
 
-    private void DashSlashTriggerRelay_OnTriggerEnter(object sender, TriggerRelay.CollisionEvent e)
+    private void DashSlashTriggerRelay_OnTriggerStay(object sender, TriggerRelay.CollisionEvent e)
     {
         if (!canDashSlashDamage) return;
         GameObject hitGameGbject = e.other.gameObject;
 
         if (hitGameGbject.CompareTag("DefensePoint")) return;
+        if (hitGameGbject.CompareTag("Player")) return;
 
         if (hitThisAttack.Contains(hitGameGbject)) return;
         hitThisAttack.Add(hitGameGbject);
@@ -78,7 +79,7 @@ public class Katana : MonoBehaviour
 
         hitHealth.TakeDamage(damage * 3);
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.katanaSlash, transform.position);
-        Debug.Log("Hit Dash Slash");
+        //Debug.Log("Hit Dash Slash");
 
     }
 

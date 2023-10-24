@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2240106601233882212}
   - component: {fileID: 2606389467945472120}
   - component: {fileID: 2027055432988764494}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HPText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3075827330609723752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DefensePointTarget
   m_TagString: DefensePointTarget
   m_Icon: {fileID: 0}
@@ -213,17 +213,17 @@ GameObject:
   - component: {fileID: 1291371771052806450}
   - component: {fileID: 2301647640377769608}
   - component: {fileID: 8948193551263180203}
-  - component: {fileID: 2882327126694253643}
-  - component: {fileID: 4552396254629471015}
   - component: {fileID: 3236694062627628358}
   - component: {fileID: 7649526297449946106}
   - component: {fileID: 8357682804701738949}
   - component: {fileID: 783386070273988008}
   - component: {fileID: 1615160958927896825}
   - component: {fileID: 956496274819715818}
-  m_Layer: 11
+  - component: {fileID: 7885334507065015536}
+  - component: {fileID: 7456762681543611077}
+  m_Layer: 7
   m_Name: PumpkinGodBoss
-  m_TagString: DefensePoint
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,6 +244,7 @@ Transform:
   - {fileID: 3249709449661803942}
   - {fileID: 2240106601233882212}
   - {fileID: 3075827330609723752}
+  - {fileID: 4336642102641371133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2301647640377769608
@@ -296,48 +297,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: -0.15, y: 0, z: 0}
---- !u!114 &2882327126694253643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4146702364105981110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 467809d72e13c1c4ca58a93ba553c6b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ableToInteract: 1
-  interactMessage: '[F] Start New Wave'
-  interactEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4552396254629471015}
-        m_TargetAssemblyTypeName: DefensePoint, Assembly-CSharp
-        m_MethodName: StartWave
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &4552396254629471015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4146702364105981110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 789663b24bfe2014880d26200be173c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpText: {fileID: 2027055432988764494}
 --- !u!114 &3236694062627628358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 100
   currenthealth: 100
-  destroyOnDeath: 0
+  destroyOnDeath: 1
 --- !u!114 &7649526297449946106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,11 +390,90 @@ MonoBehaviour:
   spawnerProjectile: {fileID: 2969398090660905548, guid: 46dd3fa42d64dd34c8267d22698da722, type: 3}
   enemyPrefabs:
   - {fileID: 8926778632086394726, guid: 33ce6de6d4c69044bb6da41f5b322dc7, type: 3}
-  - {fileID: 5669864015801779209, guid: 7f3b0352675fb5a42aaff963688a97bb, type: 3}
   - {fileID: 8926778632086394726, guid: 254cc8b319e7e1a479b0209e70a3d6de, type: 3}
   - {fileID: 5669864015801779209, guid: f1fb7c27df7decd4bb5875a038cb380e, type: 3}
   - {fileID: 8926778632086394726, guid: 260f8f8634246dc4f97e843ea659d377, type: 3}
-  spawnFrequency: 2
+  spawnFrequency: 2.5
+  burstSpawnRate: 1.5
+--- !u!114 &7885334507065015536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146702364105981110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f72869037434a42bc8c2fd91001bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 2027055432988764494}
+--- !u!114 &7456762681543611077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146702364105981110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b027741ee831b645b78ba312e9040d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagged: 0
+--- !u!1 &5088541114236400518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4336642102641371133}
+  - component: {fileID: 5333822254592506263}
+  m_Layer: 12
+  m_Name: DashCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4336642102641371133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088541114236400518}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15000004, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1291371771052806450}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &5333822254592506263
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088541114236400518}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3249709449661937446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -447,6 +485,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
       propertyPath: m_Name
       value: pumpkin1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a5b2e902769496041844e0f4c980882a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -927,6 +969,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
       propertyPath: m_Name
       value: InvertedPumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157309607397930224, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

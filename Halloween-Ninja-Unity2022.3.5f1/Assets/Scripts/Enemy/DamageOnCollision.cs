@@ -8,13 +8,15 @@ public class DamageOnCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("DefensePoint"))
-        {
-            other.gameObject.TryGetComponent(out Health defensePointHealth);
-            this.gameObject.TryGetComponent(out Health enemyHealth);
+        Transform hitParent = other.transform.parent;
+        Transform hit = hitParent == null ? other.transform : hitParent;
+        if (hit.tag != "Player" && hit.tag != "DefensePoint") return;
 
-            defensePointHealth.TakeDamage(damage);
-            enemyHealth.Death();
-        }
+        
+        hit.gameObject.TryGetComponent(out Health targetHealth);
+        targetHealth.TakeDamage(damage);
+
+        this.gameObject.TryGetComponent(out Health thisUnitHealth);
+        thisUnitHealth.Death();
     }
 }

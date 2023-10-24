@@ -1,37 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1228676360428766158
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
-  m_PrefabInstance: {fileID: 2147174076207857311}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1893466840902310260}
-  - component: {fileID: 523630583672189412}
-  m_Layer: 0
-  m_Name: 'InvertedPumpkin (Missing Prefab with guid: 4bd647cc54fa5a444910548a094d0b94)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &1893466840902310260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
-  m_PrefabInstance: {fileID: 2147174076207857311}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228676360428766158}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071058, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0.03, z: -0.026}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7864205239756386652}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &2308578727644589649
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 100
   currenthealth: 100
-  destroyOnDeath: 0
+  destroyOnDeath: 1
 --- !u!114 &8285948296209363015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,13 +184,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2308578727644589649}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5e82bfa75a96c340888f19577b18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bodyToReplace: {fileID: 7864205239756386652}
-  bodyToReplaceWith: {fileID: 6366909129260405567, guid: a97f851da3d4ff6448035c8e6457ae6d, type: 3}
+  bodyToReplaceWith: {fileID: 0}
 --- !u!1 &6590677657873536950
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +473,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 523630583672189412}
   m_SourcePrefab: {fileID: 100100000, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
+--- !u!1 &1228676360428766158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
+  m_PrefabInstance: {fileID: 2147174076207857311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &523630583672189412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +553,11 @@ MonoBehaviour:
   flickerSpeed: 3
   flickerMagnitude: 0.1
   randomizeStartingValue: 0
+--- !u!4 &1893466840902310260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4bd647cc54fa5a444910548a094d0b94, type: 3}
+  m_PrefabInstance: {fileID: 2147174076207857311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7864205239756778460
 PrefabInstance:
   m_ObjectHideFlags: 0
