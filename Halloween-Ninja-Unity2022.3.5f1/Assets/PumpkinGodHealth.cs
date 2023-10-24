@@ -14,6 +14,7 @@ public class PumpkinGodhealth : MonoBehaviour
         health = GetComponent<Health>();
         health.OnTakeDamage += TakeDamage;
         health.OnDeath += PumpkinGodDeath;
+        healthText.text = health.currenthealth + "%";
     }
 
     void TakeDamage(object sender, EventArgs e)
@@ -24,6 +25,7 @@ public class PumpkinGodhealth : MonoBehaviour
     void PumpkinGodDeath(object sender, EventArgs e)
     {
         LoseSystem.Instance.Win = true;
+        LoseSystem.Instance.Victory();
     }
 
     

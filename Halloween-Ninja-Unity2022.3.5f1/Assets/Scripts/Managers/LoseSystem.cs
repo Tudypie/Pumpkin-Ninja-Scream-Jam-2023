@@ -90,6 +90,6 @@ public class LoseSystem : MonoBehaviour
 
     public void Victory()
     {
-
+        MusicManager.Instance.ExitBossBattle();
     }
 }

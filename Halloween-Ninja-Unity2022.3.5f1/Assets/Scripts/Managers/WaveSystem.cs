@@ -164,6 +164,11 @@ public class WaveSystem : MonoBehaviour
         waveIsInProgress = false;
         waveTimerText.text = "It was inevitable.";
         Invoke("HideMessage", 3f);
+        foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
+        {
+            if (enemy != null)
+                enemy.GetComponent<Health>().Death();
+        }
     }
 
     #endregion
@@ -176,7 +181,7 @@ public class WaveSystem : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if(LoseSystem.Instance.Lose) { return; }
+        if(LoseSystem.Instance.Lose || !waveIsInProgress) { return; }
 
         if (spawnableEnemies.Count == 0)
         {
@@ -250,12 +255,6 @@ public class WaveSystem : MonoBehaviour
         FMODAudio.Instance.PlayAudio(FMODAudio.Instance.waveEnd);
 
         minimap.SetActive(false);
-
-        /*foreach (GameObject enemy in enemiesSpawnedInCurrentWave)
-        {
-            if (enemy != null)
-                enemy.GetComponent<Health>().Death();
-        }*/
 
         enemiesSpawnedInCurrentWave = new List<GameObject>();
         enemiesKilledInCurrentWave = 0;

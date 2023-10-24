@@ -27,6 +27,7 @@ public class Health : MonoBehaviour
     public int maxhealth;
     public float currenthealth;
     [SerializeField] private bool destroyOnDeath = true;
+    private bool isDead = false;
 
     public void Awake()
     {
@@ -49,6 +50,9 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
+        if(isDead) { return; }
+        isDead = true;
+
         OnDeath?.Invoke(this, EventArgs.Empty);
 
         if (destroyOnDeath)

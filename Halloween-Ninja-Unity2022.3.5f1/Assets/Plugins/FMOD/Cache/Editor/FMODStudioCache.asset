@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638336918615868373
+  lastModified: 638337728686054776
   FileSizes:
   - Name: Desktop
-    Value: 13435136
+    Value: 13435776
   Exists: 1
 --- !u!114 &-6305740602961135948
 MonoBehaviour:
@@ -305,7 +305,7 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638336633687400998
+  lastModified: 638337714603588373
   FileSizes:
   - Name: Desktop
     Value: 4214
@@ -406,12 +406,13 @@ MonoBehaviour:
   - {fileID: 9052759778837683338}
   - {fileID: 5147251805780561634}
   - {fileID: -6897619877253817133}
+  - {fileID: 4988070517143970964}
   EditorParameters: []
   MasterBanks:
   - {fileID: -564994515729920819}
   StringsBanks:
   - {fileID: 7204074291728855098}
-  cacheTime: 638336918616130296
+  cacheTime: 638337735667767221
   cacheVersion: 131603
 --- !u!114 &538128785970648780
 MonoBehaviour:
@@ -428,10 +429,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638336918616130296
+  lastModified: 638337735667767221
   FileSizes:
   - Name: Desktop
-    Value: 2531360
+    Value: 2512384
   Exists: 1
 --- !u!114 &627610486626017267
 MonoBehaviour:
@@ -594,7 +595,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3226
+  Length: 1303
 --- !u!114 &4753823604157425176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +650,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 76800
+--- !u!114 &4988070517143970964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Fanfares/mus_victory
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Fanfares/mus_victory
+  Guid:
+    Data1: -715641343
+    Data2: 1205270980
+    Data3: -1281431362
+    Data4: 1571118451
+  Banks:
+  - {fileID: -6811316367364741212}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5147251805780561634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,10 +801,10 @@ MonoBehaviour:
   Path: ../FMOD/HalloweenNinjaAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638336918614670345
+  lastModified: 638337714603598345
   FileSizes:
   - Name: Desktop
-    Value: 2504
+    Value: 2554
   Exists: 1
 --- !u!114 &7992619180810420158
 MonoBehaviour:

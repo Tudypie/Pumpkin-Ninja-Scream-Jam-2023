@@ -35,6 +35,11 @@ public class MainMenu : MonoBehaviour
         Invoke(nameof(QuitGame), 3f);
     }
 
+    public void OnCreditsButtonClick()
+    {
+        FMODAudio.Instance.PlayAudio(FMODAudio.Instance.buttons);
+    }
+
     private IEnumerator StartGame()
     {
         FMODAudio.Instance.menuSoundtrack.Stop();

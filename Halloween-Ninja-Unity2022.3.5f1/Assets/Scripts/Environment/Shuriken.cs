@@ -6,9 +6,12 @@ public class Shuriken : MonoBehaviour
 {
     
     [SerializeField] float damage = 10f;
+    bool canDamage = true;
 
     private void OnCollisionEnter(Collision other)
     {
+        if (!canDamage) { return; }
+
         if (other.gameObject.CompareTag("Player")
             || other.gameObject.CompareTag("DefensePoint")
             || other.gameObject.CompareTag("DamageBox")) 
@@ -27,7 +30,7 @@ public class Shuriken : MonoBehaviour
 
         GetComponentInChildren<Animator>().speed = 0;
         Destroy(gameObject, 3f);
-        enabled = false;
+        canDamage = false;
     }
 
 

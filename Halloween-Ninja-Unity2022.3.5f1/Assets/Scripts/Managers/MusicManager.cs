@@ -31,14 +31,22 @@ public class MusicManager : MonoBehaviour
         fmodaudio.defeatSoundtrack.Play();
         fmodaudio.gameplaySoundtrack.Stop();
         fmodaudio.ambienceSoundtrack.Stop();
+        fmodaudio.bossBattleSoundtrack.Stop();
     }
 
     public void EnterBossBattle()
     {
-        fmodaudio.defeatSoundtrack.Play();
         fmodaudio.gameplaySoundtrack.Stop();
+        fmodaudio.ambienceSoundtrack.Stop();
         fmodaudio.bossBattleSoundtrack.Play();
+    }
 
+    public void ExitBossBattle()
+    {
+        fmodaudio.defeatSoundtrack.Stop();
+        fmodaudio.ambienceSoundtrack.Stop();
+        fmodaudio.gameplaySoundtrack.Stop();
+        fmodaudio.bossBattleSoundtrack.Stop();
     }
 
 }
