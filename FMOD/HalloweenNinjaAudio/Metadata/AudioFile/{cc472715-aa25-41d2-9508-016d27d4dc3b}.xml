@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{cc472715-aa25-41d2-9508-016d27d4dc3b}">
 		<property name="assetPath">
-			<value>Scream Jam 2023 - sfx_ui_play.wav</value>
+			<value>SFX/Scream Jam 2023 - sfx_ui_play.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
