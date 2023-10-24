@@ -161,12 +161,17 @@ public class WaveSystem : MonoBehaviour
     public void Defeat()
     {
         waveIsInProgress = false;
-        waveTimerText.text = "Game Over.";
+        waveTimerText.text = "It was inevitable.";
+        Invoke("HideMessage", 3f);
     }
 
     #endregion
 
     #region Private Methods
+    private void HideMessage()
+    {
+        waveTimerText.enabled = false;
+    }
 
     private void SpawnEnemy()
     {
@@ -306,6 +311,5 @@ public class WaveSystem : MonoBehaviour
         }
         EndWave();
     }
-
     #endregion
 }

@@ -23,7 +23,7 @@ public class PumpkinGodhealth : MonoBehaviour
 
     void PumpkinGodDeath(object sender, EventArgs e)
     {
-        Debug.Log("Win Game");
+        LoseSystem.Instance.Win = true;
     }
 
     

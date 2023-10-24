@@ -4,11 +4,13 @@ using UnityEngine.UI;
 public class LoseSystem : MonoBehaviour
 {
     [SerializeField] Image deathScreen;
+    [SerializeField] Image winScreen;
 
     float lastTime, elapsed;
     float timeUntilStop = 4f;
 
     public bool Lose { get; set; }
+    public bool Win { get; set; }
 
     public static LoseSystem Instance { get; private set; }
 
@@ -26,8 +28,14 @@ public class LoseSystem : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!Lose) { return; }
+        if (Lose) LoseFixedUpdate();
+        if (Win) WinFixedUpdate();
 
+        
+    }
+
+    void LoseFixedUpdate()
+    {
         if (lastTime == 0)
         {
             lastTime = Time.realtimeSinceStartup;
@@ -49,10 +57,39 @@ public class LoseSystem : MonoBehaviour
         }
     }
 
+    void WinFixedUpdate()
+    {
+        if (lastTime == 0)
+        {
+            lastTime = Time.realtimeSinceStartup;
+        }
+        else
+        {
+            elapsed += Time.realtimeSinceStartup - lastTime;
+            lastTime = Time.realtimeSinceStartup;
+            Time.timeScale = Mathf.Lerp(1f, 0f, elapsed / timeUntilStop);
+            winScreen.color = new Color(winScreen.color.r, winScreen.color.g, winScreen.color.b, Mathf.Lerp(0, 1f, elapsed / timeUntilStop));
+        }
+
+        if (elapsed >= timeUntilStop)
+        {
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneLoader.Instance.LoadScene("WinScreen");
+        }
+    }
+
+
     public void Defeat()
     {
         Lose = true;
         WaveSystem.Instance.Defeat();
         MusicManager.Instance.Defeat();
+    }
+
+    public void Victory()
+    {
+
     }
 }
