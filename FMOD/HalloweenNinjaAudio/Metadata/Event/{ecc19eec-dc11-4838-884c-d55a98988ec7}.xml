@@ -5,10 +5,10 @@
 			<value>Other buttons sound</value>
 		</property>
 		<property name="name">
-			<value>sfx_ui_other_buttons</value>
+			<value>sfx_ui_buttons</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{9b763181-1579-47be-a54d-05067bd6b621}</destination>
@@ -67,7 +67,7 @@
 	<object class="MarkerTrack" id="{1854d807-1a63-4221-90b7-e4e4ab7a0955}" />
 	<object class="GroupTrack" id="{791f6319-77c0-4fd2-9406-fc1604890c38}">
 		<relationship name="modules">
-			<destination>{31f894c7-1f5d-4f4a-85f0-243046978d51}</destination>
+			<destination>{0d3858f6-1a8e-462e-85e9-5aee94d4a88d}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{165b64f7-155f-4035-9f4c-c4e27699c6fc}</destination>
@@ -75,7 +75,7 @@
 	</object>
 	<object class="Timeline" id="{f6f032b5-b9f4-4b4c-a181-d3809d4a2828}">
 		<relationship name="modules">
-			<destination>{31f894c7-1f5d-4f4a-85f0-243046978d51}</destination>
+			<destination>{0d3858f6-1a8e-462e-85e9-5aee94d4a88d}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b5e6ea8b-dfbd-4ec2-9be0-97cfe093ac7c}">
@@ -95,10 +95,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f250682b-9743-4b77-b029-d02bced97c21}" />
-	<object class="SingleSound" id="{31f894c7-1f5d-4f4a-85f0-243046978d51}">
+	<object class="SingleSound" id="{0d3858f6-1a8e-462e-85e9-5aee94d4a88d}">
 		<property name="length">
-			<value>2</value>
+			<value>1.3667120181405896</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{e3eeabfc-062b-4b0f-bcba-6169a1841f4b}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{165b64f7-155f-4035-9f4c-c4e27699c6fc}">
 		<property name="name">
