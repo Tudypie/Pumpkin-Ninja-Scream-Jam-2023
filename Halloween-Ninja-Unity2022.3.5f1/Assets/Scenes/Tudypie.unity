@@ -36997,11 +36997,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960781839791581341, guid: e9198425c762d804f971e304ff49522a, type: 3}
       propertyPath: maxhealth
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 960781839791581341, guid: e9198425c762d804f971e304ff49522a, type: 3}
       propertyPath: currenthealth
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2308578727644589649, guid: e9198425c762d804f971e304ff49522a, type: 3}
       propertyPath: m_Name
@@ -40171,6 +40171,10 @@ PrefabInstance:
     - target: {fileID: 4040296993413847862, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
       propertyPath: m_Center.y
       value: -0.8069617
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707791044113290921, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6916650388113185083, guid: 5d00adf5a7025b84f98a71a3942c83b4, type: 3}
       propertyPath: PumpkinGodHealth
@@ -48294,17 +48298,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 604485442440186406, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 6039457556951886748, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
+      propertyPath: m_Color.b
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039457556951886748, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
+      propertyPath: m_Color.g
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039457556951886748, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16862746
       objectReference: {fileID: 0}
     - target: {fileID: 6873788615062273911, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
       propertyPath: m_Name
       value: Lose System
-      objectReference: {fileID: 0}
-    - target: {fileID: 6873788615062273911, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8920242208478140620, guid: a4df12e5aa110d0468435c74923fc652, type: 3}
       propertyPath: m_LocalPosition.x
