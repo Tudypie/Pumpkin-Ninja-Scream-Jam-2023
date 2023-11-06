@@ -339,7 +339,7 @@ MonoBehaviour:
   renderers:
   - {fileID: 3249709449664229190}
   flashMaterial: {fileID: 2100000, guid: fc8b577c00f008142a30311a73982939, type: 2}
-  flashDuration: 0.25
+  flashDuration: 0.1
 --- !u!114 &783386070273988008
 MonoBehaviour:
   m_ObjectHideFlags: 0

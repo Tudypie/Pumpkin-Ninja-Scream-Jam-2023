@@ -1,12 +1,20 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public EventReference fmodGameplayMusicEvent;
+
+    private FMOD.Studio.EventInstance gameplayMusicEventInstance;
+
+    public float musicIntensity;
+
     private FMODAudio fmodaudio;
 
     public static MusicManager Instance;
+
     private void Awake()
     {
         if (Instance != null)
@@ -22,8 +30,18 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         fmodaudio = FMODAudio.Instance;
-        fmodaudio.gameplaySoundtrack.Play();
+
         fmodaudio.ambienceSoundtrack.Play();
+
+        fmodGameplayMusicEvent = fmodaudio.gameplaySoundtrack.EventReference;
+        gameplayMusicEventInstance = fmodaudio.CreateInstance(fmodGameplayMusicEvent);
+        gameplayMusicEventInstance.start();
+    }
+
+    private void Update()
+    {
+        gameplayMusicEventInstance.setParameterByName("Wave Intensity", musicIntensity);
+        Debug.Log("Music intensity: " + musicIntensity);
     }
 
     public void Defeat()

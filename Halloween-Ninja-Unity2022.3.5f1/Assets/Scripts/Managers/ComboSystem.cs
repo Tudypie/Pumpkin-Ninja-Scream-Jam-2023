@@ -40,14 +40,15 @@ public class ComboSystem : MonoBehaviour
             comboText.transform.parent.gameObject.SetActive(false);
             return; 
         }
-        comboText.transform.parent.gameObject.SetActive(true);
 
+        comboText.transform.parent.gameObject.SetActive(true);
         comboText.text = "x" + currentCombo; 
         comboFillCircle.fillAmount = (currentComboTimer / comboTimer);
-
         currentCombo = Mathf.Min(currentCombo, maxCombo);
 
-        if(currentComboTimer > 0)
+        MusicManager.Instance.musicIntensity = Mathf.Log(currentCombo, 2);
+
+        if (currentComboTimer > 0)
         {
             currentComboTimer -= Time.deltaTime;
         }
